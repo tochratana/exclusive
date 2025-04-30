@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <html lang="en">
+  <!DOCTYPE html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,189 +7,75 @@
     <link rel="stylesheet" href="./src/style/output.css" />
   </head>
   <body>
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Responsive Footer</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-          rel="stylesheet"
-        />
-      </head>
-      <body>
-        <header class="sticky top-0">
-          <!-- Promo Banner -->
-          <div class="bg-black text-white text-center py-2 px-4">
-            <div class="flex justify-center items-center space-x-2">
-              <p class="text-sm md:text-base">
-                Summer Sale For All Swim Suits And Free Express Delivery - OFF
-                50%!
-              </p>
-              <a
-                href="#"
-                class="font-bold underline text-sm md:text-base whitespace-nowrap"
-                >ShopNow</a
+    <header class="sticky top-0">
+      <!-- Promo Banner -->
+      <div class="bg-black text-white text-center py-2 px-4">
+        <div class="flex justify-center items-center space-x-2">
+          <p class="text-sm md:text-base">
+            Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+          </p>
+          <a
+            href="#"
+            class="font-bold underline text-sm md:text-base whitespace-nowrap"
+            >ShopNow</a
+          >
+        </div>
+      </div>
+
+      <!-- Main Navigation -->
+      <nav class="bg-white shadow-sm">
+        <div class="container mx-auto px-4">
+          <div class="flex justify-between items-center py-4">
+            <!-- Logo -->
+            <div class="flex items-center">
+              <h1 class="text-2xl font-bold">Exclusive</h1>
+            </div>
+
+            <!-- Desktop Navigation Links -->
+            <div class="hidden md:flex gap-5 lg:gap-10">
+              <a href="/" class="text-gray-800 hover:text-gray-600">Home</a>
+              <a href="./contact.html" class="text-gray-800 hover:text-gray-600"
+                >Contact</a
+              >
+              <a href="./about.html" class="text-gray-800 hover:text-gray-600"
+                >About</a
+              >
+              <a href="./signup.html" class="text-gray-800 hover:text-gray-600"
+                >Sign Up</a
               >
             </div>
-          </div>
 
-          <!-- Main Navigation -->
-          <nav class="bg-white shadow-sm">
-            <div class="container mx-auto px-4">
-              <div class="flex justify-between items-center py-4">
-                <!-- Logo -->
-                <div class="flex items-center">
-                  <h1 class="text-2xl font-bold">Exclusive</h1>
-                </div>
-
-                <!-- Desktop Navigation Links -->
-                <div class="hidden md:flex gap-5 lg:gap-10">
-                  <a href="/" class="text-gray-800 hover:text-gray-600">Home</a>
-                  <a
-                    href="./contact.html"
-                    class="text-gray-800 hover:text-gray-600"
-                    >Contact</a
+            <!-- Search and Icons -->
+            <div class="flex items-center space-x-2">
+              <!-- Search Bar (Desktop) -->
+              <div
+                class="hidden md:flex items-center bg-gray-100 rounded-md px-3 py-2"
+              >
+                <input
+                  type="text"
+                  placeholder="What are you looking for?"
+                  class="bg-transparent border-none outline-none"
+                />
+                <button class="ml-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-gray-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
                   >
-                  <a
-                    href="./about.html"
-                    class="text-gray-800 hover:text-gray-600"
-                    >About</a
-                  >
-                  <a
-                    href="./signup.html"
-                    class="text-gray-800 hover:text-gray-600"
-                    >Sign Up</a
-                  >
-                </div>
-
-                <!-- Search and Icons -->
-                <div class="flex items-center space-x-2">
-                  <!-- Search Bar (Desktop) -->
-                  <div
-                    class="hidden md:flex items-center bg-gray-100 rounded-md px-3 py-2"
-                  >
-                    <input
-                      type="text"
-                      placeholder="What are you looking for?"
-                      class="bg-transparent border-none outline-none"
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                     />
-                    <button class="ml-2">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5 text-gray-500"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-
-                  <!-- Icons -->
-                  <a href="#" class="text-gray-800">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-6 w-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                      />
-                    </svg>
-                  </a>
-                  <a href="#" class="text-gray-800">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-6 w-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                      />
-                    </svg>
-                  </a>
-
-                  <!-- Mobile Menu Button -->
-                  <button
-                    id="mobile-menu-button"
-                    class="md:hidden text-gray-800"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-6 w-6"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M4 6h16M4 12h16M4 18h16"
-                      />
-                    </svg>
-                  </button>
-                </div>
+                  </svg>
+                </button>
               </div>
 
-              <!-- Mobile Search (Always Visible on Mobile) -->
-              <div class="md:hidden pb-4">
-                <div class="flex items-center bg-gray-100 rounded-md px-3 py-2">
-                  <input
-                    type="text"
-                    placeholder="What are you looking for?"
-                    class="bg-transparent border-none outline-none w-full"
-                  />
-                  <button class="ml-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5 text-gray-500"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </header>
-
-        <!-- Mobile Sidebar (Hidden by Default) -->
-        <div
-          id="mobile-sidebar"
-          class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-50"
-        >
-          <div class="p-4">
-            <div class="flex justify-between items-center mb-6">
-              <h1 class="text-xl font-bold">Menu</h1>
-              <button id="close-sidebar" class="text-gray-800">
+              <!-- Icons -->
+              <a href="#" class="text-gray-800">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6"
@@ -201,190 +87,275 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    d="M6 18L18 6M6 6l12 12"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="text-gray-800">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+              </a>
+
+              <!-- Mobile Menu Button -->
+              <button id="mobile-menu-button" class="md:hidden text-gray-800">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
                   />
                 </svg>
               </button>
             </div>
-            <div class="flex flex-col space-y-4">
-              <a
-                href="/"
-                class="text-gray-800 hover:text-gray-600 py-2 border-b border-gray-200"
-                >Home</a
-              >
-              <a
-                href="./contact.html"
-                class="text-gray-800 hover:text-gray-600 py-2 border-b border-gray-200"
-                >Contact</a
-              >
-              <a
-                href="./about.html"
-                class="text-gray-800 hover:text-gray-600 py-2 border-b border-gray-200"
-                >About</a
-              >
-              <a
-                href="./signup.html"
-                class="text-gray-800 hover:text-gray-600 py-2 border-b border-gray-200"
-                >Sign Up</a
-              >
+          </div>
+
+          <!-- Mobile Search (Always Visible on Mobile) -->
+          <div class="md:hidden pb-4">
+            <div class="flex items-center bg-gray-100 rounded-md px-3 py-2">
+              <input
+                type="text"
+                placeholder="What are you looking for?"
+                class="bg-transparent border-none outline-none w-full"
+              />
+              <button class="ml-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-gray-500"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Mobile Sidebar (Hidden by Default) -->
+    <div
+      id="mobile-sidebar"
+      class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-50"
+    >
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-6">
+          <h1 class="text-xl font-bold">Menu</h1>
+          <button id="close-sidebar" class="text-gray-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-col space-y-4">
+          <a
+            href="/"
+            class="text-gray-800 hover:text-gray-600 py-2 border-b border-gray-200"
+            >Home</a
+          >
+          <a
+            href="./contact.html"
+            class="text-gray-800 hover:text-gray-600 py-2 border-b border-gray-200"
+            >Contact</a
+          >
+          <a
+            href="./about.html"
+            class="text-gray-800 hover:text-gray-600 py-2 border-b border-gray-200"
+            >About</a
+          >
+          <a
+            href="./signup.html"
+            class="text-gray-800 hover:text-gray-600 py-2 border-b border-gray-200"
+            >Sign Up</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Overlay for Mobile Sidebar -->
+    <div
+      id="sidebar-overlay"
+      class="fixed inset-0 bg-black opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out"
+    ></div>
+
+    <main class="">
+      <div class="container mx-auto px-4 py-8">
+        <h2 class="text-2xl font-bold mb-4">Welcome to about page</h2>
+        <p>Write about page in main</p>
+      </div>
+    </main>
+
+    <footer class="bg-black text-white py-12">
+      <div class="container mx-auto px-4">
+        <!-- Main Footer Content -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 xl:grid-cols-5"
+        >
+          <!-- Exclusive Section -->
+          <div class="mb-6 md:mb-0">
+            <h2 class="text-xl font-bold mb-4">Exclusive</h2>
+            <p class="text-sm mb-4">Subscribe</p>
+            <p class="text-sm mb-4">Get 10% off your first order</p>
+            <div
+              class="flex items-center border border-gray-700 rounded-md overflow-hidden"
+            >
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="bg-transparent border-none outline-none px-3 py-2 w-full text-white"
+              />
+              <button class="px-3 py-2 bg-transparent">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Support Section -->
+          <div class="mb-6 md:mb-0">
+            <h2 class="text-xl font-bold mb-4">Support</h2>
+            <p class="text-sm mb-2">111 Bijoy sarani, Dhaka,</p>
+            <p class="text-sm mb-4">DH 1515, Bangladesh.</p>
+            <p class="text-sm mb-2">exclusive@gmail.com</p>
+            <p class="text-sm mb-2">+88015-88888-9999</p>
+          </div>
+
+          <!-- Account Section -->
+          <div class="mb-6 md:mb-0">
+            <h2 class="text-xl font-bold mb-4">Account</h2>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-sm hover:text-gray-300">My Account</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm hover:text-gray-300"
+                  >Login / Register</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm hover:text-gray-300">Cart</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm hover:text-gray-300">Wishlist</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm hover:text-gray-300">Shop</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick Link Section -->
+          <div class="mb-6 md:mb-0">
+            <h2 class="text-xl font-bold mb-4">Quick Link</h2>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-sm hover:text-gray-300"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-sm hover:text-gray-300">Terms Of Use</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm hover:text-gray-300">FAQ</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm hover:text-gray-300">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Download App Section -->
+          <div class="mb-6 md:mb-0">
+            <div class="mb-6 self-center">
+              <h3 class="text-lg font-semibold mb-4">Download App</h3>
+              <p class="text-sm mb-4">Save $3 with App New User Only</p>
+              <div class="flex flex-row items-center justify-start">
+                <div class="mr-4 mb-4 md:mb-0">
+                  <img
+                    src="../../public/footer/qr.png"
+                    alt="QR Code"
+                    class="w-24 h-24"
+                  />
+                </div>
+                <div class="flex flex-col space-y-2">
+                  <a href="#" class="block">
+                    <img
+                      src="../../public/footer/googleplaystore.png"
+                      alt="Google Play"
+                      class="h-10"
+                    />
+                  </a>
+                  <a href="#" class="block">
+                    <img
+                      src="../../public/footer/appstore.png"
+                      alt="App Store"
+                      class="h-10 w-34"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="flex space-x-4 justify-start lg:justify-start mt-6">
+              <a href="#" class="text-white hover:text-gray-300">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-white hover:text-gray-300">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="text-white hover:text-gray-300">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="text-white hover:text-gray-300">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Overlay for Mobile Sidebar -->
-        <div
-          id="sidebar-overlay"
-          class="fixed inset-0 bg-black opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out"
-        ></div>
-
-        <main class="">
-          <div class="container mx-auto px-4 py-8">
-            <h2 class="text-2xl font-bold mb-4">Welcome to about page</h2>
-            <p>Write about page in main</p>
-          </div>
-        </main>
-
-        <footer class="bg-black text-white py-12">
-          <div class="container mx-auto px-4">
-            <!-- Main Footer Content -->
-            <div
-              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 xl:grid-cols-5"
-            >
-              <!-- Exclusive Section -->
-              <div class="mb-6 md:mb-0">
-                <h2 class="text-xl font-bold mb-4">Exclusive</h2>
-                <p class="text-sm mb-4">Subscribe</p>
-                <p class="text-sm mb-4">Get 10% off your first order</p>
-                <div
-                  class="flex items-center border border-gray-700 rounded-md overflow-hidden"
-                >
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    class="bg-transparent border-none outline-none px-3 py-2 w-full text-white"
-                  />
-                  <button class="px-3 py-2 bg-transparent">
-                    <i class="fas fa-arrow-right"></i>
-                  </button>
-                </div>
-              </div>
-
-              <!-- Support Section -->
-              <div class="mb-6 md:mb-0">
-                <h2 class="text-xl font-bold mb-4">Support</h2>
-                <p class="text-sm mb-2">111 Bijoy sarani, Dhaka,</p>
-                <p class="text-sm mb-4">DH 1515, Bangladesh.</p>
-                <p class="text-sm mb-2">exclusive@gmail.com</p>
-                <p class="text-sm mb-2">+88015-88888-9999</p>
-              </div>
-
-              <!-- Account Section -->
-              <div class="mb-6 md:mb-0">
-                <h2 class="text-xl font-bold mb-4">Account</h2>
-                <ul class="space-y-2">
-                  <li>
-                    <a href="#" class="text-sm hover:text-gray-300"
-                      >My Account</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="text-sm hover:text-gray-300"
-                      >Login / Register</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="text-sm hover:text-gray-300">Cart</a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-sm hover:text-gray-300">Wishlist</a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-sm hover:text-gray-300">Shop</a>
-                  </li>
-                </ul>
-              </div>
-
-              <!-- Quick Link Section -->
-              <div class="mb-6 md:mb-0">
-                <h2 class="text-xl font-bold mb-4">Quick Link</h2>
-                <ul class="space-y-2">
-                  <li>
-                    <a href="#" class="text-sm hover:text-gray-300"
-                      >Privacy Policy</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="text-sm hover:text-gray-300"
-                      >Terms Of Use</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="text-sm hover:text-gray-300">FAQ</a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-sm hover:text-gray-300">Contact</a>
-                  </li>
-                </ul>
-              </div>
-              <!-- Download App Section -->
-              <div class="mb-6 md:mb-0">
-                <div class="mb-6 self-center">
-                  <h3 class="text-lg font-semibold mb-4">Download App</h3>
-                  <p class="text-sm mb-4">Save $3 with App New User Only</p>
-                  <div class="flex flex-row items-center justify-start">
-                    <div class="mr-4 mb-4 md:mb-0">
-                      <img
-                        src="../../public/footer/qr.png"
-                        alt="QR Code"
-                        class="w-24 h-24"
-                      />
-                    </div>
-                    <div class="flex flex-col space-y-2">
-                      <a href="#" class="block">
-                        <img
-                          src="../../public/footer/googleplaystore.png"
-                          alt="Google Play"
-                          class="h-10"
-                        />
-                      </a>
-                      <a href="#" class="block">
-                        <img
-                          src="../../public/footer/appstore.png"
-                          alt="App Store"
-                          class="h-10 w-34"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Social Media Icons -->
-                <div class="flex space-x-4 justify-start lg:justify-start mt-6">
-                  <a href="#" class="text-white hover:text-gray-300">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="#" class="text-white hover:text-gray-300">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                  <a href="#" class="text-white hover:text-gray-300">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                  <a href="#" class="text-white hover:text-gray-300">
-                    <i class="fab fa-linkedin-in"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="text-center">
-              <hr class="my-4" />
-              <p class="text-sm text-gray-400">
-                © Copyright Rimel 2022. All right reserved
-              </p>
-            </div>
-          </div>
-        </footer>
-      </body>
-    </html>
+        <div class="text-center">
+          <hr class="my-4" />
+          <p class="text-sm text-gray-400">
+            © Copyright Rimel 2022. All right reserved
+          </p>
+        </div>
+      </div>
+    </footer>
     <script src="../js/navbar.js"></script>
   </body>
 </html>
