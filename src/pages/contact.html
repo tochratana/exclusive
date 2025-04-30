@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./src/style/output.css" />
+    <link rel="stylesheet" href="../style/output.css" />
   </head>
-  <body class="font-poppins">
-    <header class="sticky top-0 z-100">
+  <body>
+    <header class="sticky top-0">
       <!-- Promo Banner -->
       <div class="bg-black text-white text-center py-2 px-4">
         <div class="flex justify-center items-center space-x-2">
@@ -34,19 +34,13 @@
             <!-- Desktop Navigation Links -->
             <div class="hidden md:flex gap-5 lg:gap-10">
               <a href="/" class="text-gray-800 hover:text-gray-600">Home</a>
-              <a
-                href="./src/pages/contact.html"
-                class="text-gray-800 hover:text-gray-600"
+              <a href="./contact.html" class="text-gray-800 hover:text-gray-600"
                 >Contact</a
               >
-              <a
-                href="./src/pages/about.html"
-                class="text-gray-800 hover:text-gray-600"
+              <a href="./about.html" class="text-gray-800 hover:text-gray-600"
                 >About</a
               >
-              <a
-                href="./src/pages/signup.html"
-                class="text-gray-800 hover:text-gray-600"
+              <a href="./signup.html" class="text-gray-800 hover:text-gray-600"
                 >Sign Up</a
               >
             </div>
@@ -196,17 +190,17 @@
             >Home</a
           >
           <a
-            href="./src/pages/contact.html"
+            href="./contact.html"
             class="text-gray-800 hover:text-gray-600 py-2 border-b border-gray-200"
             >Contact</a
           >
           <a
-            href="./src/pages/about.html"
+            href="./about.html"
             class="text-gray-800 hover:text-gray-600 py-2 border-b border-gray-200"
             >About</a
           >
           <a
-            href="./src/pages/signup.html"
+            href="./signup.html"
             class="text-gray-800 hover:text-gray-600 py-2 border-b border-gray-200"
             >Sign Up</a
           >
@@ -220,139 +214,11 @@
       class="fixed inset-0 bg-black opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out"
     ></div>
 
-    <!-- TODO write code here  -->
     <main class="">
       <div class="container mx-auto px-4 py-8">
-        <h2 class="text-2xl font-bold mb-4">Welcome to Exclusive</h2>
-        <p>Your content goes here...</p>
-        <div class="relative h-56 overflow-hidden rounded-lg md:h-96" data-carousel="static">
-          <!-- Slide 1 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <div class="bg-black text-amber-50 flex flex-row items-center justify-between p-8 h-full">
-              <div>
-                <div class="flex items-center">
-                  <img class="w-[40px] h-[49px]" src="./public/homepage/1200px-Apple_gray_logo 1.png" alt="">
-                  <p class="text-center ml-[24px]">iPhone 14 Series</p>
-                </div>
-                <h1 class="text-hero font-bold w-[300px] mb-[21px]">Up to 10% off Voucher</h1>
-                <a href="">Shop Now →</a>
-              </div>
-              <img src="./public/homepage/hero_endframe__cvklg0xk3w6e_large 2 (1).png" alt="">
-            </div>
-          </div>
-        
-          <!-- Slide 2 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <div class="bg-black text-amber-50 flex flex-row items-center justify-between p-8 h-full">
-              <div>
-                <div class="flex items-center">
-                  <img class="w-[40px] h-[49px]" src="./public/homepage/1200px-Apple_gray_logo 1.png" alt="">
-                  <p class="text-center ml-[24px]">iPhone 14 Pro</p>
-                </div>
-                <h1 class="text-hero font-bold w-[300px] mb-[21px]">Save Big with Promo</h1>
-                <a href="">Shop Now →</a>
-              </div>
-              <img src="./public/homepage/hero_endframe__cvklg0xk3w6e_large 2 (1).png" alt="">
-            </div>
-          </div>
-        
-          <!-- Slide 3 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <div class="bg-black text-amber-50 flex flex-row items-center justify-between p-8 h-full">
-              <div>
-                <div class="flex items-center">
-                  <img class="w-[40px] h-[49px]" src="./public/homepage/1200px-Apple_gray_logo 1.png" alt="">
-                  <p class="text-center ml-[24px]">MacBook Air M2</p>
-                </div>
-                <h1 class="text-hero font-bold w-[300px] mb-[21px]">Special Deals Available</h1>
-                <a href="">Shop Now →</a>
-              </div>
-              <img src="./public/homepage/hero_endframe__cvklg0xk3w6e_large 2 (1).png" alt="">
-            </div>
-          </div>
-        
-          <!-- Slide 4 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <div class="bg-black text-amber-50 flex flex-row items-center justify-between p-8 h-full">
-              <div>
-                <div class="flex items-center">
-                  <img class="w-[40px] h-[49px]" src="./public/homepage/1200px-Apple_gray_logo 1.png" alt="">
-                  <p class="text-center ml-[24px]">Apple Watch Series 9</p>
-                </div>
-                <h1 class="text-hero font-bold w-[300px] mb-[21px]">Up to 15% off</h1>
-                <a href="">Shop Now →</a>
-              </div>
-              <img src="./public/homepage/hero_endframe__cvklg0xk3w6e_large 2 (1).png" alt="">
-            </div>
-          </div>
-        
-          <!-- Slider indicators -->
-          <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-            <button type="button" class="w-3 h-3 rounded-full" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-          </div>
-        
-          <!-- Slider controls -->
-          <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70">
-              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-              </svg>
-              <span class="sr-only">Previous</span>
-            </span>
-          </button>
-          <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70">
-              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" fill="none" viewBox="0 0 6 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-              </svg>
-              <span class="sr-only">Next</span>
-            </span>
-          </button>
-        </div>
-        <div class="py-[140px] ">
-          <div class="flex items-center ">  
-            <div class="py-[20px] px-[10px] rounded-sm bg-secondary2 "></div> 
-             <p class="text-title text-secondary2 font-semibold ml-[16px]">Today's</p>
-          </div>
-      
-          <div class="flex items-end">
-          <h2 class="text-subtitle font-semibold pr-[87px]">Flash Sales</h2>
-          <div class="flex">
-            <div class="flex flex-col  justify-center ">
-            <p class="text-title12px font-medium">Days</p>
-            <div class="flex ">
-            <h2 class="font-inter text-heading font-bold ">03</h2>
-            <h2 class="text-hover-button text-heading mx-[10px] drop-shadow-md">:</h2>
-          </div>
-          </div>
-          <div class="flex flex-col  justify-center ">
-            <p class="text-title12px font-medium">Hours</p>
-            <div class="flex ">
-            <h2 class="font-inter text-heading font-bold ">23</h2>
-            <h2 class="text-hover-button text-heading mx-[10px] drop-shadow-md">:</h2>
-          </div>
-          </div>
-          <div class="flex flex-col  justify-center ">
-            <p class="text-title12px font-medium">Minutes</p>
-            <div class="flex ">
-            <h2 class="font-inter text-heading font-bold ">19</h2>
-            <h2 class="text-hover-button text-heading mx-[10px] drop-shadow-md">:</h2>
-          </div>
-          </div>
-          <div class="flex flex-col  justify-center ">
-            <p class="text-title12px font-medium">Seconds</p>
-            <div class="flex ">
-            <h2 class="font-inter text-heading font-bold ">56</h2>
-          </div>
-          </div>
-          </div>
-        </div>
-        </div>
-        </div>
-        
+        <h2 class="text-2xl font-bold mb-4">Welcome to Contact page</h2>
+        <p>Write your contact page here</p>
+      </div>
     </main>
 
     <footer class="bg-black text-white py-12">
@@ -441,7 +307,7 @@
               <div class="flex flex-row items-center justify-start">
                 <div class="mr-4 mb-4 md:mb-0">
                   <img
-                    src="./public/footer/qr.png"
+                    src="../../public/footer/qr.png"
                     alt="QR Code"
                     class="w-24 h-24"
                   />
@@ -449,14 +315,14 @@
                 <div class="flex flex-col space-y-2">
                   <a href="#" class="block">
                     <img
-                      src="./public/footer/googleplaystore.png"
+                      src="../../public/footer/googleplaystore.png"
                       alt="Google Play"
                       class="h-10"
                     />
                   </a>
                   <a href="#" class="block">
                     <img
-                      src="./public/footer/appstore.png"
+                      src="../../public/footer/appstore.png"
                       alt="App Store"
                       class="h-10 w-34"
                     />
@@ -490,6 +356,6 @@
         </div>
       </div>
     </footer>
-    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="../js/navbar.js"></script>
   </body>
 </html>
