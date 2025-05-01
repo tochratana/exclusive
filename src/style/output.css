@@ -1060,6 +1060,9 @@
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
+  }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
   }
@@ -1360,13 +1363,6 @@
       }
     }
   }
-  .group-hover\:text-primary1 {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        color: var(--color-primary1);
-      }
-    }
-  }
   .group-hover\:opacity-100 {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -1432,13 +1428,6 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-hover-button);
-      }
-    }
-  }
-  .hover\:bg-primary {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-primary);
       }
     }
   }
@@ -1663,6 +1652,11 @@
       width: 40px;
     }
   }
+  .md\:w-\[234px\] {
+    @media (width >= 48rem) {
+      width: 234px;
+    }
+  }
   .md\:w-\[300px\] {
     @media (width >= 48rem) {
       width: 300px;
@@ -1691,6 +1685,21 @@
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
+    }
+  }
+  .md\:items-center {
+    @media (width >= 48rem) {
+      align-items: center;
+    }
+  }
+  .md\:justify-between {
+    @media (width >= 48rem) {
+      justify-content: space-between;
+    }
+  }
+  .md\:justify-center {
+    @media (width >= 48rem) {
+      justify-content: center;
     }
   }
   .md\:justify-start {
