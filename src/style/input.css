@@ -11,4 +11,9 @@
   --color-secondary2: #db4444;
   --color-button1: #00ff66;
   --color-hover-button: #e07575;
+  --color-button2: #DB4444;
+  --color-hover-button2: #E07575;
+}
+@theme {
+  --font-display:  "Poppins", sans-serif;
 }

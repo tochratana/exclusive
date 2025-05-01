@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Signup</title>
+    <title>Login</title>
     <link rel="stylesheet" href="../style/output.css" />
   </head>
   <body class="font-display">
@@ -214,70 +214,51 @@
       class="fixed inset-0 bg-black opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out"
     ></div>
 
-    <!-- TODO Write sigup in main -->
+    <!-- Login main -->
     <main class="mx-10 my-5">
-      <section class="grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-2">
-        <div class="w-full">
-          <img src="../../public/signupLogin/11455479.jpg" alt="Login" />
-        </div>
-        <div class="block mx-auto w-full mt-4 md:w-3/4 lg:w-2/4 md:mt-0 space-y-8">
-          <div class="space-y-2">
-            <h3 class="text-3xl font-medium">Create an account</h3>
-            <p class="text-sm">Enter your details below</p>
+        <section
+          class="grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-2"
+        >
+          <div class="w-full">
+            <img src="../../public/signupLogin/11455479.jpg" alt="Login" />
           </div>
-          <div class="block space-y-5">
-            <div>
-              <input
-                type="text"
-                class="focus:ring-0 w-full border-0"
-                placeholder="Name"
-              />
-              <hr />
+          <div
+            class="block mx-auto w-full mt-4 md:w-3/4 lg:w-2/4 md:mt-0 space-y-8"
+          >
+            <div class="space-y-2">
+              <h3 class="text-3xl font-medium">Log in to Exclusive</h3>
+              <p class="text-sm">Enter your details below</p>
             </div>
-            <div>
-              <input
-                type="text"
-                class="focus:ring-0 w-full border-0"
-                placeholder="Email or Phone Number"
-              />
-              <hr />
+            <div class="block space-y-5">
+              <div>
+                <input
+                  type="text"
+                  class="focus:ring-0 w-full border-0"
+                  placeholder="Email or Phone Number"
+                />
+                <hr />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  class="focus:ring-0 w-full border-0"
+                  placeholder="Password"
+                />
+                <hr />
+              </div>
             </div>
-            <div>
-              <input
-                type="text"
-                class="focus:ring-0 w-full border-0"
-                placeholder="Password"
-              />
-              <hr />
+            <div class="flex items-center justify-between gap-4">
+                <button
+                  type="submit"
+                  class="w-2/4 text-center bg-[var(--color-button2)] hover:bg-[var(--color-hover-button2)] text-white rounded-md py-2 px-2"
+                >
+                  Login
+                </button>
+                <a class="hover:text-[var(--color-hover-button2)]" href="#">Forget Password?</a>
             </div>
           </div>
-          <div class="space-y-3">
-          <div class="space-y-4">
-            <button
-              type="submit"
-              class="w-full h-11 text-center bg-[var(--color-button2)] hover:bg-[var(--color-hover-button2)] text-white rounded-md py-2 px-2"
-            >
-              Create Account
-            </button>
-            <button
-              class="flex items-center justify-center w-full h-11 border border-gray-300 hover:border-[var(--color-hover-button2)] rounded-md py-1 px-2 gap-2"
-            >
-              <img
-                class="w-8"
-                src="../../public/signupLogin/Google_Icons-09-512.jpg"
-                alt="Google icon"
-              />
-              Sign up with Google
-            </button>
-          </div>
-          <p class="text-center">
-            Already have account?
-            <a class="underline underline-offset-8 hover:text-[var(--color-hover-button2)]" href="login.html">Login</a>
-          </p>
-        </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
 
     <footer class="bg-black text-white py-12">
       <div class="container mx-auto px-4">
