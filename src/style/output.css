@@ -964,6 +964,13 @@
       --tw-ring-color: var(--color-white);
     }
   }
+  .hover\:bg-hover-button {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-hover-button);
+      }
+    }
+  }
   .hover\:bg-primary {
     &:hover {
       @media (hover: hover) {
@@ -975,6 +982,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-secondary2);
+      }
+    }
+  }
+  .hover\:text-black {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-black);
       }
     }
   }

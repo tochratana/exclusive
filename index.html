@@ -474,14 +474,14 @@
         </div>
         <!-- Flash Sales -->
         <div class="py-[140px]">
-          <div class="flex items-center">
+          <div class="flex items-center" data-aos-duration="1500"  data-aos="fade-up-right">
             <div class="py-[20px] px-[10px] rounded-sm bg-secondary2"></div>
             <p class="text-title text-secondary2 font-semibold ml-[16px]">
               Today's
             </p>
           </div>
 
-          <div class="flex items-end py-[20px]">
+          <div class="flex items-end py-[20px]" data-aos-duration="1500"  data-aos="fade-up-right">
             <h2 class="text-subtitle font-semibold pr-[87px]">Flash Sales</h2>
             <div class="flex">
               <div class="flex flex-col justify-center">
@@ -525,12 +525,7 @@
               </div>
             </div>
           </div>
-          <div
-            class="overflow-x-auto scrollbar-hide"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-once="false"
-          >
+          <div class="overflow-x-auto scrollbar-hide aos-item" data-aos="fade-right" data-aos-duration="1500"   >
             <div class="flex items-center flex-nowrap w-max gap-[30px]">
               <!-- CARD TEMPLATE START -->
               <div
@@ -906,29 +901,29 @@
             </div>
           </div>
         </div>
-        <div class="flex items-center justify-center">
+        <div class="flex items-center justify-center" data-aos-duration="1500"  data-aos="fade-up-right">
           <a
-            class="bg-secondary2 px-[48px] py-[16px] text-primary w-[234px] h-[56px] text-title16px font-medium text-center"
+            class="bg-secondary2 hover:bg-hover-button  px-[48px] py-[16px] text-primary w-[234px] h-[56px] text-title16px font-medium text-center"
             href=""
             >View All Products</a
           >
         </div>
         <hr class="my-[60px] border-t-2 border-gray-300" />
         <!-- Category -->
-        <div class=" ">
-          <div class="flex items-center">
-            <div class="py-[20px] px-[10px] rounded-sm bg-secondary2"></div>
+        <div class="" >
+          <div class="flex items-center" data-aos-duration="1500"  data-aos="fade-up-right">
+            <div class="py-[20px] px-[10px] rounded-sm bg-secondary2" ></div>
             <p class="text-title text-secondary2 font-semibold ml-[16px]">
               Category
             </p>
           </div>
 
-          <div class="py-[20px]">
+          <div class="py-[20px]" data-aos-duration="1500"  data-aos="fade-up-right">
             <h2 class="text-subtitle font-semibold pr-[87px]">
               Browse By Category
             </h2>
           </div>
-          <div class="flex gap-[30px] overflow-x-auto scrollbar-hide">
+          <div class="flex gap-[30px] overflow-x-auto scrollbar-hide" data-aos="fade-right" data-aos-duration="1500"  >
             <!-- Phones -->
             <div
               class="group transition duration-300 hover:bg-secondary2 flex flex-col w-[170px] h-[145px] p-10 border-2 border-gray-300 items-center justify-center"
@@ -1059,19 +1054,19 @@
         <hr class="my-[60px] border-t-2 border-gray-300" />
         <!--Best Selling Products -->
         <div>
-          <div class="flex items-center">
+          <div class="flex items-center" data-aos-duration="1500"  data-aos="fade-up-right">
             <div class="py-[20px] px-[10px] rounded-sm bg-secondary2"></div>
             <p class="text-title text-secondary2 font-semibold ml-[16px]">
               This month
             </p>
           </div>
 
-          <div class="flex items-end py-[20px]">
+          <div class="flex items-end py-[20px]" data-aos-duration="1500"  data-aos="fade-up-right">
             <h2 class="text-subtitle font-semibold pr-[87px]">
               Best Selling Products
             </h2>
           </div>
-          <div class="overflow-x-auto scrollbar-hide">
+          <div class="overflow-x-auto scrollbar-hide" data-aos="fade-right" data-aos-duration="1500">
             <div class="flex items-center flex-nowrap w-max gap-[30px]">
               <div
                 class="group w-[270px] h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden"
@@ -1092,11 +1087,8 @@
                       ></i>
                     </div>
                     <div
-                      class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center"
-                    >
-                      <i
-                        class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"
-                      ></i>
+                      class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center"  >
+                      <i class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300" ></i>
                     </div>
                   </div>
                   <img
@@ -1523,6 +1515,7 @@
       AOS.init({
         once: false, // Ensures it repeats every scroll
         mirror: true,
+        reset: true,
       });
     </script>
   </body>
