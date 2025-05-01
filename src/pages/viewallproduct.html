@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern E-commerce Shop</title>
+    <link rel="stylesheet" href="../style/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <style>
+      /* Custom scrollbar for webkit browsers */
+      .scrollbar-thin::-webkit-scrollbar {
+        width: 4px;
+      }
+      .scrollbar-thin::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      .scrollbar-thin::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 4px;
+      }
+      .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 h-screen flex flex-col">
+    <header class="sticky top-0 z-10 bg-white shadow-sm">
+      <!-- Promo Banner -->
+      <div class="bg-black text-white text-center py-2 px-4">
+        <div class="flex justify-center items-center space-x-2">
+          <p class="text-sm md:text-base">
+            Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+          </p>
+          <a
+            href="#"
+            class="font-bold underline text-sm md:text-base whitespace-nowrap"
+            >ShopNow</a
+          >
+        </div>
+      </div>
+
+      <!-- Main Navigation -->
+      <nav class="bg-white">
+        <div class="container mx-auto px-4">
+          <div class="flex justify-between items-center py-4">
+            <!-- Logo -->
+            <div class="flex items-center">
+              <h1 class="text-2xl font-bold">Exclusive</h1>
+            </div>
+
+            <!-- Desktop Navigation Links -->
+            <div class="hidden md:flex gap-5 lg:gap-10">
+              <a href="/" class="text-gray-800 hover:text-gray-600">Home</a>
+              <a href="./contact.html" class="text-gray-800 hover:text-gray-600"
+                >Contact</a
+              >
+              <a href="./about.html" class="text-gray-800 hover:text-gray-600"
+                >About</a
+              >
+              <a href="./signup.html" class="text-gray-800 hover:text-gray-600"
+                >Sign Up</a
+              >
+            </div>
+
+            <!-- Search and Icons -->
+            <div class="flex items-center space-x-2">
+              <!-- Search Bar (Desktop) -->
+              <div
+                class="hidden md:flex items-center bg-gray-100 rounded-md px-3 py-2"
+              >
+                <input
+                  type="text"
+                  placeholder="What are you looking for?"
+                  class="bg-transparent border-none outline-none"
+                />
+                <button class="ml-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-gray-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Icons -->
+              <a href="#" class="text-gray-800">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="text-gray-800">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+              </a>
+
+              <!-- Mobile Menu Button -->
+              <button id="mobile-menu-button" class="md:hidden text-gray-800">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile Search (Always Visible on Mobile) -->
+          <div class="md:hidden pb-4">
+            <div class="flex items-center bg-gray-100 rounded-md px-3 py-2">
+              <input
+                type="text"
+                placeholder="What are you looking for?"
+                class="bg-transparent border-none outline-none w-full"
+              />
+              <button class="ml-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 text-gray-500"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Mobile Sidebar -->
+    <div
+      id="mobile-sidebar"
+      class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-50"
+    >
+      <div class="p-4">
+        <div class="flex justify-between items-center mb-6">
+          <h1 class="text-xl font-bold">Exclusive</h1>
+          <button id="close-sidebar" class="text-gray-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-col space-y-4">
+          <a
+            href="/"
+            class="text-gray-800 hover:text-gray-600 py-2 border-b border-gray-200"
+            >Home</a
+          >
+          <a
+            href="./contact.html"
+            class="text-gray-800 hover:text-gray-600 py-2 border-b border-gray-200"
+            >Contact</a
+          >
+          <a
+            href="./about.html"
+            class="text-gray-800 hover:text-gray-600 py-2 border-b border-gray-200"
+            >About</a
+          >
+          <a
+            href="./signup.html"
+            class="text-gray-800 hover:text-gray-600 py-2 border-b border-gray-200"
+            >Sign Up</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Overlay for Mobile Sidebar -->
+    <div
+      id="sidebar-overlay"
+      class="fixed inset-0 bg-black opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out"
+    ></div>
+
+    <!-- Main Content -->
+    <main class="flex-1 overflow-hidden">
+      <div class="h-full flex flex-col md:flex-row">
+        <!-- Left Column: Fixed Filters (on desktop) -->
+        <div class="md:w-64 bg-white">
+          <!-- Filter sidebar for desktop - fixed position -->
+          <div class="hidden md:block h-full overflow-y-auto scrollbar-thin">
+            <div class="p-4 sticky top-0">
+              <h2 class="text-xl font-bold mb-6">Filters</h2>
+
+              <!-- Category Filter -->
+              <div class="mb-6">
+                <h3 class="font-semibold mb-3">Category</h3>
+                <div class="space-y-2">
+                  <div class="flex items-center">
+                    <input
+                      id="category-phones"
+                      name="category"
+                      type="checkbox"
+                      class="h-4 w-4 text-blue-600"
+                    />
+                    <label for="category-phones" class="ml-2 text-gray-700"
+                      >Smartphones</label
+                    >
+                  </div>
+                  <div class="flex items-center">
+                    <input
+                      id="category-laptops"
+                      name="category"
+                      type="checkbox"
+                      class="h-4 w-4 text-blue-600"
+                    />
+                    <label for="category-laptops" class="ml-2 text-gray-700"
+                      >Laptops</label
+                    >
+                  </div>
+                  <div class="flex items-center">
+                    <input
+                      id="category-tablets"
+                      name="category"
+                      type="checkbox"
+                      class="h-4 w-4 text-blue-600"
+                    />
+                    <label for="category-tablets" class="ml-2 text-gray-700"
+                      >Tablets</label
+                    >
+                  </div>
+                  <div class="flex items-center">
+                    <input
+                      id="category-accessories"
+                      name="category"
+                      type="checkbox"
+                      class="h-4 w-4 text-blue-600"
+                    />
+                    <label for="category-accessories" class="ml-2 text-gray-700"
+                      >Accessories</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Price Range Filter -->
+              <div class="mb-6">
+                <h3 class="font-semibold mb-3">Price Range</h3>
+                <div class="space-y-3">
+                  <div class="flex justify-between text-sm text-gray-600">
+                    <span>$0</span>
+                    <span>$2000</span>
+                  </div>
+                  <input type="range" min="0" max="2000" class="w-full" />
+                  <div class="flex space-x-2">
+                    <div class="w-1/2">
+                      <label class="text-xs text-gray-500 block">Min</label>
+                      <input
+                        type="number"
+                        class="w-full p-2 border rounded text-sm"
+                        placeholder="$0"
+                      />
+                    </div>
+                    <div class="w-1/2">
+                      <label class="text-xs text-gray-500 block">Max</label>
+                      <input
+                        type="number"
+                        class="w-full p-2 border rounded text-sm"
+                        placeholder="$2000"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Brand Filter -->
+              <div class="mb-6">
+                <h3 class="font-semibold mb-3">Brand</h3>
+                <div class="space-y-2">
+                  <div class="flex items-center">
+                    <input
+                      id="brand-apple"
+                      name="brand"
+                      type="checkbox"
+                      class="h-4 w-4 text-blue-600"
+                    />
+                    <label for="brand-apple" class="ml-2 text-gray-700"
+                      >Apple</label
+                    >
+                  </div>
+                  <div class="flex items-center">
+                    <input
+                      id="brand-samsung"
+                      name="brand"
+                      type="checkbox"
+                      class="h-4 w-4 text-blue-600"
+                    />
+                    <label for="brand-samsung" class="ml-2 text-gray-700"
+                      >Samsung</label
+                    >
+                  </div>
+                  <div class="flex items-center">
+                    <input
+                      id="brand-google"
+                      name="brand"
+                      type="checkbox"
+                      class="h-4 w-4 text-blue-600"
+                    />
+                    <label for="brand-google" class="ml-2 text-gray-700"
+                      >Google</label
+                    >
+                  </div>
+                  <div class="flex items-center">
+                    <input
+                      id="brand-dell"
+                      name="brand"
+                      type="checkbox"
+                      class="h-4 w-4 text-blue-600"
+                    />
+                    <label for="brand-dell" class="ml-2 text-gray-700"
+                      >Dell</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <button
+                class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition"
+              >
+                Apply Filters
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile filter accordion (collapsible) -->
+          <div class="md:hidden p-4 bg-white shadow-sm">
+            <button
+              id="mobile-filter-toggle"
+              class="flex justify-between items-center w-full py-2 font-bold"
+            >
+              <span>Filters</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div id="mobile-filter-content" class="hidden mt-4 space-y-6">
+              <!-- Mobile filters (same content as desktop but with less spacing) -->
+              <!-- Category Filter -->
+              <div class="mb-4">
+                <h3 class="font-semibold mb-2">Category</h3>
+                <div class="space-y-1">
+                  <div class="flex items-center">
+                    <input
+                      id="mobile-category-phones"
+                      name="category"
+                      type="checkbox"
+                      class="h-4 w-4 text-blue-600"
+                    />
+                    <label
+                      for="mobile-category-phones"
+                      class="ml-2 text-gray-700"
+                      >Smartphones</label
+                    >
+                  </div>
+                  <!-- More category options... -->
+                </div>
+              </div>
+              <!-- More filter sections... -->
+              <button
+                class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition"
+              >
+                Apply Filters
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Scrollable Products Grid -->
+        <div class="max-w-[1280px] flex-1 overflow-y-auto scrollbar-thin">
+          <div class="p-4">
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+            >
+              <!-- Product 1 -->
+              <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="relative">
+                  <img
+                    src="https://west-africa.pro.infinixmobility.com/media/catalog/product/x/6/x6962_zero_flip_base_1_3_10.png"
+                    alt="iPhone 15 Pro"
+                    class="w-full h-48 object-contain"
+                  />
+                  <span
+                    class="absolute top-2 left-2 bg-blue-500 text-white text-xs px-2 py-1 rounded"
+                    >New</span
+                  >
+                </div>
+                <div class="p-4">
+                  <div class="flex justify-between items-start mb-2">
+                    <div>
+                      <h3 class="font-semibold">iPhone 15 Pro</h3>
+                      <p class="text-sm text-gray-500">Apple</p>
+                    </div>
+                    <div class="flex items-center text-sm">
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star-half-alt text-yellow-400"></i>
+                      <span class="ml-1 text-gray-600">(4.5)</span>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center mt-3">
+                    <p class="font-bold">$999.00</p>
+                    <button
+                      class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full"
+                    >
+                      <i class="fas fa-shopping-cart text-gray-700"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 2 -->
+              <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="relative">
+                  <img
+                    src="https://d1rlzxa98cyc61.cloudfront.net/catalog/product/cache/1801c418208f9607a371e61f8d9184d9/1/7/173547_2020.jpg"
+                    alt="Galaxy S24 Ultra"
+                    class="w-full h-48 object-contain"
+                  />
+                  <span
+                    class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded"
+                    >Sale</span
+                  >
+                </div>
+                <div class="p-4">
+                  <div class="flex justify-between items-start mb-2">
+                    <div>
+                      <h3 class="font-semibold">Galaxy S24 Ultra</h3>
+                      <p class="text-sm text-gray-500">Samsung</p>
+                    </div>
+                    <div class="flex items-center text-sm">
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="far fa-star text-yellow-400"></i>
+                      <span class="ml-1 text-gray-600">(4.0)</span>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center mt-3">
+                    <div>
+                      <p class="font-bold">$899.00</p>
+                      <p class="text-sm text-gray-500 line-through">
+                        $1,199.00
+                      </p>
+                    </div>
+                    <button
+                      class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full"
+                    >
+                      <i class="fas fa-shopping-cart text-gray-700"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 3 -->
+              <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="relative">
+                  <img
+                    src="https://www.machines.com.my/cdn/shop/products/iPhone_13_ProductRED_PDP_Image_Position-1A__GBEN.jpg?v=1705598374&width=1445"
+                    alt="Pixel 8 Pro"
+                    class="w-full h-48 object-contain"
+                  />
+                </div>
+                <div class="p-4">
+                  <div class="flex justify-between items-start mb-2">
+                    <div>
+                      <h3 class="font-semibold">Pixel 8 Pro</h3>
+                      <p class="text-sm text-gray-500">Google</p>
+                    </div>
+                    <div class="flex items-center text-sm">
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <span class="ml-1 text-gray-600">(5.0)</span>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center mt-3">
+                    <p class="font-bold">$899.00</p>
+                    <button
+                      class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full"
+                    >
+                      <i class="fas fa-shopping-cart text-gray-700"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 4 -->
+              <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="relative">
+                  <img
+                    src="https://www.costco.co.uk/medias/sys_master/images/he7/h1a/175083303239710.jpg"
+                    alt="iPhone 15"
+                    class="w-full h-48 object-contain"
+                  />
+                </div>
+                <div class="p-4">
+                  <div class="flex justify-between items-start mb-2">
+                    <div>
+                      <h3 class="font-semibold">iPhone 15</h3>
+                      <p class="text-sm text-gray-500">Apple</p>
+                    </div>
+                    <div class="flex items-center text-sm">
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star-half-alt text-yellow-400"></i>
+                      <i class="far fa-star text-yellow-400"></i>
+                      <span class="ml-1 text-gray-600">(3.5)</span>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center mt-3">
+                    <p class="font-bold">$799.00</p>
+                    <button
+                      class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full"
+                    >
+                      <i class="fas fa-shopping-cart text-gray-700"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 5 -->
+              <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="relative">
+                  <img
+                    src="https://csdam.net/digitalcontent/0/5820/58201938.jpg"
+                    alt="MacBook Pro 16"
+                    class="w-full h-48 object-contain"
+                  />
+                  <span
+                    class="absolute top-2 left-2 bg-blue-500 text-white text-xs px-2 py-1 rounded"
+                    >New</span
+                  >
+                </div>
+                <div class="p-4">
+                  <div class="flex justify-between items-start mb-2">
+                    <div>
+                      <h3 class="font-semibold">MacBook Pro 16"</h3>
+                      <p class="text-sm text-gray-500">Apple</p>
+                    </div>
+                    <div class="flex items-center text-sm">
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <span class="ml-1 text-gray-600">(5.0)</span>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center mt-3">
+                    <p class="font-bold">$2,499.00</p>
+                    <button
+                      class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full"
+                    >
+                      <i class="fas fa-shopping-cart text-gray-700"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 6 -->
+              <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="relative">
+                  <img
+                    src="https://www.techtarget.com/rms/onlineimages/hp_elitebook_mobile.jpg"
+                    alt="Dell XPS 15"
+                    class="w-full h-48 object-contain"
+                  />
+                  <span
+                    class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded"
+                    >Sale</span
+                  >
+                </div>
+                <div class="p-4">
+                  <div class="flex justify-between items-start mb-2">
+                    <div>
+                      <h3 class="font-semibold">Dell XPS 15</h3>
+                      <p class="text-sm text-gray-500">Dell</p>
+                    </div>
+                    <div class="flex items-center text-sm">
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="far fa-star text-yellow-400"></i>
+                      <span class="ml-1 text-gray-600">(4.2)</span>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center mt-3">
+                    <div>
+                      <p class="font-bold">$1,899.00</p>
+                      <p class="text-sm text-gray-500 line-through">
+                        $2,099.00
+                      </p>
+                    </div>
+                    <button
+                      class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full"
+                    >
+                      <i class="fas fa-shopping-cart text-gray-700"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="relative">
+                  <img
+                    src="https://www.techtarget.com/rms/onlineimages/hp_elitebook_mobile.jpg"
+                    alt="Dell XPS 15"
+                    class="w-full h-48 object-contain"
+                  />
+                  <span
+                    class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded"
+                    >Sale</span
+                  >
+                </div>
+                <div class="p-4">
+                  <div class="flex justify-between items-start mb-2">
+                    <div>
+                      <h3 class="font-semibold">Dell XPS 15</h3>
+                      <p class="text-sm text-gray-500">Dell</p>
+                    </div>
+                    <div class="flex items-center text-sm">
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="far fa-star text-yellow-400"></i>
+                      <span class="ml-1 text-gray-600">(4.2)</span>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center mt-3">
+                    <div>
+                      <p class="font-bold">$1,899.00</p>
+                      <p class="text-sm text-gray-500 line-through">
+                        $2,099.00
+                      </p>
+                    </div>
+                    <button
+                      class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full"
+                    >
+                      <i class="fas fa-shopping-cart text-gray-700"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="relative">
+                  <img
+                    src="https://www.techtarget.com/rms/onlineimages/hp_elitebook_mobile.jpg"
+                    alt="Dell XPS 15"
+                    class="w-full h-48 object-contain"
+                  />
+                  <span
+                    class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded"
+                    >Sale</span
+                  >
+                </div>
+                <div class="p-4">
+                  <div class="flex justify-between items-start mb-2">
+                    <div>
+                      <h3 class="font-semibold">Dell XPS 15</h3>
+                      <p class="text-sm text-gray-500">Dell</p>
+                    </div>
+                    <div class="flex items-center text-sm">
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="far fa-star text-yellow-400"></i>
+                      <span class="ml-1 text-gray-600">(4.2)</span>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center mt-3">
+                    <div>
+                      <p class="font-bold">$1,899.00</p>
+                      <p class="text-sm text-gray-500 line-through">
+                        $2,099.00
+                      </p>
+                    </div>
+                    <button
+                      class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full"
+                    >
+                      <i class="fas fa-shopping-cart text-gray-700"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="relative">
+                  <img
+                    src="https://www.techtarget.com/rms/onlineimages/hp_elitebook_mobile.jpg"
+                    alt="Dell XPS 15"
+                    class="w-full h-48 object-contain"
+                  />
+                  <span
+                    class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded"
+                    >Sale</span
+                  >
+                </div>
+                <div class="p-4">
+                  <div class="flex justify-between items-start mb-2">
+                    <div>
+                      <h3 class="font-semibold">Dell XPS 15</h3>
+                      <p class="text-sm text-gray-500">Dell</p>
+                    </div>
+                    <div class="flex items-center text-sm">
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="far fa-star text-yellow-400"></i>
+                      <span class="ml-1 text-gray-600">(4.2)</span>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center mt-3">
+                    <div>
+                      <p class="font-bold">$1,899.00</p>
+                      <p class="text-sm text-gray-500 line-through">
+                        $2,099.00
+                      </p>
+                    </div>
+                    <button
+                      class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full"
+                    >
+                      <i class="fas fa-shopping-cart text-gray-700"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="relative">
+                  <img
+                    src="https://www.techtarget.com/rms/onlineimages/hp_elitebook_mobile.jpg"
+                    alt="Dell XPS 15"
+                    class="w-full h-48 object-contain"
+                  />
+                  <span
+                    class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded"
+                    >Sale</span
+                  >
+                </div>
+                <div class="p-4">
+                  <div class="flex justify-between items-start mb-2">
+                    <div>
+                      <h3 class="font-semibold">Dell XPS 15</h3>
+                      <p class="text-sm text-gray-500">Dell</p>
+                    </div>
+                    <div class="flex items-center text-sm">
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="far fa-star text-yellow-400"></i>
+                      <span class="ml-1 text-gray-600">(4.2)</span>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center mt-3">
+                    <div>
+                      <p class="font-bold">$1,899.00</p>
+                      <p class="text-sm text-gray-500 line-through">
+                        $2,099.00
+                      </p>
+                    </div>
+                    <button
+                      class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full"
+                    >
+                      <i class="fas fa-shopping-cart text-gray-700"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="relative">
+                  <img
+                    src="https://www.techtarget.com/rms/onlineimages/hp_elitebook_mobile.jpg"
+                    alt="Dell XPS 15"
+                    class="w-full h-48 object-contain"
+                  />
+                  <span
+                    class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded"
+                    >Sale</span
+                  >
+                </div>
+                <div class="p-4">
+                  <div class="flex justify-between items-start mb-2">
+                    <div>
+                      <h3 class="font-semibold">Dell XPS 15</h3>
+                      <p class="text-sm text-gray-500">Dell</p>
+                    </div>
+                    <div class="flex items-center text-sm">
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="far fa-star text-yellow-400"></i>
+                      <span class="ml-1 text-gray-600">(4.2)</span>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center mt-3">
+                    <div>
+                      <p class="font-bold">$1,899.00</p>
+                      <p class="text-sm text-gray-500 line-through">
+                        $2,099.00
+                      </p>
+                    </div>
+                    <button
+                      class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full"
+                    >
+                      <i class="fas fa-shopping-cart text-gray-700"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="relative">
+                  <img
+                    src="https://www.techtarget.com/rms/onlineimages/hp_elitebook_mobile.jpg"
+                    alt="Dell XPS 15"
+                    class="w-full h-48 object-contain"
+                  />
+                  <span
+                    class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded"
+                    >Sale</span
+                  >
+                </div>
+                <div class="p-4">
+                  <div class="flex justify-between items-start mb-2">
+                    <div>
+                      <h3 class="font-semibold">Dell XPS 15</h3>
+                      <p class="text-sm text-gray-500">Dell</p>
+                    </div>
+                    <div class="flex items-center text-sm">
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="far fa-star text-yellow-400"></i>
+                      <span class="ml-1 text-gray-600">(4.2)</span>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center mt-3">
+                    <div>
+                      <p class="font-bold">$1,899.00</p>
+                      <p class="text-sm text-gray-500 line-through">
+                        $2,099.00
+                      </p>
+                    </div>
+                    <button
+                      class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full"
+                    >
+                      <i class="fas fa-shopping-cart text-gray-700"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="../js/navbar.js"></script>
+  </body>
+</html>
