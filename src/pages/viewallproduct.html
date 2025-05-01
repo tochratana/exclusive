@@ -4,15 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modern E-commerce Shop</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../style/output.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="../style/view.css" />
+    <style>
+      /* Custom scrollbar for webkit browsers */
+      .scrollbar-thin::-webkit-scrollbar {
+        width: 4px;
+      }
+      .scrollbar-thin::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      .scrollbar-thin::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 4px;
+      }
+      .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    </style>
   </head>
-  <body class="bg-gray-50">
-    <header class="sticky top-0 z-10">
+  <body class="bg-gray-50 h-screen flex flex-col">
+    <header class="sticky top-0 z-10 bg-white shadow-sm">
       <!-- Promo Banner -->
       <div class="bg-black text-white text-center py-2 px-4">
         <div class="flex justify-center items-center space-x-2">
@@ -28,7 +43,7 @@
       </div>
 
       <!-- Main Navigation -->
-      <nav class="bg-white shadow-sm">
+      <nav class="bg-white">
         <div class="container mx-auto px-4">
           <div class="flex justify-between items-center py-4">
             <!-- Logo -->
@@ -163,14 +178,14 @@
       </nav>
     </header>
 
-    <!-- Mobile Sidebar (Hidden by Default) -->
+    <!-- Mobile Sidebar -->
     <div
       id="mobile-sidebar"
       class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-50"
     >
       <div class="p-4">
         <div class="flex justify-between items-center mb-6">
-          <h1 class="text-xl font-bold">Menu</h1>
+          <h1 class="text-xl font-bold">Exclusive</h1>
           <button id="close-sidebar" class="text-gray-800">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -218,60 +233,62 @@
       id="sidebar-overlay"
       class="fixed inset-0 bg-black opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out"
     ></div>
+
     <!-- Main Content -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="container">
-        <div class="content-wrapper">
-          <!-- Left Column: Fixed Filters -->
-          <div class="sidebar">
-            <div class="filter-panel">
-              <h2 class="filter-title">Filters</h2>
+    <main class="flex-1 overflow-hidden">
+      <div class="h-full flex flex-col md:flex-row">
+        <!-- Left Column: Fixed Filters (on desktop) -->
+        <div class="md:w-64 bg-white">
+          <!-- Filter sidebar for desktop - fixed position -->
+          <div class="hidden md:block h-full overflow-y-auto scrollbar-thin">
+            <div class="p-4 sticky top-0">
+              <h2 class="text-xl font-bold mb-6">Filters</h2>
 
               <!-- Category Filter -->
-              <div class="filter-group">
-                <h3 class="filter-group-title">Category</h3>
-                <div class="filter-options">
-                  <div class="filter-option">
+              <div class="mb-6">
+                <h3 class="font-semibold mb-3">Category</h3>
+                <div class="space-y-2">
+                  <div class="flex items-center">
                     <input
                       id="category-phones"
                       name="category"
                       type="checkbox"
-                      class="filter-checkbox"
+                      class="h-4 w-4 text-blue-600"
                     />
-                    <label for="category-phones" class="filter-label"
+                    <label for="category-phones" class="ml-2 text-gray-700"
                       >Smartphones</label
                     >
                   </div>
-                  <div class="filter-option">
+                  <div class="flex items-center">
                     <input
                       id="category-laptops"
                       name="category"
                       type="checkbox"
-                      class="filter-checkbox"
+                      class="h-4 w-4 text-blue-600"
                     />
-                    <label for="category-laptops" class="filter-label"
+                    <label for="category-laptops" class="ml-2 text-gray-700"
                       >Laptops</label
                     >
                   </div>
-                  <div class="filter-option">
+                  <div class="flex items-center">
                     <input
                       id="category-tablets"
                       name="category"
                       type="checkbox"
-                      class="filter-checkbox"
+                      class="h-4 w-4 text-blue-600"
                     />
-                    <label for="category-tablets" class="filter-label"
+                    <label for="category-tablets" class="ml-2 text-gray-700"
                       >Tablets</label
                     >
                   </div>
-                  <div class="filter-option">
+                  <div class="flex items-center">
                     <input
                       id="category-accessories"
                       name="category"
                       type="checkbox"
-                      class="filter-checkbox"
+                      class="h-4 w-4 text-blue-600"
                     />
-                    <label for="category-accessories" class="filter-label"
+                    <label for="category-accessories" class="ml-2 text-gray-700"
                       >Accessories</label
                     >
                   </div>
@@ -279,28 +296,28 @@
               </div>
 
               <!-- Price Range Filter -->
-              <div class="filter-group">
-                <h3 class="filter-group-title">Price Range</h3>
-                <div class="price-range">
-                  <div class="price-limits">
-                    <span class="price-limit">$0</span>
-                    <span class="price-limit">$2000</span>
+              <div class="mb-6">
+                <h3 class="font-semibold mb-3">Price Range</h3>
+                <div class="space-y-3">
+                  <div class="flex justify-between text-sm text-gray-600">
+                    <span>$0</span>
+                    <span>$2000</span>
                   </div>
-                  <input type="range" min="0" max="2000" class="range-slider" />
-                  <div class="price-inputs">
-                    <div class="price-input-group">
-                      <label class="price-input-label">Min</label>
+                  <input type="range" min="0" max="2000" class="w-full" />
+                  <div class="flex space-x-2">
+                    <div class="w-1/2">
+                      <label class="text-xs text-gray-500 block">Min</label>
                       <input
                         type="number"
-                        class="price-input"
+                        class="w-full p-2 border rounded text-sm"
                         placeholder="$0"
                       />
                     </div>
-                    <div class="price-input-group">
-                      <label class="price-input-label">Max</label>
+                    <div class="w-1/2">
+                      <label class="text-xs text-gray-500 block">Max</label>
                       <input
                         type="number"
-                        class="price-input"
+                        class="w-full p-2 border rounded text-sm"
                         placeholder="$2000"
                       />
                     </div>
@@ -309,603 +326,611 @@
               </div>
 
               <!-- Brand Filter -->
-              <div class="filter-group">
-                <h3 class="filter-group-title">Brand</h3>
-                <div class="filter-options">
-                  <div class="filter-option">
+              <div class="mb-6">
+                <h3 class="font-semibold mb-3">Brand</h3>
+                <div class="space-y-2">
+                  <div class="flex items-center">
                     <input
                       id="brand-apple"
                       name="brand"
                       type="checkbox"
-                      class="filter-checkbox"
+                      class="h-4 w-4 text-blue-600"
                     />
-                    <label for="brand-apple" class="filter-label">Apple</label>
+                    <label for="brand-apple" class="ml-2 text-gray-700"
+                      >Apple</label
+                    >
                   </div>
-                  <div class="filter-option">
+                  <div class="flex items-center">
                     <input
                       id="brand-samsung"
                       name="brand"
                       type="checkbox"
-                      class="filter-checkbox"
+                      class="h-4 w-4 text-blue-600"
                     />
-                    <label for="brand-samsung" class="filter-label"
+                    <label for="brand-samsung" class="ml-2 text-gray-700"
                       >Samsung</label
                     >
                   </div>
-                  <div class="filter-option">
+                  <div class="flex items-center">
                     <input
                       id="brand-google"
                       name="brand"
                       type="checkbox"
-                      class="filter-checkbox"
+                      class="h-4 w-4 text-blue-600"
                     />
-                    <label for="brand-google" class="filter-label"
+                    <label for="brand-google" class="ml-2 text-gray-700"
                       >Google</label
                     >
                   </div>
-                  <div class="filter-option">
+                  <div class="flex items-center">
                     <input
                       id="brand-dell"
                       name="brand"
                       type="checkbox"
-                      class="filter-checkbox"
+                      class="h-4 w-4 text-blue-600"
                     />
-                    <label for="brand-dell" class="filter-label">Dell</label>
+                    <label for="brand-dell" class="ml-2 text-gray-700"
+                      >Dell</label
+                    >
                   </div>
                 </div>
               </div>
 
-              <!-- Rating Filter -->
-              <!-- <div class="filter-group">
-                <h3 class="filter-group-title">Rating</h3>
-                <div class="filter-options">
-                  <div class="filter-option">
-                    <input
-                      id="rating-4"
-                      name="rating"
-                      type="checkbox"
-                      class="filter-checkbox"
-                    />
-                    <label for="rating-4" class="filter-label">
-                      <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                      </div>
-                      <span>&nbsp;& Up</span>
-                    </label>
-                  </div>
-                  <div class="filter-option">
-                    <input
-                      id="rating-3"
-                      name="rating"
-                      type="checkbox"
-                      class="filter-checkbox"
-                    />
-                    <label for="rating-3" class="filter-label">
-                      <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                      </div>
-                      <span>&nbsp;& Up</span>
-                    </label>
-                  </div>
-                  <div class="filter-option">
-                    <input
-                      id="rating-2"
-                      name="rating"
-                      type="checkbox"
-                      class="filter-checkbox"
-                    />
-                    <label for="rating-2" class="filter-label">
-                      <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                      </div>
-                      <span>&nbsp;& Up</span>
-                    </label>
-                  </div>
-                </div>
-              </div> -->
-
-              <button class="filter-button">Apply Filters</button>
+              <button
+                class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition"
+              >
+                Apply Filters
+              </button>
             </div>
           </div>
 
-          <!-- Right Column: Scrollable Products Grid -->
-          <div class="products-area">
-            <div class="product-grid">
+          <!-- Mobile filter accordion (collapsible) -->
+          <div class="md:hidden p-4 bg-white shadow-sm">
+            <button
+              id="mobile-filter-toggle"
+              class="flex justify-between items-center w-full py-2 font-bold"
+            >
+              <span>Filters</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div id="mobile-filter-content" class="hidden mt-4 space-y-6">
+              <!-- Mobile filters (same content as desktop but with less spacing) -->
+              <!-- Category Filter -->
+              <div class="mb-4">
+                <h3 class="font-semibold mb-2">Category</h3>
+                <div class="space-y-1">
+                  <div class="flex items-center">
+                    <input
+                      id="mobile-category-phones"
+                      name="category"
+                      type="checkbox"
+                      class="h-4 w-4 text-blue-600"
+                    />
+                    <label
+                      for="mobile-category-phones"
+                      class="ml-2 text-gray-700"
+                      >Smartphones</label
+                    >
+                  </div>
+                  <!-- More category options... -->
+                </div>
+              </div>
+              <!-- More filter sections... -->
+              <button
+                class="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition"
+              >
+                Apply Filters
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Scrollable Products Grid -->
+        <div class="max-w-[1280px] flex-1 overflow-y-auto scrollbar-thin">
+          <div class="p-4">
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+            >
               <!-- Product 1 -->
-              <div class="product-card">
-                <div class="product-image">
+              <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="relative">
                   <img
                     src="https://west-africa.pro.infinixmobility.com/media/catalog/product/x/6/x6962_zero_flip_base_1_3_10.png"
-                    alt="Product"
+                    alt="iPhone 15 Pro"
+                    class="w-full h-48 object-contain"
                   />
-                  <span class="product-badge badge-new">New</span>
+                  <span
+                    class="absolute top-2 left-2 bg-blue-500 text-white text-xs px-2 py-1 rounded"
+                    >New</span
+                  >
                 </div>
-                <div class="product-info">
-                  <div class="product-header">
+                <div class="p-4">
+                  <div class="flex justify-between items-start mb-2">
                     <div>
-                      <h3 class="product-title">iPhone 15 Pro</h3>
-                      <p class="product-brand">Apple</p>
+                      <h3 class="font-semibold">iPhone 15 Pro</h3>
+                      <p class="text-sm text-gray-500">Apple</p>
                     </div>
-                    <div class="product-rating">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star-half-alt"></i>
-                      <span class="rating-score">(4.5)</span>
+                    <div class="flex items-center text-sm">
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star-half-alt text-yellow-400"></i>
+                      <span class="ml-1 text-gray-600">(4.5)</span>
                     </div>
                   </div>
-                  <div class="product-price">
-                    <p class="price">$999.00</p>
-                    <button class="cart-button">
-                      <i class="fas fa-shopping-cart"></i>
+                  <div class="flex justify-between items-center mt-3">
+                    <p class="font-bold">$999.00</p>
+                    <button
+                      class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full"
+                    >
+                      <i class="fas fa-shopping-cart text-gray-700"></i>
                     </button>
                   </div>
                 </div>
               </div>
 
               <!-- Product 2 -->
-              <div class="product-card">
-                <div class="product-image">
+              <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="relative">
                   <img
                     src="https://d1rlzxa98cyc61.cloudfront.net/catalog/product/cache/1801c418208f9607a371e61f8d9184d9/1/7/173547_2020.jpg"
-                    alt="Product"
+                    alt="Galaxy S24 Ultra"
+                    class="w-full h-48 object-contain"
                   />
-                  <span class="product-badge badge-sale">Sale</span>
+                  <span
+                    class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded"
+                    >Sale</span
+                  >
                 </div>
-                <div class="product-info">
-                  <div class="product-header">
+                <div class="p-4">
+                  <div class="flex justify-between items-start mb-2">
                     <div>
-                      <h3 class="product-title">Galaxy S24 Ultra</h3>
-                      <p class="product-brand">Samsung</p>
+                      <h3 class="font-semibold">Galaxy S24 Ultra</h3>
+                      <p class="text-sm text-gray-500">Samsung</p>
                     </div>
-                    <div class="product-rating">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <span class="rating-score">(4.0)</span>
+                    <div class="flex items-center text-sm">
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="far fa-star text-yellow-400"></i>
+                      <span class="ml-1 text-gray-600">(4.0)</span>
                     </div>
                   </div>
-                  <div class="product-price">
+                  <div class="flex justify-between items-center mt-3">
                     <div>
-                      <p class="price">$899.00</p>
-                      <p class="original-price">$1,199.00</p>
+                      <p class="font-bold">$899.00</p>
+                      <p class="text-sm text-gray-500 line-through">
+                        $1,199.00
+                      </p>
                     </div>
-                    <button class="cart-button">
-                      <i class="fas fa-shopping-cart"></i>
+                    <button
+                      class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full"
+                    >
+                      <i class="fas fa-shopping-cart text-gray-700"></i>
                     </button>
                   </div>
                 </div>
               </div>
 
               <!-- Product 3 -->
-              <div class="product-card">
-                <div class="product-image">
+              <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="relative">
                   <img
                     src="https://www.machines.com.my/cdn/shop/products/iPhone_13_ProductRED_PDP_Image_Position-1A__GBEN.jpg?v=1705598374&width=1445"
-                    alt="Product"
+                    alt="Pixel 8 Pro"
+                    class="w-full h-48 object-contain"
                   />
                 </div>
-                <div class="product-info">
-                  <div class="product-header">
+                <div class="p-4">
+                  <div class="flex justify-between items-start mb-2">
                     <div>
-                      <h3 class="product-title">Pixel 8 Pro</h3>
-                      <p class="product-brand">Google</p>
+                      <h3 class="font-semibold">Pixel 8 Pro</h3>
+                      <p class="text-sm text-gray-500">Google</p>
                     </div>
-                    <div class="product-rating">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <span class="rating-score">(5.0)</span>
+                    <div class="flex items-center text-sm">
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <span class="ml-1 text-gray-600">(5.0)</span>
                     </div>
                   </div>
-                  <div class="product-price">
-                    <p class="price">$899.00</p>
-                    <button class="cart-button">
-                      <i class="fas fa-shopping-cart"></i>
+                  <div class="flex justify-between items-center mt-3">
+                    <p class="font-bold">$899.00</p>
+                    <button
+                      class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full"
+                    >
+                      <i class="fas fa-shopping-cart text-gray-700"></i>
                     </button>
                   </div>
                 </div>
               </div>
 
               <!-- Product 4 -->
-              <div class="product-card">
-                <div class="product-image">
+              <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="relative">
                   <img
                     src="https://www.costco.co.uk/medias/sys_master/images/he7/h1a/175083303239710.jpg"
-                    alt="Product"
+                    alt="iPhone 15"
+                    class="w-full h-48 object-contain"
                   />
                 </div>
-                <div class="product-info">
-                  <div class="product-header">
+                <div class="p-4">
+                  <div class="flex justify-between items-start mb-2">
                     <div>
-                      <h3 class="product-title">iPhone 15</h3>
-                      <p class="product-brand">Apple</p>
+                      <h3 class="font-semibold">iPhone 15</h3>
+                      <p class="text-sm text-gray-500">Apple</p>
                     </div>
-                    <div class="product-rating">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star-half-alt"></i>
-                      <i class="far fa-star"></i>
-                      <span class="rating-score">(3.5)</span>
+                    <div class="flex items-center text-sm">
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star-half-alt text-yellow-400"></i>
+                      <i class="far fa-star text-yellow-400"></i>
+                      <span class="ml-1 text-gray-600">(3.5)</span>
                     </div>
                   </div>
-                  <div class="product-price">
-                    <p class="price">$799.00</p>
-                    <button class="cart-button">
-                      <i class="fas fa-shopping-cart"></i>
+                  <div class="flex justify-between items-center mt-3">
+                    <p class="font-bold">$799.00</p>
+                    <button
+                      class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full"
+                    >
+                      <i class="fas fa-shopping-cart text-gray-700"></i>
                     </button>
                   </div>
                 </div>
               </div>
 
-              <!-- Additional Products (for scrolling demo) -->
-              <div class="product-card">
-                <div class="product-image">
+              <!-- Product 5 -->
+              <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="relative">
                   <img
                     src="https://csdam.net/digitalcontent/0/5820/58201938.jpg"
-                    alt="Product"
+                    alt="MacBook Pro 16"
+                    class="w-full h-48 object-contain"
                   />
-                  <span class="product-badge badge-new">New</span>
+                  <span
+                    class="absolute top-2 left-2 bg-blue-500 text-white text-xs px-2 py-1 rounded"
+                    >New</span
+                  >
                 </div>
-                <div class="product-info">
-                  <div class="product-header">
+                <div class="p-4">
+                  <div class="flex justify-between items-start mb-2">
                     <div>
-                      <h3 class="product-title">MacBook Pro 16"</h3>
-                      <p class="product-brand">Apple</p>
+                      <h3 class="font-semibold">MacBook Pro 16"</h3>
+                      <p class="text-sm text-gray-500">Apple</p>
                     </div>
-                    <div class="product-rating">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <span class="rating-score">(5.0)</span>
+                    <div class="flex items-center text-sm">
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <span class="ml-1 text-gray-600">(5.0)</span>
                     </div>
                   </div>
-                  <div class="product-price">
-                    <p class="price">$2,499.00</p>
-                    <button class="cart-button">
-                      <i class="fas fa-shopping-cart"></i>
+                  <div class="flex justify-between items-center mt-3">
+                    <p class="font-bold">$2,499.00</p>
+                    <button
+                      class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full"
+                    >
+                      <i class="fas fa-shopping-cart text-gray-700"></i>
                     </button>
                   </div>
                 </div>
               </div>
 
-              <div class="product-card">
-                <div class="product-image">
+              <!-- Product 6 -->
+              <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="relative">
                   <img
                     src="https://www.techtarget.com/rms/onlineimages/hp_elitebook_mobile.jpg"
-                    alt="Product"
+                    alt="Dell XPS 15"
+                    class="w-full h-48 object-contain"
                   />
-                  <span class="product-badge badge-sale">Sale</span>
+                  <span
+                    class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded"
+                    >Sale</span
+                  >
                 </div>
-                <div class="product-info">
-                  <div class="product-header">
+                <div class="p-4">
+                  <div class="flex justify-between items-start mb-2">
                     <div>
-                      <h3 class="product-title">Dell XPS 15</h3>
-                      <p class="product-brand">Dell</p>
+                      <h3 class="font-semibold">Dell XPS 15</h3>
+                      <p class="text-sm text-gray-500">Dell</p>
                     </div>
-                    <div class="product-rating">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <span class="rating-score">(4.2)</span>
+                    <div class="flex items-center text-sm">
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="far fa-star text-yellow-400"></i>
+                      <span class="ml-1 text-gray-600">(4.2)</span>
                     </div>
                   </div>
-                  <div class="product-price">
+                  <div class="flex justify-between items-center mt-3">
                     <div>
-                      <p class="price">$1,899.00</p>
-                      <p class="original-price">$2,099.00</p>
+                      <p class="font-bold">$1,899.00</p>
+                      <p class="text-sm text-gray-500 line-through">
+                        $2,099.00
+                      </p>
                     </div>
-                    <button class="cart-button">
-                      <i class="fas fa-shopping-cart"></i>
+                    <button
+                      class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full"
+                    >
+                      <i class="fas fa-shopping-cart text-gray-700"></i>
                     </button>
                   </div>
                 </div>
               </div>
 
-              <div class="product-card">
-                <div class="product-image">
+              <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="relative">
                   <img
-                    src="https://soeithelp.stanford.edu/sites/g/files/sbiybj26301/files/styles/breakpoint_2xl_2x/public/media/image/new_computer_setup_0.jpeg?itok=SnXZWbrE"
-                    alt="Product"
+                    src="https://www.techtarget.com/rms/onlineimages/hp_elitebook_mobile.jpg"
+                    alt="Dell XPS 15"
+                    class="w-full h-48 object-contain"
                   />
-                  <span class="product-badge badge-sale">Sale</span>
+                  <span
+                    class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded"
+                    >Sale</span
+                  >
                 </div>
-                <div class="product-info">
-                  <div class="product-header">
+                <div class="p-4">
+                  <div class="flex justify-between items-start mb-2">
                     <div>
-                      <h3 class="product-title">Dell XPS 15</h3>
-                      <p class="product-brand">Dell</p>
+                      <h3 class="font-semibold">Dell XPS 15</h3>
+                      <p class="text-sm text-gray-500">Dell</p>
                     </div>
-                    <div class="product-rating">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <span class="rating-score">(4.2)</span>
+                    <div class="flex items-center text-sm">
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="far fa-star text-yellow-400"></i>
+                      <span class="ml-1 text-gray-600">(4.2)</span>
                     </div>
                   </div>
-                  <div class="product-price">
+                  <div class="flex justify-between items-center mt-3">
                     <div>
-                      <p class="price">$1,899.00</p>
-                      <p class="original-price">$2,099.00</p>
+                      <p class="font-bold">$1,899.00</p>
+                      <p class="text-sm text-gray-500 line-through">
+                        $2,099.00
+                      </p>
                     </div>
-                    <button class="cart-button">
-                      <i class="fas fa-shopping-cart"></i>
+                    <button
+                      class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full"
+                    >
+                      <i class="fas fa-shopping-cart text-gray-700"></i>
                     </button>
                   </div>
                 </div>
               </div>
 
-              <div class="product-card">
-                <div class="product-image">
+              <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="relative">
                   <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlp-Ltk9qnyjnLsGhF5p4Tx5n8T83yCg9Zfg&s"
-                    alt="Product"
+                    src="https://www.techtarget.com/rms/onlineimages/hp_elitebook_mobile.jpg"
+                    alt="Dell XPS 15"
+                    class="w-full h-48 object-contain"
                   />
-                  <span class="product-badge badge-sale">Sale</span>
+                  <span
+                    class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded"
+                    >Sale</span
+                  >
                 </div>
-                <div class="product-info">
-                  <div class="product-header">
+                <div class="p-4">
+                  <div class="flex justify-between items-start mb-2">
                     <div>
-                      <h3 class="product-title">Dell XPS 15</h3>
-                      <p class="product-brand">Dell</p>
+                      <h3 class="font-semibold">Dell XPS 15</h3>
+                      <p class="text-sm text-gray-500">Dell</p>
                     </div>
-                    <div class="product-rating">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <span class="rating-score">(4.2)</span>
+                    <div class="flex items-center text-sm">
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="far fa-star text-yellow-400"></i>
+                      <span class="ml-1 text-gray-600">(4.2)</span>
                     </div>
                   </div>
-                  <div class="product-price">
+                  <div class="flex justify-between items-center mt-3">
                     <div>
-                      <p class="price">$1,899.00</p>
-                      <p class="original-price">$2,099.00</p>
+                      <p class="font-bold">$1,899.00</p>
+                      <p class="text-sm text-gray-500 line-through">
+                        $2,099.00
+                      </p>
                     </div>
-                    <button class="cart-button">
-                      <i class="fas fa-shopping-cart"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="product-card">
-                <div class="product-image">
-                  <img
-                    src="https://ttbazaar.com/cdn/shop/files/GoldenYellow.jpg?v=1742800184"
-                    alt="Product"
-                  />
-                  <span class="product-badge badge-sale">Sale</span>
-                </div>
-                <div class="product-info">
-                  <div class="product-header">
-                    <div>
-                      <h3 class="product-title">Dell XPS 15</h3>
-                      <p class="product-brand">Dell</p>
-                    </div>
-                    <div class="product-rating">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <span class="rating-score">(4.2)</span>
-                    </div>
-                  </div>
-                  <div class="product-price">
-                    <div>
-                      <p class="price">$1,899.00</p>
-                      <p class="original-price">$2,099.00</p>
-                    </div>
-                    <button class="cart-button">
-                      <i class="fas fa-shopping-cart"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="product-card">
-                <div class="product-image">
-                  <img
-                    src="https://5.imimg.com/data5/SELLER/Default/2024/4/412350855/PA/BS/GY/19528648/mens-full-sleeve-printed-casual-shirt.jpg"
-                    alt="Product"
-                  />
-                  <span class="product-badge badge-sale">Sale</span>
-                </div>
-                <div class="product-info">
-                  <div class="product-header">
-                    <div>
-                      <h3 class="product-title">Dell XPS 15</h3>
-                      <p class="product-brand">Dell</p>
-                    </div>
-                    <div class="product-rating">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <span class="rating-score">(4.2)</span>
-                    </div>
-                  </div>
-                  <div class="product-price">
-                    <div>
-                      <p class="price">$1,899.00</p>
-                      <p class="original-price">$2,099.00</p>
-                    </div>
-                    <button class="cart-button">
-                      <i class="fas fa-shopping-cart"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="product-card">
-                <div class="product-image">
-                  <img src="/api/placeholder/400/320" alt="Product" />
-                  <span class="product-badge badge-sale">Sale</span>
-                </div>
-                <div class="product-info">
-                  <div class="product-header">
-                    <div>
-                      <h3 class="product-title">Dell XPS 15</h3>
-                      <p class="product-brand">Dell</p>
-                    </div>
-                    <div class="product-rating">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <span class="rating-score">(4.2)</span>
-                    </div>
-                  </div>
-                  <div class="product-price">
-                    <div>
-                      <p class="price">$1,899.00</p>
-                      <p class="original-price">$2,099.00</p>
-                    </div>
-                    <button class="cart-button">
-                      <i class="fas fa-shopping-cart"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="product-card">
-                <div class="product-image">
-                  <img src="/api/placeholder/400/320" alt="Product" />
-                  <span class="product-badge badge-sale">Sale</span>
-                </div>
-                <div class="product-info">
-                  <div class="product-header">
-                    <div>
-                      <h3 class="product-title">Dell XPS 15</h3>
-                      <p class="product-brand">Dell</p>
-                    </div>
-                    <div class="product-rating">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <span class="rating-score">(4.2)</span>
-                    </div>
-                  </div>
-                  <div class="product-price">
-                    <div>
-                      <p class="price">$1,899.00</p>
-                      <p class="original-price">$2,099.00</p>
-                    </div>
-                    <button class="cart-button">
-                      <i class="fas fa-shopping-cart"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="product-card">
-                <div class="product-image">
-                  <img src="/api/placeholder/400/320" alt="Product" />
-                  <span class="product-badge badge-sale">Sale</span>
-                </div>
-                <div class="product-info">
-                  <div class="product-header">
-                    <div>
-                      <h3 class="product-title">Dell XPS 15</h3>
-                      <p class="product-brand">Dell</p>
-                    </div>
-                    <div class="product-rating">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <span class="rating-score">(4.2)</span>
-                    </div>
-                  </div>
-                  <div class="product-price">
-                    <div>
-                      <p class="price">$1,899.00</p>
-                      <p class="original-price">$2,099.00</p>
-                    </div>
-                    <button class="cart-button">
-                      <i class="fas fa-shopping-cart"></i>
+                    <button
+                      class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full"
+                    >
+                      <i class="fas fa-shopping-cart text-gray-700"></i>
                     </button>
                   </div>
                 </div>
               </div>
 
-              <div class="product-card">
-                <div class="product-image">
-                  <img src="/api/placeholder/400/320" alt="Product" />
+              <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="relative">
+                  <img
+                    src="https://www.techtarget.com/rms/onlineimages/hp_elitebook_mobile.jpg"
+                    alt="Dell XPS 15"
+                    class="w-full h-48 object-contain"
+                  />
+                  <span
+                    class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded"
+                    >Sale</span
+                  >
                 </div>
-                <div class="product-info">
-                  <div class="product-header">
+                <div class="p-4">
+                  <div class="flex justify-between items-start mb-2">
                     <div>
-                      <h3 class="product-title">iPad Pro 12.9"</h3>
-                      <p class="product-brand">Apple</p>
+                      <h3 class="font-semibold">Dell XPS 15</h3>
+                      <p class="text-sm text-gray-500">Dell</p>
                     </div>
-                    <div class="product-rating">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star-half-alt"></i>
-                      <span class="rating-score">(4.7)</span>
+                    <div class="flex items-center text-sm">
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="far fa-star text-yellow-400"></i>
+                      <span class="ml-1 text-gray-600">(4.2)</span>
                     </div>
                   </div>
-                  <div class="product-price">
-                    <p class="price">$1,099.00</p>
-                    <button class="cart-button">
-                      <i class="fas fa-shopping-cart"></i>
+                  <div class="flex justify-between items-center mt-3">
+                    <div>
+                      <p class="font-bold">$1,899.00</p>
+                      <p class="text-sm text-gray-500 line-through">
+                        $2,099.00
+                      </p>
+                    </div>
+                    <button
+                      class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full"
+                    >
+                      <i class="fas fa-shopping-cart text-gray-700"></i>
                     </button>
                   </div>
                 </div>
               </div>
 
-              <div class="product-card">
-                <div class="product-image">
-                  <img src="/api/placeholder/400/320" alt="Product" />
+              <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="relative">
+                  <img
+                    src="https://www.techtarget.com/rms/onlineimages/hp_elitebook_mobile.jpg"
+                    alt="Dell XPS 15"
+                    class="w-full h-48 object-contain"
+                  />
+                  <span
+                    class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded"
+                    >Sale</span
+                  >
                 </div>
-                <div class="product-info">
-                  <div class="product-header">
+                <div class="p-4">
+                  <div class="flex justify-between items-start mb-2">
                     <div>
-                      <h3 class="product-title">Galaxy Tab S9 Ultra</h3>
-                      <p class="product-brand">Samsung</p>
+                      <h3 class="font-semibold">Dell XPS 15</h3>
+                      <p class="text-sm text-gray-500">Dell</p>
                     </div>
-                    <div class="product-rating">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="far fa-star"></i>
-                      <span class="rating-score">(4.0)</span>
+                    <div class="flex items-center text-sm">
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="far fa-star text-yellow-400"></i>
+                      <span class="ml-1 text-gray-600">(4.2)</span>
                     </div>
                   </div>
-                  <div class="product-price">
-                    <p class="price">$1,199.00</p>
-                    <button class="cart-button">
-                      <i class="fas fa-shopping-cart"></i>
+                  <div class="flex justify-between items-center mt-3">
+                    <div>
+                      <p class="font-bold">$1,899.00</p>
+                      <p class="text-sm text-gray-500 line-through">
+                        $2,099.00
+                      </p>
+                    </div>
+                    <button
+                      class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full"
+                    >
+                      <i class="fas fa-shopping-cart text-gray-700"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="relative">
+                  <img
+                    src="https://www.techtarget.com/rms/onlineimages/hp_elitebook_mobile.jpg"
+                    alt="Dell XPS 15"
+                    class="w-full h-48 object-contain"
+                  />
+                  <span
+                    class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded"
+                    >Sale</span
+                  >
+                </div>
+                <div class="p-4">
+                  <div class="flex justify-between items-start mb-2">
+                    <div>
+                      <h3 class="font-semibold">Dell XPS 15</h3>
+                      <p class="text-sm text-gray-500">Dell</p>
+                    </div>
+                    <div class="flex items-center text-sm">
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="far fa-star text-yellow-400"></i>
+                      <span class="ml-1 text-gray-600">(4.2)</span>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center mt-3">
+                    <div>
+                      <p class="font-bold">$1,899.00</p>
+                      <p class="text-sm text-gray-500 line-through">
+                        $2,099.00
+                      </p>
+                    </div>
+                    <button
+                      class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full"
+                    >
+                      <i class="fas fa-shopping-cart text-gray-700"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="relative">
+                  <img
+                    src="https://www.techtarget.com/rms/onlineimages/hp_elitebook_mobile.jpg"
+                    alt="Dell XPS 15"
+                    class="w-full h-48 object-contain"
+                  />
+                  <span
+                    class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded"
+                    >Sale</span
+                  >
+                </div>
+                <div class="p-4">
+                  <div class="flex justify-between items-start mb-2">
+                    <div>
+                      <h3 class="font-semibold">Dell XPS 15</h3>
+                      <p class="text-sm text-gray-500">Dell</p>
+                    </div>
+                    <div class="flex items-center text-sm">
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="fas fa-star text-yellow-400"></i>
+                      <i class="far fa-star text-yellow-400"></i>
+                      <span class="ml-1 text-gray-600">(4.2)</span>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center mt-3">
+                    <div>
+                      <p class="font-bold">$1,899.00</p>
+                      <p class="text-sm text-gray-500 line-through">
+                        $2,099.00
+                      </p>
+                    </div>
+                    <button
+                      class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full"
+                    >
+                      <i class="fas fa-shopping-cart text-gray-700"></i>
                     </button>
                   </div>
                 </div>
@@ -915,142 +940,6 @@
         </div>
       </div>
     </main>
-    <!-- Footer -->
-    <footer class="bg-black text-white py-12">
-      <div class="container mx-auto px-4">
-        <!-- Main Footer Content -->
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 xl:grid-cols-5"
-        >
-          <!-- Exclusive Section -->
-          <div class="mb-6 md:mb-0">
-            <h2 class="text-xl font-bold mb-4">Exclusive</h2>
-            <p class="text-sm mb-4">Subscribe</p>
-            <p class="text-sm mb-4">Get 10% off your first order</p>
-            <div
-              class="flex items-center border border-gray-700 rounded-md overflow-hidden"
-            >
-              <input
-                type="email"
-                placeholder="Enter your email"
-                class="bg-transparent border-none outline-none px-3 py-2 w-full text-white"
-              />
-              <button class="px-3 py-2 bg-transparent">
-                <i class="fas fa-arrow-right"></i>
-              </button>
-            </div>
-          </div>
-
-          <!-- Support Section -->
-          <div class="mb-6 md:mb-0">
-            <h2 class="text-xl font-bold mb-4">Support</h2>
-            <p class="text-sm mb-2">111 Bijoy sarani, Dhaka,</p>
-            <p class="text-sm mb-4">DH 1515, Bangladesh.</p>
-            <p class="text-sm mb-2">exclusive@gmail.com</p>
-            <p class="text-sm mb-2">+88015-88888-9999</p>
-          </div>
-
-          <!-- Account Section -->
-          <div class="mb-6 md:mb-0">
-            <h2 class="text-xl font-bold mb-4">Account</h2>
-            <ul class="space-y-2">
-              <li>
-                <a href="#" class="text-sm hover:text-gray-300">My Account</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm hover:text-gray-300"
-                  >Login / Register</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-sm hover:text-gray-300">Cart</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm hover:text-gray-300">Wishlist</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm hover:text-gray-300">Shop</a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Quick Link Section -->
-          <div class="mb-6 md:mb-0">
-            <h2 class="text-xl font-bold mb-4">Quick Link</h2>
-            <ul class="space-y-2">
-              <li>
-                <a href="#" class="text-sm hover:text-gray-300"
-                  >Privacy Policy</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-sm hover:text-gray-300">Terms Of Use</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm hover:text-gray-300">FAQ</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm hover:text-gray-300">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <!-- Download App Section -->
-          <div class="mb-6 md:mb-0">
-            <div class="mb-6 self-center">
-              <h3 class="text-lg font-semibold mb-4">Download App</h3>
-              <p class="text-sm mb-4">Save $3 with App New User Only</p>
-              <div class="flex flex-row items-center justify-start">
-                <div class="mr-4 mb-4 md:mb-0">
-                  <img
-                    src="./public/footer/qr.png"
-                    alt="QR Code"
-                    class="w-24 h-24"
-                  />
-                </div>
-                <div class="flex flex-col space-y-2">
-                  <a href="#" class="block">
-                    <img
-                      src="./public/footer/googleplaystore.png"
-                      alt="Google Play"
-                      class="h-10"
-                    />
-                  </a>
-                  <a href="#" class="block">
-                    <img
-                      src="./public/footer/appstore.png"
-                      alt="App Store"
-                      class="h-10 w-34"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- Social Media Icons -->
-            <div class="flex space-x-4 justify-start lg:justify-start mt-6">
-              <a href="#" class="text-white hover:text-gray-300">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="text-white hover:text-gray-300">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="text-white hover:text-gray-300">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="#" class="text-white hover:text-gray-300">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="text-center">
-          <hr class="my-4" />
-          <p class="text-sm text-gray-400">
-            © Copyright Rimel 2022. All right reserved
-          </p>
-        </div>
-      </div>
-    </footer>
     <script src="../js/navbar.js"></script>
   </body>
 </html>

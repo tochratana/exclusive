@@ -19,7 +19,7 @@ body {
   display: flex;
   padding: 1.5rem 0;
   position: relative;
-  height: calc(100vh - 3rem); /* Full height minus padding */
+  height: calc(100vh - 3rem);
 }
 
 /* Fixed sidebar */
@@ -42,7 +42,8 @@ body {
   flex: 1;
   overflow-y: auto;
   padding-left: 1rem;
-  height: calc(100vh - 3rem);
+  /* height: 100vh; */
+  /* height: calc(100vh - 3rem); */
 }
 
 /* Filter panel */
