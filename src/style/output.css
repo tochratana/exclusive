@@ -951,6 +951,9 @@
   .bg-secondary2 {
     background-color: var(--color-secondary2);
   }
+  .bg-text2 {
+    background-color: var(--color-text2);
+  }
   .bg-transparent {
     background-color: transparent;
   }
