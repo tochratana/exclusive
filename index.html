@@ -1,1699 +1,1529 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Basic Meta Tags -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Exclusive" />
-    <meta
-      name="description"
-      content="A platform that that use to sell product"
-    />
-    <meta
-      name="keywords"
-      content="E-commerce, Market place, computer, Accessories"
-    />
-    <meta name="robots" content="index, follow" />
 
-    <!-- Open Graph (OG) Meta Tags for Social Media -->
-    <!-- Open Graph Meta Tags for Social Media Sharing -->
-    <meta
-      property="og:title"
-      content="Exclusive Deals on Tech | Computers, Phones & Cameras"
-    />
-    <meta
-      property="og:description"
-      content="Discover the best prices on top tech products. Shop computers, smartphones, cameras, and more at our exclusive online store."
-    />
-    <meta
-      property="og:image"
-      content="https://exclusive-istad.netlify.app/thumbnail.jpg"
-    />
-    <meta property="og:url" content="https://exclusive-istad.netlify.app/" />
-    <meta property="og:type" content="website" />
+<head>
+  <!-- Basic Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Exclusive" />
+  <meta name="description" content="A platform that that use to sell product" />
+  <meta name="keywords" content="E-commerce, Market place, computer, Accessories" />
+  <meta name="robots" content="index, follow" />
 
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Tech Deals Online | Computers, Phones, Cameras & More"
-    />
-    <meta
-      name="twitter:description"
-      content="Browse high-quality gadgets at unbeatable prices. Our online tech store offers a wide range of products including computers, phones, and cameras."
-    />
-    <meta
-      name="twitter:image"
-      content="https://exclusive-istad.netlify.app/thumbnail.jpg"
-    />
+  <!-- Open Graph (OG) Meta Tags for Social Media -->
+  <!-- Open Graph Meta Tags for Social Media Sharing -->
+  <meta property="og:title" content="Exclusive Deals on Tech | Computers, Phones & Cameras" />
+  <meta property="og:description"
+    content="Discover the best prices on top tech products. Shop computers, smartphones, cameras, and more at our exclusive online store." />
+  <meta property="og:image" content="https://exclusive-istad.netlify.app/thumbnail.jpg" />
+  <meta property="og:url" content="https://exclusive-istad.netlify.app/" />
+  <meta property="og:type" content="website" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="./public/asset/icon.png" type="image/x-icon" />
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tech Deals Online | Computers, Phones, Cameras & More" />
+  <meta name="twitter:description"
+    content="Browse high-quality gadgets at unbeatable prices. Our online tech store offers a wide range of products including computers, phones, and cameras." />
+  <meta name="twitter:image" content="https://exclusive-istad.netlify.app/thumbnail.jpg" />
 
-    <title>Exclusive</title>
-    <link rel="stylesheet" href="./src/style/output.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
-      rel="stylesheet"
-    /> -->
-  </head>
-  <body class="font-poppins">
-    <header class="sticky top-0 z-10">
-      <!-- Promo Banner -->
-      <div class="bg-black text-white text-center py-2 px-4">
-        <div class="flex justify-center items-center space-x-2">
-          <p class="text-sm md:text-base">
-            Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
-          </p>
-          <a
-            href="#"
-            class="font-bold underline text-sm md:text-base whitespace-nowrap"
-            >ShopNow</a
-          >
-        </div>
-      </div>
+  <!-- Favicon -->
+  <link rel="icon" href="./public/asset/icon.png" type="image/x-icon" />
 
-      <!-- Main Navigation -->
-      <nav class="bg-white shadow-sm">
-        <div class="container mx-auto px-4">
-          <div class="flex justify-between items-center py-4">
-            <!-- Logo -->
-            <div class="flex items-center">
-              <a href="/" class="text-2xl font-bold">Exclusive</a>
-            </div>
+  <title>Exclusive</title>
+  <link rel="stylesheet" href="./src/style/output.css" />
+  <link rel="stylesheet" href="./src/style/index.css" />
+  <script src="https://kit.fontawesome.com/edf3b8acef.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" /> -->
+</head>
 
-            <!-- Desktop Navigation Links -->
-            <div class="hidden md:flex gap-5 lg:gap-10">
-              <a href="/" class="text-gray-800 hover:text-gray-600">Home</a>
-              <a
-                href="./src/pages/contact.html"
-                class="text-gray-800 hover:text-gray-600"
-                >Contact</a
-              >
-              <a
-                href="./src/pages/about.html"
-                class="text-gray-800 hover:text-gray-600"
-                >About</a
-              >
-              <a
-                href="./src/pages/signup.html"
-                class="text-gray-800 hover:text-gray-600"
-                >Sign Up</a
-              >
-            </div>
-
-            <!-- Search and Icons -->
-            <div class="flex items-center space-x-2">
-              <!-- Search Bar (Desktop) -->
-              <div
-                class="hidden md:flex items-center bg-gray-100 rounded-md px-3 py-2"
-              >
-                <input
-                  type="text"
-                  placeholder="What are you looking for?"
-                  class="bg-transparent border-none outline-none"
-                />
-                <button class="ml-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 text-gray-500"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                    />
-                  </svg>
-                </button>
-              </div>
-
-              <!-- Icons -->
-              <a href="#" class="text-gray-800">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                  />
-                </svg>
-              </a>
-              <a href="./src/pages/addCart.html" class="text-gray-800">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                  />
-                </svg>
-              </a>
-
-              <!-- Mobile Menu Button -->
-              <button id="mobile-menu-button" class="md:hidden text-gray-800">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          <!-- Mobile Search (Always Visible on Mobile) -->
-          <div class="md:hidden pb-4">
-            <div class="flex items-center bg-gray-100 rounded-md px-3 py-2">
-              <input
-                type="text"
-                placeholder="What are you looking for?"
-                class="bg-transparent border-none outline-none w-full"
-              />
-              <button class="ml-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5 text-gray-500"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Mobile Sidebar (Hidden by Default) -->
-    <div
-      id="mobile-sidebar"
-      class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-50"
-    >
-      <div class="p-4">
-        <div class="flex justify-between items-center mb-6">
-          <h1 class="text-xl font-bold">Menu</h1>
-          <button id="close-sidebar" class="text-gray-800">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
-        </div>
-        <div class="flex flex-col space-y-4">
-          <a
-            href="/"
-            class="text-gray-800 hover:text-gray-600 py-2 border-b border-gray-200"
-            >Home</a
-          >
-          <a
-            href="./src/pages/contact.html"
-            class="text-gray-800 hover:text-gray-600 py-2 border-b border-gray-200"
-            >Contact</a
-          >
-          <a
-            href="./src/pages/about.html"
-            class="text-gray-800 hover:text-gray-600 py-2 border-b border-gray-200"
-            >About</a
-          >
-          <a
-            href="./src/pages/signup.html"
-            class="text-gray-800 hover:text-gray-600 py-2 border-b border-gray-200"
-            >Sign Up</a
-          >
-        </div>
+<body class="font-poppins">
+  <header class="sticky top-0 z-10">
+    <!-- Promo Banner -->
+    <div class="bg-black text-white text-center py-2 px-4">
+      <div class="flex justify-center items-center space-x-2">
+        <p class="text-sm md:text-base">
+          Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+        </p>
+        <a href="#" class="font-bold underline text-sm md:text-base whitespace-nowrap">ShopNow</a>
       </div>
     </div>
 
-    <!-- Overlay for Mobile Sidebar -->
-    <div
-      id="sidebar-overlay"
-      class="fixed inset-0 bg-black opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out"
-    ></div>
-
-    <!-- TODO write code here  -->
-    <main>
-      <div class="container mx-auto px-4 py-8">
-        <!-- Banner -->
-        <div
-          class="relative h-90 md:h-96 overflow-hidden rounded-lg"
-          data-carousel="static"
-          data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1500"
-          data-aos-once="false"
-        >
-          <!-- Slide 1 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <div
-              class="bg-black text-amber-50 flex flex-col md:flex-row items-center justify-between p-6 md:p-20 h-full gap-6"
-            >
-              <!-- Text Content -->
-              <div class="text-center md:text-left">
-                <div
-                  class="flex items-center justify-center md:justify-start mb-3"
-                >
-                  <img
-                    class="w-[30px] h-[36px] md:w-[40px] md:h-[49px]"
-                    src="./public/homepage/1200px-Apple_gray_logo 1.png"
-                    alt="Apple logo"
-                  />
-                  <p class="ml-[16px] md:ml-[24px] text-sm md:text-base">
-                    iPhone 14 Series
-                  </p>
-                </div>
-                <h1
-                  class="text-[20px] md:text-hero font-bold mb-[16px] md:mb-[21px] w-[250px] md:w-[300px]"
-                >
-                  Up to 10% off Voucher
-                </h1>
-                <a
-                  href="./src/pages/viewallproduct.html"
-                  class="text-sm md:text-base underline"
-                  >Shop Now →</a
-                >
-              </div>
-              <img
-                class="w-[250px] sm:w-[280px] md:w-[400px] h-auto"
-                src="./public/homepage/hero_endframe__cvklg0xk3w6e_large 2 (1).png"
-                alt="iPhone hero image"
-              />
-
-              <!-- Image -->
-            </div>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <div
-              class="bg-black text-amber-50 flex flex-col md:flex-row items-center justify-between p-6 md:p-20 h-full gap-6"
-            >
-              <!-- Text Content -->
-              <div class="text-center md:text-left">
-                <div
-                  class="flex items-center justify-center md:justify-start mb-3"
-                >
-                  <img
-                    class="w-[30px] h-[36px] md:w-[40px] md:h-[49px]"
-                    src="./public/homepage/1200px-Apple_gray_logo 1.png"
-                    alt="Apple logo"
-                  />
-                  <p class="ml-[16px] md:ml-[24px] text-sm md:text-base">
-                    AirPods Max Black
-                  </p>
-                </div>
-                <h1
-                  class="text-[20px] md:text-hero font-bold mb-[16px] md:mb-[21px] w-[250px] md:w-[300px]"
-                >
-                  Save Big with Promo
-                </h1>
-                <a
-                  href="./src/pages/viewallproduct.html"
-                  class="text-sm md:text-base underline"
-                  >Shop Now →</a
-                >
-              </div>
-              <img
-                class="w-[300px] sm:w-[280px] md:w-[400px] h-auto"
-                src="./public/homepage/AirPods-Max-black.webp"
-                alt="AirPods Max Black"
-              />
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <div
-              class="bg-black text-amber-50 flex flex-col md:flex-row items-center justify-between p-6 md:p-20 h-full gap-6"
-            >
-              <!-- Text Content -->
-              <div class="text-center md:text-left">
-                <div
-                  class="flex items-center justify-center md:justify-start mb-3"
-                >
-                  <img
-                    class="w-[30px] h-[36px] md:w-[40px] md:h-[49px]"
-                    src="./public/homepage/1200px-Apple_gray_logo 1.png"
-                    alt="Apple logo"
-                  />
-                  <p class="ml-[16px] md:ml-[24px] text-sm md:text-base">
-                    MacBook Air M2
-                  </p>
-                </div>
-                <h1
-                  class="text-[20px] md:text-hero font-bold mb-[16px] md:mb-[21px] w-[250px] md:w-[300px]"
-                >
-                  Exclusive Deals
-                </h1>
-                <a
-                  href="./src/pages/viewallproduct.html"
-                  class="text-sm md:text-base underline"
-                  >Shop Now →</a
-                >
-              </div>
-              <img
-                class="w-[300px] sm:w-[280px] md:w-[400px] h-auto"
-                src="./public/homepage/m3-mbp-space-black.webp"
-                alt="MacBook Air M2"
-              />
-
-              <!-- Image -->
-            </div>
-          </div>
-
-          <!-- Slide 4 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <div
-              class="bg-black text-amber-50 flex flex-col md:flex-row items-center justify-between p-6 md:p-20 h-full gap-6"
-            >
-              <!-- Text Content -->
-              <div class="text-center md:text-left">
-                <div
-                  class="flex items-center justify-center md:justify-start mb-3"
-                >
-                  <img
-                    class="w-[30px] h-[36px] md:w-[40px] md:h-[49px]"
-                    src="./public/homepage/1200px-Apple_gray_logo 1.png"
-                    alt="Apple logo"
-                  />
-                  <p class="ml-[16px] md:ml-[24px] text-sm md:text-base">
-                    Apple Watch Series 9
-                  </p>
-                </div>
-                <h1
-                  class="text-[20px] md:text-hero font-bold mb-[16px] md:mb-[21px] w-[250px] md:w-[300px]"
-                >
-                  Up to 15% off
-                </h1>
-                <a
-                  href="./src/pages/viewallproduct.html"
-                  class="text-sm md:text-base underline"
-                  >Shop Now →</a
-                >
-              </div>
-              <img
-                class="w-[300px] sm:w-[280px] md:w-[400px] h-auto"
-                src="./public/homepage/GhKf4D7VVCu5oXmq9kJqzG.jpg"
-                alt="Apple Watch Series 9"
-              />
-
-              <!-- Image -->
-            </div>
-          </div>
-
-          <!-- Slider indicators -->
-          <div
-            class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
-          >
-            <button
-              type="button"
-              class="w-3 h-3 rounded-full"
-              aria-label="Slide 1"
-              data-carousel-slide-to="0"
-            ></button>
-            <button
-              type="button"
-              class="w-3 h-3 rounded-full"
-              aria-label="Slide 2"
-              data-carousel-slide-to="1"
-            ></button>
-            <button
-              type="button"
-              class="w-3 h-3 rounded-full"
-              aria-label="Slide 3"
-              data-carousel-slide-to="2"
-            ></button>
-            <button
-              type="button"
-              class="w-3 h-3 rounded-full"
-              aria-label="Slide 4"
-              data-carousel-slide-to="3"
-            ></button>
-          </div>
-
-          <!-- Slider controls -->
-          <button
-            type="button"
-            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-            data-carousel-prev
-          >
-            <span
-              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70"
-            >
-              <svg
-                class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-                fill="none"
-                viewBox="0 0 6 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 1 1 5l4 4"
-                />
-              </svg>
-              <span class="sr-only">Previous</span>
-            </span>
-          </button>
-          <button
-            type="button"
-            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-            data-carousel-next
-          >
-            <span
-              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70"
-            >
-              <svg
-                class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-                fill="none"
-                viewBox="0 0 6 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m1 9 4-4-4-4"
-                />
-              </svg>
-              <span class="sr-only">Next</span>
-            </span>
-          </button>
-        </div>
-        <!-- Flash Sales -->
-        <div class="py-[140px]">
-          <div
-            class="flex items-center"
-            data-aos-duration="1500"
-            data-aos="fade-up-right"
-          >
-            <div class="py-[20px] px-[10px] rounded-sm bg-secondary2"></div>
-            <p class="text-title text-secondary2 font-semibold ml-[16px]">
-              Today's
-            </p>
-          </div>
-
-          <div
-            class="flex items-end py-[20px]"
-            data-aos-duration="1500"
-            data-aos="fade-up-right"
-          >
-            <h2 class="text-subtitle font-semibold pr-[87px]">Flash Sales</h2>
-            <div class="flex">
-              <div class="flex flex-col justify-center">
-                <p class="text-title12px font-medium">Days</p>
-                <div class="flex">
-                  <h2 class="font-inter text-heading font-bold">03</h2>
-                  <h2
-                    class="text-hover-button text-heading mx-[10px] drop-shadow-md"
-                  >
-                    :
-                  </h2>
-                </div>
-              </div>
-              <div class="flex flex-col justify-center">
-                <p class="text-title12px font-medium">Hours</p>
-                <div class="flex">
-                  <h2 class="font-inter text-heading font-bold">23</h2>
-                  <h2
-                    class="text-hover-button text-heading mx-[10px] drop-shadow-md"
-                  >
-                    :
-                  </h2>
-                </div>
-              </div>
-              <div class="flex flex-col justify-center">
-                <p class="text-title12px font-medium">Minutes</p>
-                <div class="flex">
-                  <h2 class="font-inter text-heading font-bold">19</h2>
-                  <h2
-                    class="text-hover-button text-heading mx-[10px] drop-shadow-md"
-                  >
-                    :
-                  </h2>
-                </div>
-              </div>
-              <div class="flex flex-col justify-center">
-                <p class="text-title12px font-medium">Seconds</p>
-                <div class="flex">
-                  <h2 class="font-inter text-heading font-bold">56</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="overflow-x-auto scrollbar-hide aos-item"
-            data-aos="fade-right"
-            data-aos-duration="1500"
-          >
-            <div class="flex items-center flex-nowrap w-max gap-[30px]">
-              <!-- Cart 1 -->
-              <div
-                class="group w-[270px] h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden"
-              >
-                <div
-                  class="w-[270px] h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl"
-                >
-                  <span
-                    class="absolute bg-secondary2 top-2.5 left-2.5 text-title12px px-[12px] py-[4px] rounded-[4px] text-primary"
-                    >-40%</span
-                  >
-                  <div class="flex flex-col">
-                    <div
-                      class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center"
-                    >
-                      <i
-                        class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"
-                      ></i>
-                    </div>
-                    <div
-                      class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center"
-                    >
-                      <i
-                        class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"
-                      ></i>
-                    </div>
-                  </div>
-                  <a href="./src/Components/detail.html">
-                    <img
-                      class="w-[172px] h-[152px]"
-                      src="./public/homepage/g92-2-500x500 1.png"
-                      alt=""
-                    />
-                  </a>
-
-                  <a
-                    href="./src/pages/addCart.html"
-                    class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block"
-                  >
-                    Add to Cart
-                  </a>
-                </div>
-                <h2 class="text-base font-semibold mt-2 px-2">
-                  HAVIT HV-G92 Gamepad
-                </h2>
-                <p class="px-2">
-                  <span class="text-secondary2 font-medium text-title16px"
-                    >$120</span
-                  >
-                  <span
-                    class="line-through text-primary1 font-medium ml-2 text-title16px"
-                    >$160</span
-                  >
-                </p>
-                <div class="text-yellow-400 px-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                  <span class="text-primary1 font-medium text-title16px"
-                    >(80)</span
-                  >
-                </div>
-              </div>
-              <!-- Cart2 -->
-              <div
-                class="group w-[270px] h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden"
-              >
-                <div
-                  class="w-[270px] h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl"
-                >
-                  <span
-                    class="absolute bg-secondary2 top-2.5 left-2.5 text-title12px px-[12px] py-[4px] rounded-[4px] text-primary"
-                    >-35%</span
-                  >
-                  <div class="flex flex-col">
-                    <div
-                      class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center"
-                    >
-                      <i
-                        class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"
-                      ></i>
-                    </div>
-                    <div
-                      class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center"
-                    >
-                      <i
-                        class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"
-                      ></i>
-                    </div>
-                  </div>
-                  <a href="./src/Components/detail2.html">
-                    <img
-                      class="w-[191px] h-[101px]"
-                      src="./public/homepage/ak-900-01-500x500 1.png"
-                      alt=""
-                    />
-                  </a>
-                  <a
-                    href="./src/pages/addCart.html"
-                    class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block"
-                  >
-                    Add to Cart
-                  </a>
-                </div>
-                <h2 class="text-base font-semibold mt-2 px-2">
-                  AK-900 Wired Keyboard
-                </h2>
-                <p class="px-2">
-                  <span class="text-secondary2 font-medium text-title16px"
-                    >$220</span
-                  >
-                  <span
-                    class="line-through text-primary1 font-medium ml-2 text-title16px"
-                    >$260</span
-                  >
-                </p>
-                <div class="text-yellow-400 px-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <span class="text-primary1 font-medium text-title16px"
-                    >(88)</span
-                  >
-                </div>
-              </div>
-
-              <div
-                class="group w-[270px] h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden"
-              >
-                <div
-                  class="w-[270px] h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl"
-                >
-                  <span
-                    class="absolute bg-secondary2 top-2.5 left-2.5 text-title12px px-[12px] py-[4px] rounded-[4px] text-primary"
-                    >-30%</span
-                  >
-                  <div class="flex flex-col">
-                    <div
-                      class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center"
-                    >
-                      <i
-                        class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"
-                      ></i>
-                    </div>
-                    <div
-                      class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center"
-                    >
-                      <i
-                        class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"
-                      ></i>
-                    </div>
-                  </div>
-                  <img
-                    class="w-[172px] h-[152px]"
-                    src="./public/homepage/g27cq4-500x500 1.png"
-                    alt=""
-                  />
-                  <a
-                    href="./src/pages/addCart.html"
-                    class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block"
-                  >
-                    Add to Cart
-                  </a>
-                </div>
-                <h2 class="text-base font-semibold mt-2 px-2">
-                  G27CQ4 Gaming Monitor
-                </h2>
-                <p class="px-2">
-                  <span class="text-secondary2 font-medium text-title16px"
-                    >$960</span
-                  >
-                  <span
-                    class="line-through text-primary1 font-medium ml-2 text-title16px"
-                    >$1160</span
-                  >
-                </p>
-                <div class="text-yellow-400 px-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                  <span class="text-primary1 font-medium text-title16px"
-                    >(80)</span
-                  >
-                </div>
-              </div>
-              <!-- CARD 4 -->
-              <div
-                class="group w-[270px] h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden"
-              >
-                <div
-                  class="w-[270px] h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl"
-                >
-                  <span
-                    class="absolute bg-secondary2 top-2.5 left-2.5 text-title12px px-[12px] py-[4px] rounded-[4px] text-primary"
-                    >-25%</span
-                  >
-                  <div class="flex flex-col">
-                    <div
-                      class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center"
-                    >
-                      <i
-                        class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"
-                      ></i>
-                    </div>
-                    <div
-                      class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center"
-                    >
-                      <i
-                        class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"
-                      ></i>
-                    </div>
-                  </div>
-                  <img
-                    class="w-[150px] h-[150px]"
-                    src="./public/homepage/png-clipart-gaming-chair-table-furniture-video-game-chair-blue-furniture-thumbnail.png"
-                    alt=""
-                  />
-                  <a
-                    href="./src/pages/addCart.html"
-                    class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block"
-                  >
-                    Add to Cart
-                  </a>
-                </div>
-                <h2 class="text-base font-semibold mt-2 px-2">
-                  S-Series Comfort Chair
-                </h2>
-                <p class="px-2">
-                  <span class="text-secondary2 font-medium text-title16px"
-                    >$375</span
-                  >
-                  <span
-                    class="line-through text-primary1 font-medium ml-2 text-title16px"
-                    >$400</span
-                  >
-                </p>
-                <div class="text-yellow-400 px-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <span class="text-primary1 font-medium text-title16px"
-                    >(125)</span
-                  >
-                </div>
-              </div>
-
-              <!-- CARD 5 -->
-              <div
-                class="group w-[270px] h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden"
-              >
-                <div
-                  class="w-[270px] h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl"
-                >
-                  <span
-                    class="absolute bg-secondary2 top-2.5 left-2.5 text-title12px px-[12px] py-[4px] rounded-[4px] text-primary"
-                    >-50%</span
-                  >
-                  <div class="flex flex-col">
-                    <div
-                      class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center"
-                    >
-                      <i
-                        class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"
-                      ></i>
-                    </div>
-                    <div
-                      class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center"
-                    >
-                      <i
-                        class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"
-                      ></i>
-                    </div>
-                  </div>
-                  <img
-                    class="w-[150px] h-[120px]"
-                    src="./public/homepage/Logitech G502 LIGHTSPEED WIRELESS GAMING MOUSE.png"
-                    alt=""
-                  />
-                  <a
-                    href="./src/pages/addCart.html"
-                    class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block"
-                  >
-                    Add to Cart
-                  </a>
-                </div>
-                <h2 class="text-base font-semibold mt-2 px-2">
-                  Logitech Gaming Mouse
-                </h2>
-                <p class="px-2">
-                  <span class="text-secondary2 font-medium text-title16px"
-                    >$50</span
-                  >
-                  <span
-                    class="line-through text-primary1 font-medium ml-2 text-title16px"
-                    >$100</span
-                  >
-                </p>
-                <div class="text-yellow-400 px-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <span class="text-primary1 font-medium text-title16px"
-                    >(45)</span
-                  >
-                </div>
-              </div>
-
-              <!-- CARD 6 -->
-              <div
-                class="group w-[270px] h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden"
-              >
-                <div
-                  class="w-[270px] h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl"
-                >
-                  <span
-                    class="absolute bg-secondary2 top-2.5 left-2.5 text-title12px px-[12px] py-[4px] rounded-[4px] text-primary"
-                    >-20%</span
-                  >
-                  <div class="flex flex-col">
-                    <div
-                      class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center"
-                    >
-                      <i
-                        class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"
-                      ></i>
-                    </div>
-                    <div
-                      class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center"
-                    >
-                      <i
-                        class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"
-                      ></i>
-                    </div>
-                  </div>
-                  <img
-                    class="w-[150px] h-[120px]"
-                    src="./public/homepage/71LBvbVa95L._AC_UF1000,1000_QL80_.png"
-                    alt=""
-                  />
-                  <a
-                    href="./src/pages/addCart.html"
-                    class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block"
-                  >
-                    Add to Cart
-                  </a>
-                </div>
-                <h2 class="text-base font-semibold mt-2 px-2">
-                  Mechanical Keyboard
-                </h2>
-                <p class="px-2">
-                  <span class="text-secondary2 font-medium text-title16px"
-                    >$80</span
-                  >
-                  <span
-                    class="line-through text-primary1 font-medium ml-2 text-title16px"
-                    >$100</span
-                  >
-                </p>
-                <div class="text-yellow-400 px-2">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <span class="text-primary1 font-medium text-title16px"
-                    >(60)</span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="flex items-center justify-center"
-          data-aos-duration="1500"
-          data-aos="fade-up-right"
-        >
-          <a
-            class="bg-secondary2 hover:bg-hover-button rounded-[4px] px-[48px] py-[16px] text-primary w-[234px] h-[56px] text-title16px font-medium text-center"
-            href="./src/pages/viewallproduct.html"
-            >View All Products</a
-          >
-        </div>
-        <hr class="my-[60px] border-t-2 border-gray-300" />
-        <!-- Category -->
-        <div class="">
-          <div
-            class="flex items-center"
-            data-aos-duration="1500"
-            data-aos="fade-up-right"
-          >
-            <div class="py-[20px] px-[10px] rounded-sm bg-secondary2"></div>
-            <p class="text-title text-secondary2 font-semibold ml-[16px]">
-              Category
-            </p>
-          </div>
-
-          <div
-            class="py-[20px]"
-            data-aos-duration="1500"
-            data-aos="fade-up-right"
-          >
-            <h2 class="text-subtitle font-semibold pr-[87px]">
-              Browse By Category
-            </h2>
-          </div>
-          <div
-            class="flex gap-[30px] overflow-x-auto scrollbar-hide"
-            data-aos="fade-right"
-            data-aos-duration="1500"
-          >
-            <!-- Phones -->
-            <div
-              class="group transition duration-300 hover:bg-secondary2 flex flex-col w-[170px] h-[145px] p-10 border-2 border-gray-300 items-center justify-center"
-            >
-              <img
-                class="mb-2 w-[50px] h-[50px] transition duration-300 group-hover:invert"
-                src="./public/homepage/icons8-phone-50.png"
-                alt=""
-              />
-              <p
-                class="text-title16px transition duration-300 group-hover:text-primary"
-              >
-                Phones
-              </p>
-            </div>
-
-            <!-- Computer -->
-            <div
-              class="group transition duration-300 hover:bg-secondary2 flex flex-col w-[170px] h-[145px] p-10 border-2 border-gray-300 items-center justify-center"
-            >
-              <img
-                class="mb-2 w-[50px] h-[50px] transition duration-300 group-hover:invert"
-                src="./public/homepage/icons8-computer-50.png"
-                alt=""
-              />
-              <p
-                class="text-title16px transition duration-300 group-hover:text-primary"
-              >
-                Computer
-              </p>
-            </div>
-
-            <!-- SmartWatch -->
-            <div
-              class="group transition duration-300 hover:bg-secondary2 flex flex-col w-[170px] h-[145px] p-10 border-2 border-gray-300 items-center justify-center"
-            >
-              <img
-                class="mb-2 w-[50px] h-[50px] transition duration-300 group-hover:invert"
-                src="./public/homepage/icons8-smartwatch-50.png"
-                alt=""
-              />
-              <p
-                class="text-title16px transition duration-300 group-hover:text-primary"
-              >
-                SmartWatch
-              </p>
-            </div>
-
-            <!-- Camera -->
-            <div
-              class="group transition duration-300 bg-primary hover:bg-secondary2 flex flex-col w-[170px] h-[145px] p-10 border-2 border-gray-300 items-center justify-center"
-            >
-              <img
-                class="mb-2 w-[50px] h-[50px] transition duration-300 group-hover:invert"
-                src="./public/homepage/icons8-camera-50 (4).png"
-                alt=""
-              />
-              <p
-                class="text-title16px transition duration-300 group-hover:text-primary"
-              >
-                Camera
-              </p>
-            </div>
-
-            <!-- HeadPhones -->
-            <div
-              class="group transition duration-300 hover:bg-secondary2 flex flex-col w-[170px] h-[145px] p-10 border-2 border-gray-300 items-center justify-center"
-            >
-              <img
-                class="mb-2 w-[50px] h-[50px] transition duration-300 group-hover:invert"
-                src="./public/homepage/icons8-headphone-100.png"
-                alt=""
-              />
-              <p
-                class="text-title16px transition duration-300 group-hover:text-primary"
-              >
-                HeadPhones
-              </p>
-            </div>
-
-            <!-- Gaming -->
-            <div
-              class="group transition duration-300 hover:bg-secondary2 flex flex-col w-[170px] h-[145px] p-10 border-2 border-gray-300 items-center justify-center"
-            >
-              <img
-                class="mb-2 w-[50px] h-[50px] transition duration-300 group-hover:invert"
-                src="./public/homepage/icons8-game-controller-50.png"
-                alt=""
-              />
-              <p
-                class="text-title16px transition duration-300 group-hover:text-primary"
-              >
-                Gaming
-              </p>
-            </div>
-
-            <!-- Computer (duplicate) -->
-            <div
-              class="group transition duration-300 hover:bg-secondary2 flex flex-col w-[170px] h-[145px] p-10 border-2 border-gray-300 items-center justify-center"
-            >
-              <img
-                class="mb-2 w-[50px] h-[50px] transition duration-300 group-hover:invert"
-                src="./public/homepage/icons8-drone-50.png"
-                alt=""
-              />
-              <p
-                class="text-title16px transition duration-300 group-hover:text-primary"
-              >
-                Drone
-              </p>
-            </div>
-            <div
-              class="group transition duration-300 hover:bg-secondary2 flex flex-col w-[170px] h-[145px] p-10 border-2 border-gray-300 items-center justify-center"
-            >
-              <img
-                class="mb-2 w-[50px] h-[50px] transition duration-300 group-hover:invert"
-                src="./public/homepage/icons8-router-50.png"
-                alt=""
-              />
-              <p
-                class="text-title16px transition duration-300 group-hover:text-primary"
-              >
-                Router
-              </p>
-            </div>
-          </div>
-        </div>
-        <hr class="my-[60px] border-t-2 border-gray-300" />
-        <!--Best Selling Products -->
-        <div>
-          <div
-            class="flex items-center"
-            data-aos-duration="1500"
-            data-aos="fade-up-right"
-          >
-            <div class="py-[20px] px-[10px] rounded-sm bg-secondary2"></div>
-            <p class="text-title text-secondary2 font-semibold ml-[16px]">
-              This month
-            </p>
-          </div>
-
-          <div
-            class="flex items-end py-[20px] justify-between"
-            data-aos-duration="1500"
-            data-aos="fade-up-right"
-          >
-            <h2 class="text-subtitle font-semibold pr-[87px]">
-              Best Selling Products
-            </h2>
-            <a
-              class="bg-secondary2 hover:bg-hover-button px-[24px] py-[16px] rounded-[4px] text-primary w-[234px] h-[56px] text-title16px font-medium text-center"
-              href="./src/pages/viewallproduct.html"
-              >View All
-            </a>
-          </div>
-          <div
-            class="overflow-x-auto scrollbar-hide"
-            data-aos="fade-right"
-            data-aos-duration="1500"
-          >
-            <div class="flex items-center flex-nowrap w-max gap-[30px]">
-              <div
-                class="group w-[270px] h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden"
-              >
-                <div
-                  class="w-[270px] h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl"
-                >
-                  <span
-                    class="absolute bg-secondary2 top-2.5 left-2.5 text-title12px px-[12px] py-[4px] rounded-[4px] text-primary"
-                    >-40%</span
-                  >
-                  <div class="flex flex-col">
-                    <div
-                      class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center"
-                    >
-                      <i
-                        class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"
-                      ></i>
-                    </div>
-                    <div
-                      class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center"
-                    >
-                      <i
-                        class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"
-                      ></i>
-                    </div>
-                  </div>
-                  <img
-                    class="w-[172px] h-[152px]"
-                    src="./public/homepage/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png"
-                    alt=""
-                  />
-                  <a
-                    href="./src/pages/addCart.html"
-                    class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block"
-                  >
-                    Add to Cart
-                  </a>
-                </div>
-                <h2 class="text-base font-semibold mt-2">
-                  Gucci x North Face Jacket
-                </h2>
-                <p>
-                  <span class="text-secondary2 font-medium text-title16px"
-                    >$150</span
-                  >
-                  <span
-                    class="line-through text-primary1 font-medium ml-2 text-title16px"
-                    >$250</span
-                  >
-                </p>
-                <div class="text-yellow-400">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                  <span class="text-primary1 font-medium text-title16px"
-                    >(88)</span
-                  >
-                </div>
-              </div>
-
-              <div
-                class="group w-[270px] h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden"
-              >
-                <div
-                  class="w-[270px] h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl"
-                >
-                  <span
-                    class="absolute bg-secondary2 top-2.5 left-2.5 text-title12px px-[12px] py-[4px] rounded-[4px] text-primary"
-                    >-40%</span
-                  >
-                  <div class="flex flex-col">
-                    <div
-                      class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center"
-                    >
-                      <i
-                        class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"
-                      ></i>
-                    </div>
-                    <div
-                      class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center"
-                    >
-                      <i
-                        class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"
-                      ></i>
-                    </div>
-                  </div>
-                  <img
-                    class="w-[172px] h-[152px]"
-                    src="./public/homepage/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png"
-                    alt=""
-                  />
-                  <a
-                    href="./src/pages/addCart.html"
-                    class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block"
-                  >
-                    Add to Cart
-                  </a>
-                </div>
-                <h2 class="text-base font-semibold mt-2">Gucci Savoy Bag</h2>
-                <p>
-                  <span class="text-secondary2 font-medium text-title16px"
-                    >$180</span
-                  >
-                  <span
-                    class="line-through text-primary1 font-medium ml-2 text-title16px"
-                    >$300</span
-                  >
-                </p>
-                <div class="text-yellow-400">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                  <span class="text-primary1 font-medium text-title16px"
-                    >(88)</span
-                  >
-                </div>
-              </div>
-
-              <div
-                class="group w-[270px] h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden"
-              >
-                <div
-                  class="w-[270px] h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl"
-                >
-                  <span
-                    class="absolute bg-secondary2 top-2.5 left-2.5 text-title12px px-[12px] py-[4px] rounded-[4px] text-primary"
-                    >-40%</span
-                  >
-                  <div class="flex flex-col">
-                    <div
-                      class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center"
-                    >
-                      <i
-                        class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"
-                      ></i>
-                    </div>
-                    <div
-                      class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center"
-                    >
-                      <i
-                        class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"
-                      ></i>
-                    </div>
-                  </div>
-                  <img
-                    class="mt-10"
-                    src="./public/homepage/gammaxx-l240-argb-1-500x500 1.png"
-                    alt=""
-                  />
-                  <a
-                    href="./src/pages/addCart.html"
-                    class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block"
-                  >
-                    Add to Cart
-                  </a>
-                </div>
-                <h2 class="text-base font-semibold mt-2">
-                  Gammaxx L240 ARGB Cooler
-                </h2>
-                <p>
-                  <span class="text-secondary2 font-medium text-title16px"
-                    >$65</span
-                  >
-                  <span
-                    class="line-through text-primary1 font-medium ml-2 text-title16px"
-                    >$110</span
-                  >
-                </p>
-                <div class="text-yellow-400">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                  <span class="text-primary1 font-medium text-title16px"
-                    >(88)</span
-                  >
-                </div>
-              </div>
-
-              <div
-                class="group w-[270px] h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden"
-              >
-                <div
-                  class="w-[270px] h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl"
-                >
-                  <span
-                    class="absolute bg-secondary2 top-2.5 left-2.5 text-title12px px-[12px] py-[4px] rounded-[4px] text-primary"
-                    >-40%</span
-                  >
-                  <div class="flex flex-col">
-                    <div
-                      class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center"
-                    >
-                      <i
-                        class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"
-                      ></i>
-                    </div>
-                    <div
-                      class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center"
-                    >
-                      <i
-                        class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"
-                      ></i>
-                    </div>
-                  </div>
-                  <img
-                    class="w-[190px] h-[152px]"
-                    src="./public/homepage/037b1fdeec4688705918fab463a162d5f1d3e7fc-2048x1536.png"
-                    alt=""
-                  />
-                  <a
-                    href="./src/pages/addCart.html"
-                    class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block"
-                  >
-                    Add to Cart
-                  </a>
-                </div>
-                <h2 class="text-base font-semibold mt-2">Tesla Robot</h2>
-                <p>
-                  <span class="text-secondary2 font-medium text-title16px"
-                    >$20,000</span
-                  >
-                  <span
-                    class="line-through text-primary1 font-medium ml-2 text-title16px"
-                    >$20,500</span
-                  >
-                </p>
-                <div class="text-yellow-400">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                  <span class="text-primary1 font-medium text-title16px"
-                    >(88)</span
-                  >
-                </div>
-              </div>
-              <div
-                class="group w-[270px] h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden"
-              >
-                <div
-                  class="w-[270px] h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl"
-                >
-                  <span
-                    class="absolute bg-secondary2 top-2.5 left-2.5 text-title12px px-[12px] py-[4px] rounded-[4px] text-primary"
-                    >-40%</span
-                  >
-                  <div class="flex flex-col">
-                    <div
-                      class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center"
-                    >
-                      <i
-                        class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"
-                      ></i>
-                    </div>
-                    <div
-                      class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center"
-                    >
-                      <i
-                        class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"
-                      ></i>
-                    </div>
-                  </div>
-                  <img
-                    class="w-[172px] h-[152px]"
-                    src="./public/homepage/s-l1200.png"
-                    alt=""
-                  />
-                  <a
-                    href="./src/pages/addCart.html"
-                    class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block"
-                  >
-                    Add to Cart
-                  </a>
-                </div>
-                <h2 class="text-base font-semibold mt-2">
-                  nike dunk low retro
-                </h2>
-                <p>
-                  <span class="text-secondary2 font-medium text-title16px"
-                    >$105</span
-                  >
-                  <span
-                    class="line-through text-primary1 font-medium ml-2 text-title16px"
-                    >$175</span
-                  >
-                </p>
-                <div class="text-yellow-400">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                  <span class="text-primary1 font-medium text-title16px"
-                    >(88)</span
-                  >
-                </div>
-              </div>
-              <div
-                class="group w-[270px] h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden"
-              >
-                <div
-                  class="w-[270px] h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl"
-                >
-                  <span
-                    class="absolute bg-secondary2 top-2.5 left-2.5 text-title12px px-[12px] py-[4px] rounded-[4px] text-primary"
-                    >-40%</span
-                  >
-                  <div class="flex flex-col">
-                    <div
-                      class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center"
-                    >
-                      <i
-                        class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"
-                      ></i>
-                    </div>
-                    <div
-                      class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center"
-                    >
-                      <i
-                        class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"
-                      ></i>
-                    </div>
-                  </div>
-                  <img
-                    class="w-[172px] h-[152px]"
-                    src="./public/homepage/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png"
-                    alt=""
-                  />
-                  <a
-                    href="./src/pages/addCart.html"
-                    class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block"
-                  >
-                    Add to Cart
-                  </a>
-                </div>
-                <h2 class="text-base font-semibold mt-2">
-                  Leather High-Top Sneakers
-                </h2>
-                <p>
-                  <span class="text-secondary2 font-medium text-title16px"
-                    >$95</span
-                  >
-                  <span
-                    class="line-through text-primary1 font-medium ml-2 text-title16px"
-                    >$160</span
-                  >
-                </p>
-                <div class="text-yellow-400">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half-stroke"></i>
-                  <span class="text-primary1 font-medium text-title16px"
-                    >(88)</span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <footer class="bg-black text-white py-12">
+    <!-- Main Navigation -->
+    <nav class="bg-white shadow-sm">
       <div class="container mx-auto px-4">
-        <!-- Main Footer Content -->
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 xl:grid-cols-5"
-        >
-          <!-- Exclusive Section -->
-          <div class="mb-6 md:mb-0">
-            <a href="/" class="text-xl font-bold mb-4">Exclusive</a>
-            <p class="text-sm mb-4">Subscribe</p>
-            <p class="text-sm mb-4">Get 10% off your first order</p>
-            <div
-              class="flex items-center border border-gray-700 rounded-md overflow-hidden"
-            >
-              <input
-                type="email"
-                placeholder="Enter your email"
-                class="bg-transparent border-none outline-none px-3 py-2 w-full text-white"
-              />
-              <button class="px-3 py-2 bg-transparent">
-                <i class="fas fa-arrow-right"></i>
+        <div class="flex justify-between items-center py-4">
+          <!-- Logo -->
+          <div class="flex items-center">
+            <h1 class="text-2xl font-bold">Exclusive</h1>
+          </div>
+
+          <!-- Desktop Navigation Links -->
+          <div class="hidden md:flex gap-5 lg:gap-10">
+            <a href="/" class="text-gray-800 hover:text-gray-600">Home</a>
+            <a href="./src/pages/contact.html" class="text-gray-800 hover:text-gray-600">Contact</a>
+            <a href="./src/pages/about.html" class="text-gray-800 hover:text-gray-600">About</a>
+            <a href="./src/pages/signup.html" class="text-gray-800 hover:text-gray-600">Sign Up</a>
+          </div>
+
+          <!-- Search and Icons -->
+          <div class="flex items-center space-x-2">
+            <!-- Search Bar (Desktop) -->
+            <div class="hidden md:flex items-center bg-gray-100 rounded-md px-3 py-2">
+              <input type="text" placeholder="What are you looking for?"
+                class="bg-transparent border-none outline-none" />
+              <button class="ml-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
               </button>
             </div>
-          </div>
 
-          <!-- Support Section -->
-          <div class="mb-6 md:mb-0">
-            <h2 class="text-xl font-bold mb-4">Support</h2>
-            <p class="text-sm mb-2">111 Bijoy sarani, Dhaka,</p>
-            <p class="text-sm mb-4">DH 1515, Bangladesh.</p>
-            <p class="text-sm mb-2">exclusive@gmail.com</p>
-            <p class="text-sm mb-2">+88015-88888-9999</p>
-          </div>
+            <!-- Icons -->
+            <a href="#" class="text-gray-800">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </a>
+            <a href="./src/pages/addCart.html" class="text-gray-800">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </a>
 
-          <!-- Account Section -->
-          <div class="mb-6 md:mb-0">
-            <h2 class="text-xl font-bold mb-4">Account</h2>
-            <ul class="space-y-2">
-              <li>
-                <a href="#" class="text-sm hover:text-gray-300">My Account</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm hover:text-gray-300"
-                  >Login / Register</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-sm hover:text-gray-300">Cart</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm hover:text-gray-300">Wishlist</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm hover:text-gray-300">Shop</a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Quick Link Section -->
-          <div class="mb-6 md:mb-0">
-            <h2 class="text-xl font-bold mb-4">Quick Link</h2>
-            <ul class="space-y-2">
-              <li>
-                <a href="#" class="text-sm hover:text-gray-300"
-                  >Privacy Policy</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-sm hover:text-gray-300">Terms Of Use</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm hover:text-gray-300">FAQ</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm hover:text-gray-300">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <!-- Download App Section -->
-          <div class="mb-6 md:mb-0">
-            <div class="mb-6 self-center">
-              <h3 class="text-lg font-semibold mb-4">Download App</h3>
-              <p class="text-sm mb-4">Save $3 with App New User Only</p>
-              <div class="flex flex-row items-center justify-start">
-                <div class="mr-4 mb-4 md:mb-0">
-                  <img
-                    src="./public/footer/qr.png"
-                    alt="QR Code"
-                    class="w-24 h-24"
-                  />
-                </div>
-                <div class="flex flex-col space-y-2">
-                  <a href="#" class="block">
-                    <img
-                      src="./public/footer/googleplaystore.png"
-                      alt="Google Play"
-                      class="h-10"
-                    />
-                  </a>
-                  <a href="#" class="block">
-                    <img
-                      src="./public/footer/appstore.png"
-                      alt="App Store"
-                      class="h-10 w-34"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- Social Media Icons -->
-            <div class="flex space-x-4 justify-start lg:justify-start mt-6">
-              <a href="#" class="text-white hover:text-gray-300">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="text-white hover:text-gray-300">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="text-white hover:text-gray-300">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="#" class="text-white hover:text-gray-300">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-800">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
           </div>
         </div>
 
-        <div class="text-center">
-          <hr class="my-4" />
-          <p class="text-sm text-gray-400">
-            © Copyright Rimel 2022. All right reserved
-          </p>
+        <!-- Mobile Search (Always Visible on Mobile) -->
+        <div class="md:hidden pb-4">
+          <div class="flex items-center bg-gray-100 rounded-md px-3 py-2">
+            <input type="text" placeholder="What are you looking for?"
+              class="bg-transparent border-none outline-none w-full" />
+            <button class="ml-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
-    <script src="./src/js/navbar.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        once: false, // Ensures it repeats every scroll
-        mirror: true,
-        reset: true,
-      });
-    </script>
-  </body>
+    </nav>
+  </header>
+
+  <!-- Mobile Sidebar (Hidden by Default) -->
+  <div id="mobile-sidebar"
+    class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+    <div class="p-4">
+      <div class="flex justify-between items-center mb-6">
+        <h1 class="text-xl font-bold">Menu</h1>
+        <button id="close-sidebar" class="text-gray-800">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="flex flex-col space-y-4">
+        <a href="/" class="text-gray-800 hover:text-gray-600 py-2 border-b border-gray-200">Home</a>
+        <a href="./src/pages/contact.html"
+          class="text-gray-800 hover:text-gray-600 py-2 border-b border-gray-200">Contact</a>
+        <a href="./src/pages/about.html"
+          class="text-gray-800 hover:text-gray-600 py-2 border-b border-gray-200">About</a>
+        <a href="./src/pages/signup.html" class="text-gray-800 hover:text-gray-600 py-2 border-b border-gray-200">Sign
+          Up</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay for Mobile Sidebar -->
+  <div id="sidebar-overlay"
+    class="fixed inset-0 bg-black opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out"></div>
+
+  <!-- TODO write code here  -->
+  <main>
+    <div class="container mx-auto px-4 py-8">
+      <!-- Banner -->
+      <div class="relative h-90 md:h-96 overflow-hidden rounded-lg" data-carousel="static" data-aos="fade-down"
+        data-aos-easing="linear" data-aos-duration="1500" data-aos-once="false">
+        <!-- Slide 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <div
+            class="bg-black text-amber-50 flex flex-col md:flex-row items-center justify-between p-6 md:p-20 h-full gap-6">
+            <!-- Text Content -->
+            <div class="text-center md:text-left">
+              <div class="flex items-center justify-center md:justify-start mb-3">
+                <img class="w-[30px] h-[36px] md:w-[40px] md:h-[49px]"
+                  src="./public/homepage/1200px-Apple_gray_logo 1.png" alt="Apple logo" />
+                <p class="ml-[16px] md:ml-[24px] text-sm md:text-base">
+                  iPhone 14 Series
+                </p>
+              </div>
+              <h1 class="text-[20px] md:text-hero font-bold mb-[16px] md:mb-[21px] w-[250px] md:w-[300px]">
+                Up to 10% off Voucher
+              </h1>
+              <a href="./src/pages/viewallproduct.html" class="text-sm md:text-base underline">Shop Now →</a>
+            </div>
+            <img class="w-[250px] sm:w-[280px] md:w-[400px] h-auto"
+              src="./public/homepage/hero_endframe__cvklg0xk3w6e_large 2 (1).png" alt="iPhone hero image" />
+
+            <!-- Image -->
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <div
+            class="bg-black text-amber-50 flex flex-col md:flex-row items-center justify-between p-6 md:p-20 h-full gap-6">
+            <!-- Text Content -->
+            <div class="text-center md:text-left">
+              <div class="flex items-center justify-center md:justify-start mb-3">
+                <img class="w-[30px] h-[36px] md:w-[40px] md:h-[49px]"
+                  src="./public/homepage/1200px-Apple_gray_logo 1.png" alt="Apple logo" />
+                <p class="ml-[16px] md:ml-[24px] text-sm md:text-base">
+                  AirPods Max Black
+                </p>
+              </div>
+              <h1 class="text-[20px] md:text-hero font-bold mb-[16px] md:mb-[21px] w-[250px] md:w-[300px]">
+                Save Big with Promo
+              </h1>
+              <a href="./src/pages/viewallproduct.html" class="text-sm md:text-base underline">Shop Now →</a>
+            </div>
+            <img class="w-[300px] sm:w-[280px] md:w-[400px] h-auto" src="./public/homepage/AirPods-Max-black.webp"
+              alt="AirPods Max Black" />
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <div
+            class="bg-black text-amber-50 flex flex-col md:flex-row items-center justify-between p-6 md:p-20 h-full gap-6">
+            <!-- Text Content -->
+            <div class="text-center md:text-left">
+              <div class="flex items-center justify-center md:justify-start mb-3">
+                <img class="w-[30px] h-[36px] md:w-[40px] md:h-[49px]"
+                  src="./public/homepage/1200px-Apple_gray_logo 1.png" alt="Apple logo" />
+                <p class="ml-[16px] md:ml-[24px] text-sm md:text-base">
+                  MacBook Air M2
+                </p>
+              </div>
+              <h1 class="text-[20px] md:text-hero font-bold mb-[16px] md:mb-[21px] w-[250px] md:w-[300px]">
+                Exclusive Deals
+              </h1>
+              <a href="./src/pages/viewallproduct.html" class="text-sm md:text-base underline">Shop Now →</a>
+            </div>
+            <img class="w-[300px] sm:w-[280px] md:w-[400px] h-auto" src="./public/homepage/m3-mbp-space-black.webp"
+              alt="MacBook Air M2" />
+
+            <!-- Image -->
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <div
+            class="bg-black text-amber-50 flex flex-col md:flex-row items-center justify-between p-6 md:p-20 h-full gap-6">
+            <!-- Text Content -->
+            <div class="text-center md:text-left">
+              <div class="flex items-center justify-center md:justify-start mb-3">
+                <img class="w-[30px] h-[36px] md:w-[40px] md:h-[49px]"
+                  src="./public/homepage/1200px-Apple_gray_logo 1.png" alt="Apple logo" />
+                <p class="ml-[16px] md:ml-[24px] text-sm md:text-base">
+                  Apple Watch Series 9
+                </p>
+              </div>
+              <h1 class="text-[20px] md:text-hero font-bold mb-[16px] md:mb-[21px] w-[250px] md:w-[300px]">
+                Up to 15% off
+              </h1>
+              <a href="./src/pages/viewallproduct.html" class="text-sm md:text-base underline">Shop Now →</a>
+            </div>
+            <img class="w-[300px] sm:w-[280px] md:w-[400px] h-auto" src="./public/homepage/GhKf4D7VVCu5oXmq9kJqzG.jpg"
+              alt="Apple Watch Series 9" />
+
+            <!-- Image -->
+          </div>
+        </div>
+
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+          <button type="button" class="w-3 h-3 rounded-full" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+        </div>
+
+        <!-- Slider controls -->
+        <button type="button"
+          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev>
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5 1 1 5l4 4" />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button type="button"
+          class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next>
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 9 4-4-4-4" />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+      <!-- Flash Sales -->
+      <div class="py-[140px]">
+        <div class="flex items-center" data-aos-duration="1500" data-aos="fade-up-right">
+          <div class="py-[20px] px-[10px] rounded-sm bg-secondary2"></div>
+          <p class="text-title text-secondary2 font-semibold ml-[16px]">
+            Today's
+          </p>
+        </div>
+
+        <div class="flex items-end py-[20px]" data-aos-duration="1500" data-aos="fade-up-right">
+          <h2 class="text-subtitle font-semibold pr-[87px]">Flash Sales</h2>
+          <div class="flex">
+            <div class="flex flex-col justify-center">
+              <p class="text-title12px font-medium">Days</p>
+              <div class="flex">
+                <h2 class="font-inter text-heading font-bold">03</h2>
+                <h2 class="text-hover-button text-heading mx-[10px] drop-shadow-md">
+                  :
+                </h2>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center">
+              <p class="text-title12px font-medium">Hours</p>
+              <div class="flex">
+                <h2 class="font-inter text-heading font-bold">23</h2>
+                <h2 class="text-hover-button text-heading mx-[10px] drop-shadow-md">
+                  :
+                </h2>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center">
+              <p class="text-title12px font-medium">Minutes</p>
+              <div class="flex">
+                <h2 class="font-inter text-heading font-bold">19</h2>
+                <h2 class="text-hover-button text-heading mx-[10px] drop-shadow-md">
+                  :
+                </h2>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center">
+              <p class="text-title12px font-medium">Seconds</p>
+              <div class="flex">
+                <h2 class="font-inter text-heading font-bold">56</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overflow-x-auto scrollbar-hide aos-item" data-aos="fade-right" data-aos-duration="1500">
+          <div class="flex items-center flex-nowrap w-max gap-[30px]">
+            <!-- CARD TEMPLATE START -->
+            <div
+              class="group w-[270px] h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden">
+              <div class="w-[270px] h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl">
+                <span
+                  class="absolute bg-secondary2 top-2.5 left-2.5 text-title12px px-[12px] py-[4px] rounded-[4px] text-primary">-40%</span>
+                <div class="flex flex-col">
+                  <div
+                    class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                    <i class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                  </div>
+                  <div
+                    class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                    <i class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                  </div>
+                </div>
+                <img class="w-[172px] h-[152px]" src="./public/homepage/g92-2-500x500 1.png" alt="" />
+                <a href="./src/pages/addCart.html"
+                  class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block">
+                  Add to Cart
+                </a>
+              </div>
+              <h2 class="text-base font-semibold mt-2 px-2">
+                HAVIT HV-G92 Gamepad
+              </h2>
+              <p class="px-2">
+                <span class="text-secondary2 font-medium text-title16px">$120</span>
+                <span class="line-through text-primary1 font-medium ml-2 text-title16px">$160</span>
+              </p>
+              <div class="text-yellow-400 px-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span class="text-primary1 font-medium text-title16px">(80)</span>
+              </div>
+            </div>
+            <!-- CARD TEMPLATE END -->
+
+            <!-- DUPLICATE AND EDIT FOR OTHER CARDS -->
+
+            <div
+              class="group w-[270px] h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden">
+              <div class="w-[270px] h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl">
+                <span
+                  class="absolute bg-secondary2 top-2.5 left-2.5 text-title12px px-[12px] py-[4px] rounded-[4px] text-primary">-35%</span>
+                <div class="flex flex-col">
+                  <div
+                    class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                    <i class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                  </div>
+                  <div
+                    class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                    <i class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                  </div>
+                </div>
+                <img class="w-[191px] h-[101px]" src="./public/homepage/ak-900-01-500x500 1.png" alt="" />
+                <a href="./src/pages/addCart.html"
+                  class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block">
+                  Add to Cart
+                </a>
+              </div>
+              <h2 class="text-base font-semibold mt-2 px-2">
+                AK-900 Wired Keyboard
+              </h2>
+              <p class="px-2">
+                <span class="text-secondary2 font-medium text-title16px">$220</span>
+                <span class="line-through text-primary1 font-medium ml-2 text-title16px">$260</span>
+              </p>
+              <div class="text-yellow-400 px-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="text-primary1 font-medium text-title16px">(88)</span>
+              </div>
+            </div>
+
+            <div
+              class="group w-[270px] h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden">
+              <div class="w-[270px] h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl">
+                <span
+                  class="absolute bg-secondary2 top-2.5 left-2.5 text-title12px px-[12px] py-[4px] rounded-[4px] text-primary">-30%</span>
+                <div class="flex flex-col">
+                  <div
+                    class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                    <i class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                  </div>
+                  <div
+                    class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                    <i class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                  </div>
+                </div>
+                <img class="w-[172px] h-[152px]" src="./public/homepage/g27cq4-500x500 1.png" alt="" />
+                <a href="./src/pages/addCart.html"
+                  class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block">
+                  Add to Cart
+                </a>
+              </div>
+              <h2 class="text-base font-semibold mt-2 px-2">
+                G27CQ4 Gaming Monitor
+              </h2>
+              <p class="px-2">
+                <span class="text-secondary2 font-medium text-title16px">$960</span>
+                <span class="line-through text-primary1 font-medium ml-2 text-title16px">$1160</span>
+              </p>
+              <div class="text-yellow-400 px-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span class="text-primary1 font-medium text-title16px">(80)</span>
+              </div>
+            </div>
+            <!-- CARD 4 -->
+            <div
+              class="group w-[270px] h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden">
+              <div class="w-[270px] h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl">
+                <span
+                  class="absolute bg-secondary2 top-2.5 left-2.5 text-title12px px-[12px] py-[4px] rounded-[4px] text-primary">-25%</span>
+                <div class="flex flex-col">
+                  <div
+                    class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                    <i class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                  </div>
+                  <div
+                    class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                    <i class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                  </div>
+                </div>
+                <img class="w-[150px] h-[150px]"
+                  src="./public/homepage/png-clipart-gaming-chair-table-furniture-video-game-chair-blue-furniture-thumbnail.png"
+                  alt="" />
+                <a href="./src/pages/addCart.html"
+                  class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block">
+                  Add to Cart
+                </a>
+              </div>
+              <h2 class="text-base font-semibold mt-2 px-2">
+                S-Series Comfort Chair
+              </h2>
+              <p class="px-2">
+                <span class="text-secondary2 font-medium text-title16px">$375</span>
+                <span class="line-through text-primary1 font-medium ml-2 text-title16px">$400</span>
+              </p>
+              <div class="text-yellow-400 px-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="text-primary1 font-medium text-title16px">(125)</span>
+              </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div
+              class="group w-[270px] h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden">
+              <div class="w-[270px] h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl">
+                <span
+                  class="absolute bg-secondary2 top-2.5 left-2.5 text-title12px px-[12px] py-[4px] rounded-[4px] text-primary">-50%</span>
+                <div class="flex flex-col">
+                  <div
+                    class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                    <i class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                  </div>
+                  <div
+                    class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                    <i class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                  </div>
+                </div>
+                <img class="w-[150px] h-[120px]"
+                  src="./public/homepage/Logitech G502 LIGHTSPEED WIRELESS GAMING MOUSE.png" alt="" />
+                <a href="./src/pages/addCart.html"
+                  class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block">
+                  Add to Cart
+                </a>
+              </div>
+              <h2 class="text-base font-semibold mt-2 px-2">
+                Logitech Gaming Mouse
+              </h2>
+              <p class="px-2">
+                <span class="text-secondary2 font-medium text-title16px">$50</span>
+                <span class="line-through text-primary1 font-medium ml-2 text-title16px">$100</span>
+              </p>
+              <div class="text-yellow-400 px-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="text-primary1 font-medium text-title16px">(45)</span>
+              </div>
+            </div>
+
+            <!-- CARD 6 -->
+            <div
+              class="group w-[270px] h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden">
+              <div class="w-[270px] h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl">
+                <span
+                  class="absolute bg-secondary2 top-2.5 left-2.5 text-title12px px-[12px] py-[4px] rounded-[4px] text-primary">-20%</span>
+                <div class="flex flex-col">
+                  <div
+                    class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                    <i class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                  </div>
+                  <div
+                    class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                    <i class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                  </div>
+                </div>
+                <img class="w-[150px] h-[120px]" src="./public/homepage/71LBvbVa95L._AC_UF1000,1000_QL80_.png" alt="" />
+                <a href="./src/pages/addCart.html"
+                  class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block">
+                  Add to Cart
+                </a>
+              </div>
+              <h2 class="text-base font-semibold mt-2 px-2">
+                Mechanical Keyboard
+              </h2>
+              <p class="px-2">
+                <span class="text-secondary2 font-medium text-title16px">$80</span>
+                <span class="line-through text-primary1 font-medium ml-2 text-title16px">$100</span>
+              </p>
+              <div class="text-yellow-400 px-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="text-primary1 font-medium text-title16px">(60)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center" data-aos-duration="1500" data-aos="fade-up-right">
+        <a class="bg-secondary2 hover:bg-hover-button rounded-[4px] px-[48px] py-[16px] text-primary w-[234px] h-[56px] text-title16px font-medium text-center"
+          href="./src/pages/viewallproduct.html">View All Products</a>
+      </div>
+      <hr class="my-[60px] border-t-2 border-gray-300" />
+      <!-- Category -->
+      <div class="">
+        <div class="flex items-center" data-aos-duration="1500" data-aos="fade-up-right">
+          <div class="py-[20px] px-[10px] rounded-sm bg-secondary2"></div>
+          <p class="text-title text-secondary2 font-semibold ml-[16px]">
+            Category
+          </p>
+        </div>
+
+        <div class="py-[20px]" data-aos-duration="1500" data-aos="fade-up-right">
+          <h2 class="text-subtitle font-semibold pr-[87px]">
+            Browse By Category
+          </h2>
+        </div>
+        <div class="flex gap-[30px] overflow-x-auto scrollbar-hide" data-aos="fade-right" data-aos-duration="1500">
+          <!-- Phones -->
+          <div
+            class="group transition duration-300 hover:bg-secondary2 flex flex-col w-[170px] h-[145px] p-10 border-2 border-gray-300 items-center justify-center">
+            <img class="mb-2 w-[50px] h-[50px] transition duration-300 group-hover:invert"
+              src="./public/homepage/icons8-phone-50.png" alt="" />
+            <p class="text-title16px transition duration-300 group-hover:text-primary">
+              Phones
+            </p>
+          </div>
+
+          <!-- Computer -->
+          <div
+            class="group transition duration-300 hover:bg-secondary2 flex flex-col w-[170px] h-[145px] p-10 border-2 border-gray-300 items-center justify-center">
+            <img class="mb-2 w-[50px] h-[50px] transition duration-300 group-hover:invert"
+              src="./public/homepage/icons8-computer-50.png" alt="" />
+            <p class="text-title16px transition duration-300 group-hover:text-primary">
+              Computer
+            </p>
+          </div>
+
+          <!-- SmartWatch -->
+          <div
+            class="group transition duration-300 hover:bg-secondary2 flex flex-col w-[170px] h-[145px] p-10 border-2 border-gray-300 items-center justify-center">
+            <img class="mb-2 w-[50px] h-[50px] transition duration-300 group-hover:invert"
+              src="./public/homepage/icons8-smartwatch-50.png" alt="" />
+            <p class="text-title16px transition duration-300 group-hover:text-primary">
+              SmartWatch
+            </p>
+          </div>
+
+          <!-- Camera -->
+          <div
+            class="group transition duration-300 bg-primary hover:bg-secondary2 flex flex-col w-[170px] h-[145px] p-10 border-2 border-gray-300 items-center justify-center">
+            <img class="mb-2 w-[50px] h-[50px] transition duration-300 group-hover:invert"
+              src="./public/homepage/icons8-camera-50 (4).png" alt="" />
+            <p class="text-title16px transition duration-300 group-hover:text-primary">
+              Camera
+            </p>
+          </div>
+
+          <!-- HeadPhones -->
+          <div
+            class="group transition duration-300 hover:bg-secondary2 flex flex-col w-[170px] h-[145px] p-10 border-2 border-gray-300 items-center justify-center">
+            <img class="mb-2 w-[50px] h-[50px] transition duration-300 group-hover:invert"
+              src="./public/homepage/icons8-headphone-100.png" alt="" />
+            <p class="text-title16px transition duration-300 group-hover:text-primary">
+              HeadPhones
+            </p>
+          </div>
+
+          <!-- Gaming -->
+          <div
+            class="group transition duration-300 hover:bg-secondary2 flex flex-col w-[170px] h-[145px] p-10 border-2 border-gray-300 items-center justify-center">
+            <img class="mb-2 w-[50px] h-[50px] transition duration-300 group-hover:invert"
+              src="./public/homepage/icons8-game-controller-50.png" alt="" />
+            <p class="text-title16px transition duration-300 group-hover:text-primary">
+              Gaming
+            </p>
+          </div>
+
+          <!-- Computer (duplicate) -->
+          <div
+            class="group transition duration-300 hover:bg-secondary2 flex flex-col w-[170px] h-[145px] p-10 border-2 border-gray-300 items-center justify-center">
+            <img class="mb-2 w-[50px] h-[50px] transition duration-300 group-hover:invert"
+              src="./public/homepage/icons8-drone-50.png" alt="" />
+            <p class="text-title16px transition duration-300 group-hover:text-primary">
+              Drone
+            </p>
+          </div>
+          <div
+            class="group transition duration-300 hover:bg-secondary2 flex flex-col w-[170px] h-[145px] p-10 border-2 border-gray-300 items-center justify-center">
+            <img class="mb-2 w-[50px] h-[50px] transition duration-300 group-hover:invert"
+              src="./public/homepage/icons8-router-50.png" alt="" />
+            <p class="text-title16px transition duration-300 group-hover:text-primary">
+              Router
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr class="my-[60px] border-t-2 border-gray-300" />
+      <!--Best Selling Products -->
+      <div>
+        <div class="flex items-center" data-aos-duration="1500" data-aos="fade-up-right">
+          <div class="py-[20px] px-[10px] rounded-sm bg-secondary2"></div>
+          <p class="text-title text-secondary2 font-semibold ml-[16px]">
+            This month
+          </p>
+        </div>
+
+        <div class="flex items-end py-[20px] justify-between" data-aos-duration="1500" data-aos="fade-up-right">
+          <h2 class="text-subtitle font-semibold pr-[87px]">
+            Best Selling Products
+          </h2>
+          <a class="bg-secondary2 hover:bg-hover-button px-[24px] py-[16px] rounded-[4px] text-primary w-[234px] h-[56px] text-title16px font-medium text-center"
+            href="./src/pages/viewallproduct.html">View All
+          </a>
+        </div>
+        <div class="overflow-x-auto scrollbar-hide" data-aos="fade-right" data-aos-duration="1500">
+          <div class="flex items-center flex-nowrap w-max gap-[30px]">
+            <div
+              class="group w-[270px] h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden">
+              <div class="w-[270px] h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl">
+                <span
+                  class="absolute bg-secondary2 top-2.5 left-2.5 text-title12px px-[12px] py-[4px] rounded-[4px] text-primary">-40%</span>
+                <div class="flex flex-col">
+                  <div
+                    class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                    <i class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                  </div>
+                  <div
+                    class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                    <i class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                  </div>
+                </div>
+                <img class="w-[172px] h-[152px]"
+                  src="./public/homepage/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png"
+                  alt="" />
+                <a href="./src/pages/addCart.html"
+                  class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block">
+                  Add to Cart
+                </a>
+              </div>
+              <h2 class="text-base font-semibold mt-2">
+                Gucci x North Face Jacket
+              </h2>
+              <p>
+                <span class="text-secondary2 font-medium text-title16px">$150</span>
+                <span class="line-through text-primary1 font-medium ml-2 text-title16px">$250</span>
+              </p>
+              <div class="text-yellow-400">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span class="text-primary1 font-medium text-title16px">(88)</span>
+              </div>
+            </div>
+
+            <div
+              class="group w-[270px] h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden">
+              <div class="w-[270px] h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl">
+                <span
+                  class="absolute bg-secondary2 top-2.5 left-2.5 text-title12px px-[12px] py-[4px] rounded-[4px] text-primary">-40%</span>
+                <div class="flex flex-col">
+                  <div
+                    class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                    <i class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                  </div>
+                  <div
+                    class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                    <i class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                  </div>
+                </div>
+                <img class="w-[172px] h-[152px]"
+                  src="./public/homepage/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png"
+                  alt="" />
+                <a href="./src/pages/addCart.html"
+                  class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block">
+                  Add to Cart
+                </a>
+              </div>
+              <h2 class="text-base font-semibold mt-2">Gucci Savoy Bag</h2>
+              <p>
+                <span class="text-secondary2 font-medium text-title16px">$180</span>
+                <span class="line-through text-primary1 font-medium ml-2 text-title16px">$300</span>
+              </p>
+              <div class="text-yellow-400">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span class="text-primary1 font-medium text-title16px">(88)</span>
+              </div>
+            </div>
+
+            <div
+              class="group w-[270px] h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden">
+              <div class="w-[270px] h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl">
+                <span
+                  class="absolute bg-secondary2 top-2.5 left-2.5 text-title12px px-[12px] py-[4px] rounded-[4px] text-primary">-40%</span>
+                <div class="flex flex-col">
+                  <div
+                    class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                    <i class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                  </div>
+                  <div
+                    class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                    <i class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                  </div>
+                </div>
+                <img class="mt-10" src="./public/homepage/gammaxx-l240-argb-1-500x500 1.png" alt="" />
+                <a href="./src/pages/addCart.html"
+                  class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block">
+                  Add to Cart
+                </a>
+              </div>
+              <h2 class="text-base font-semibold mt-2">
+                Gammaxx L240 ARGB Cooler
+              </h2>
+              <p>
+                <span class="text-secondary2 font-medium text-title16px">$65</span>
+                <span class="line-through text-primary1 font-medium ml-2 text-title16px">$110</span>
+              </p>
+              <div class="text-yellow-400">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span class="text-primary1 font-medium text-title16px">(88)</span>
+              </div>
+            </div>
+
+            <div
+              class="group w-[270px] h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden">
+              <div class="w-[270px] h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl">
+                <span
+                  class="absolute bg-secondary2 top-2.5 left-2.5 text-title12px px-[12px] py-[4px] rounded-[4px] text-primary">-40%</span>
+                <div class="flex flex-col">
+                  <div
+                    class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                    <i class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                  </div>
+                  <div
+                    class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                    <i class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                  </div>
+                </div>
+                <img class="w-[190px] h-[152px]"
+                  src="./public/homepage/037b1fdeec4688705918fab463a162d5f1d3e7fc-2048x1536.png" alt="" />
+                <a href="./src/pages/addCart.html"
+                  class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block">
+                  Add to Cart
+                </a>
+              </div>
+              <h2 class="text-base font-semibold mt-2">Tesla Robot</h2>
+              <p>
+                <span class="text-secondary2 font-medium text-title16px">$20,000</span>
+                <span class="line-through text-primary1 font-medium ml-2 text-title16px">$20,500</span>
+              </p>
+              <div class="text-yellow-400">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span class="text-primary1 font-medium text-title16px">(88)</span>
+              </div>
+            </div>
+            <div
+              class="group w-[270px] h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden">
+              <div class="w-[270px] h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl">
+                <span
+                  class="absolute bg-secondary2 top-2.5 left-2.5 text-title12px px-[12px] py-[4px] rounded-[4px] text-primary">-40%</span>
+                <div class="flex flex-col">
+                  <div
+                    class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                    <i class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                  </div>
+                  <div
+                    class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                    <i class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                  </div>
+                </div>
+                <img class="w-[172px] h-[152px]" src="./public/homepage/s-l1200.png" alt="" />
+                <a href="./src/pages/addCart.html"
+                  class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block">
+                  Add to Cart
+                </a>
+              </div>
+              <h2 class="text-base font-semibold mt-2">
+                nike dunk low retro
+              </h2>
+              <p>
+                <span class="text-secondary2 font-medium text-title16px">$105</span>
+                <span class="line-through text-primary1 font-medium ml-2 text-title16px">$175</span>
+              </p>
+              <div class="text-yellow-400">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span class="text-primary1 font-medium text-title16px">(88)</span>
+              </div>
+            </div>
+            <div
+              class="group w-[270px] h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden">
+              <div class="w-[270px] h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl">
+                <span
+                  class="absolute bg-secondary2 top-2.5 left-2.5 text-title12px px-[12px] py-[4px] rounded-[4px] text-primary">-40%</span>
+                <div class="flex flex-col">
+                  <div
+                    class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                    <i class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                  </div>
+                  <div
+                    class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                    <i class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                  </div>
+                </div>
+                <img class="w-[172px] h-[152px]" src="./public/homepage/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png"
+                  alt="" />
+                <a href="./src/pages/addCart.html"
+                  class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block">
+                  Add to Cart
+                </a>
+              </div>
+              <h2 class="text-base font-semibold mt-2">
+                Leather High-Top Sneakers
+              </h2>
+              <p>
+                <span class="text-secondary2 font-medium text-title16px">$95</span>
+                <span class="line-through text-primary1 font-medium ml-2 text-title16px">$160</span>
+              </p>
+              <div class="text-yellow-400">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span class="text-primary1 font-medium text-title16px">(88)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Category section -->
+    <section id="category-section"
+      class="w-full h-auto p-9 bg-black grid grid-cols-1 md:grid-cols-2 gap-4 text-white items-center m-auto max-w-7xl">
+      <div id="category-content flex flex-cols items-start">
+        <h3 class="text-[#00FF66] text-2xl font-bold">Category</h3>
+        <div class="flex flex-col mt-2">
+          <h2 class="text-4xl">Enhance Your</h2>
+          <h2 class="text-4xl mt-3">Music Experience</h2>
+        </div>
+        <div class="flex space-x-6 mt-6">
+          <!-- Hours -->
+          <div class="bg-white rounded-full w-15 h-15 flex flex-col items-center justify-center text-black text-center">
+            <div class="w-full font-bold">23</div>
+            <div class="w-full text-[11px]">Hours</div>
+          </div>
+          <!-- Days -->
+          <div class="bg-white rounded-full w-15 h-15 flex flex-col items-center justify-center text-black text-center">
+            <div class="w-full font-bold">12</div>
+            <div class="w-full text-[11px]">Days</div>
+          </div>
+          <!-- Minutes -->
+          <div class="bg-white rounded-full w-15 h-15 flex flex-col items-center justify-center text-black text-center">
+            <div class="w-full font-bold">32</div>
+            <div class="w-full text-[11px]">Minutes</div>
+          </div>
+          <!-- Seconds -->
+          <div class="bg-white rounded-full w-15 h-15 flex flex-col items-center justify-center text-black text-center">
+            <div class="w-full font-bold">3</div>
+            <div class="w-full text-[11px]">Seconds</div>
+          </div>
+        </div>
+        <div class="mt-9 bg-[#00FF66] text-white rounded-md px-10 py-2 text-center text-sm inline-block">
+          <a href="/">Buy Now</a>
+        </div>
+      </div>
+      <div id="jbl-image" class="h-[80%] block mt-6 bg-url-[public/Ellipse23.png]">
+        <img src="public/asset/jbl.png" alt="jbl" class="h-full mx-auto" />
+      </div>
+    </section>
+    <!-- Our Products Section -->
+    <section class="max-w-7xl mx-auto mt-6">
+      <div id="our product title" class="mb-2 flex items-center h-7">
+        <div class="bg-[#DB4444] text-[#DB4444] w-3 h-full rounded mr-3">1</div>
+        <span class="text-[#DB4444] text-md font-bold">Our Product</span>
+      </div>
+      <div id="explore-product" class="flex items-center justify-between mt-6 mb-6">
+        <h2 class="text-2xl lg:text-4xl font-bold">Explore Our Products</h2>
+        <div id="btn-explore" class="px-4 py-3 flex gap-2">
+          <a href="#" class="bg-[#F5F5F5] p-2 rounded-full">
+            <i class="fa-solid fa-arrow-left m-auto"></i>
+          </a>
+          <a href="#" class="bg-[#F5F5F5] p-2 rounded-full">
+            <i class="fa-solid fa-arrow-right m-auto"></i>
+          </a>
+        </div>
+      </div>
+      <div id="product-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-12">
+        <!-- Product Card 1 -->
+        <div class="flex items-center flex-nowrap gap-[30px]">
+          <div
+            class="group w-full h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden">
+            <div class="w-full h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl">
+              <div class="flex flex-col">
+                <div
+                  class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                  <i class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                </div>
+                <div
+                  class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                  <i class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                </div>
+              </div>
+              <img class="w-[130px] h-[152px]" src="./public/product-img/petfood.png" alt="Pet Food" />
+              <a href="./src/pages/addCart.html"
+                class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block">
+                Add to Cart
+              </a>
+            </div>
+            <h2 class="text-base font-semibold mt-2">
+              Breed Dry Drog Food
+            </h2>
+            <div class="text-yellow-400">
+              <span class="text-secondary2 font-medium text-title16px">$100</span>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star" style="color: #a1a1a1;"></i>
+              <i class="fa-solid fa-star" style="color: #a1a1a1;"></i>
+              <span class="text-primary1 font-medium text-title-16px">(88)</span>
+            </div>
+          </div>
+        </div>
+        <!-- Product Card 2 -->
+        <div class="flex items-center flex-nowrap gap-[30px]">
+          <div
+            class="group w-full h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden">
+            <div class="w-full h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl">
+              <div class="flex flex-col">
+                <div
+                  class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                  <i class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                </div>
+                <div
+                  class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                  <i class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                </div>
+              </div>
+              <img class="w-[150px] h-[152px]" src="./public/product-img/camera.png" alt="" />
+              <a href="./src/pages/addCart.html"
+                class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block">
+                Add to Cart
+              </a>
+            </div>
+            <h2 class="text-base font-semibold mt-2">
+              CAMERA EOS DSLR Camera
+            </h2>
+            <div class="text-yellow-400">
+              <span class="text-secondary2 font-medium text-title16px">$360</span>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star" style="color: #a1a1a1;"></i>
+              <span class="text-primary1 font-medium text-title-16px">(95)</span>
+            </div>
+          </div>
+        </div>
+        <!-- Product Card 3 -->
+        <div class="flex items-center flex-nowrap gap-[30px]">
+          <div
+            class="group w-full h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden">
+            <div class="w-full h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl">
+              <div class="flex flex-col">
+                <div
+                  class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                  <i class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                </div>
+                <div
+                  class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                  <i class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                </div>
+              </div>
+              <img class="w-[150px] h-[152px]" src="./public/product-img/laptop.png" alt="" />
+              <a href="./src/pages/addCart.html"
+                class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block">
+                Add to Cart
+              </a>
+            </div>
+            <h2 class="text-base font-semibold mt-2">
+              ASUS FHD Gaming Laptop
+            </h2>
+            <div class="text-yellow-400">
+              <span class="text-secondary2 font-medium text-title16px">$700</span>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="text-primary1 font-medium text-title-16px">(325)</span>
+            </div>
+          </div>
+        </div>
+        <!-- Product Card 4 -->
+        <div class="flex items-center flex-nowrap gap-[30px]">
+          <div
+            class="group w-full h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden">
+            <div class="w-full h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl">
+              <div class="flex flex-col">
+                <div
+                  class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                  <i class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                </div>
+                <div
+                  class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                  <i class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                </div>
+              </div>
+              <img class="w-[150px] h-[152px]" src="./public/product-img/cleanser.png" alt="" />
+              <a href="./src/pages/addCart.html"
+                class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block">
+                Add to Cart
+              </a>
+            </div>
+            <h2 class="text-base font-semibold mt-2">
+              Curology Product Set
+            </h2>
+            <div class="text-yellow-400">
+              <span class="text-secondary2 font-medium text-title16px">$500</span>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star" style="color: #a1a1a1;"></i>
+              <span class="text-primary1 font-medium text-title-16px">(88)</span>
+            </div>
+          </div>
+        </div>
+        <!-- Product Card 5 -->
+        <div class="flex items-center flex-nowrap gap-[30px]">
+          <div
+            class="group w-full h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden">
+            <div class="w-full h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl">
+              <div class="flex flex-col">
+                <div
+                  class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                  <i class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                </div>
+                <div
+                  class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                  <i class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                </div>
+              </div>
+              <img class="w-[150px] h-[132px]" src="./public/product-img/car.png" alt="" />
+              <a href="./src/pages/addCart.html"
+                class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block">
+                Add to Cart
+              </a>
+            </div>
+            <h2 class="text-base font-semibold mt-2">
+              Kids Eletric Car
+            </h2>
+            <div class="text-yellow-400">
+              <span class="text-secondary2 font-medium text-title16px">$960</span>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="text-primary1 font-medium text-title-16px">(99)</span>
+            </div>
+          </div>
+        </div>
+        <!-- Product Card 6 -->
+        <div class="flex items-center flex-nowrap gap-[30px]">
+          <div
+            class="group w-full h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden">
+            <div class="w-full h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl">
+              <div class="flex flex-col">
+                <div
+                  class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                  <i class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                </div>
+                <div
+                  class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                  <i class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                </div>
+              </div>
+              <img class="w-[172px] h-[152px]" src="./public/product-img/shoes.png" alt="" />
+              <a href="./src/pages/addCart.html"
+                class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block">
+                Add to Cart
+              </a>
+            </div>
+            <h2 class="text-base font-semibold mt-2">
+              Jr. Zoom Soccer Cleats
+            </h2>
+            <div class="text-yellow-400">
+              <span class="text-secondary2 font-medium text-title16px">$1600</span>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="text-primary1 font-medium text-title-16px">(168)</span>
+            </div>
+          </div>
+        </div>
+        <!-- Product Card 7 -->
+        <div class="flex items-center flex-nowrap gap-[30px]">
+          <div
+            class="group w-full h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden">
+            <div class="w-full h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl">
+              <div class="flex flex-col">
+                <div
+                  class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                  <i class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                </div>
+                <div
+                  class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                  <i class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                </div>
+              </div>
+              <img class="w-[172px] h-[152px]" src="./public/product-img/xboxplay.png" alt="" />
+              <a href="./src/pages/addCart.html"
+                class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block">
+                Add to Cart
+              </a>
+            </div>
+            <h2 class="text-base font-semibold mt-2">
+              GP11 Shooter USB Gamepad
+            </h2>
+            <div class="text-yellow-400">
+              <span class="text-secondary2 font-medium text-title16px">$660</span>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <span class="text-primary1 font-medium text-title-16px">(55)</span>
+            </div>
+          </div>
+        </div>
+        <!-- Product Card 8 -->
+        <div class="flex items-center flex-nowrap gap-[30px]">
+          <div
+            class="group w-full h-[350px] rounded-sm transition-all duration-200 ease-in-out relative overflow-hidden">
+            <div class="w-full h-[250px] relative bg-[#f5f5f5] flex items-center justify-center rounded-t-xl">
+              <div class="flex flex-col">
+                <div
+                  class="absolute top-2.5 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                  <i class="fa-regular fa-heart text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                </div>
+                <div
+                  class="absolute top-12 right-2.5 w-[34px] h-[34px] bg-primary rounded-full flex items-center justify-center">
+                  <i class="fa-regular fa-eye text-[20px] hover:text-red-500 transition-all duration-300"></i>
+                </div>
+              </div>
+              <img class="w-[172px] h-[152px]" src="./public/product-img/jacket.png" alt="" />
+              <a href="./src/pages/addCart.html"
+                class="absolute bottom-0 left-0 w-full opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-primary cursor-cell py-2 rounded-b-sm text-sm shadow-md text-center block">
+                Add to Cart
+              </a>
+            </div>
+            <h2 class="text-base font-semibold mt-2">
+              Guilited Satin Jacket
+            </h2>
+            <div class="text-yellow-400">
+              <span class="text-secondary2 font-medium text-title16px">$660</span>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <span class="text-primary1 font-medium text-title-16px">(55)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full m-auto text-center mt-2">
+        <button
+          class="bg-red-600 text-white font-bold px-10 py-4 rounded-md hover:bg-red-700 transition duration-300 ease-in-out">
+          View All Products
+        </button>
+      </div>
+    </section>
+
+    <!-- New arrivals section -->
+    <section class="max-w-7xl mx-auto my-6 px-5">
+      <div id="new-arrival-title" class="mb-2 flex items-center h-7">
+        <div class="bg-[#DB4444] text-[#DB4444] w-3 h-full rounded mr-3">2</div>
+        <span class="text-[#DB4444] text-md font-bold">New Arrival</span>
+      </div>
+    
+      <div id="explore-product" class="flex items-center mt-6 mb-6">
+        <h2 class="text-2xl lg:text-4xl font-bold">New Arrivals</h2>
+      </div>
+    
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 my-5">
+        <!-- Grid Left -->
+        <div class="relative w-full bg-black min-h-[400px] lg:h-[500px] px-5 flex items-center justify-center">
+          <div class="h-[300px] md:h-[400px] rounded-t-xl">
+            <img src="public/product-img/playstation.png" alt="Playstation" class="h-full object-cover" />
+          </div>
+          <div class="absolute bottom-8 left-5 text-white">
+            <h2 class="text-3xl font-bold mb-4">Play Station 5</h2>
+            <div class="font-extralight mb-4">
+              <p>Black and White version of the PS5</p>
+              <p>coming out on sale</p>
+            </div>
+            <a href="/" class="text-xl underline">Shop Now</a>
+          </div>
+        </div>
+    
+        <!-- Grid Right -->
+        <div class="grid grid-cols-1 gap-5 lg:h-[500px]">
+          <!-- Grid Top -->
+          <div class="relative w-full bg-black min-h-[250px] lg:h-[250px] px-5 flex items-center justify-end">
+            <div class="flex items-center justify-center lg:justify-end rounded-t-xl">
+              <img src="public/product-img/women.png" alt="Women's Collection" class="h-[250px] object-cover" />
+            </div>
+            <div class="absolute bottom-8 left-5 text-white">
+              <h2 class="text-3xl font-bold mb-4">Women's Collections</h2>
+              <div class="text-white mb-4">
+                <p>Feature women collections that</p>
+                <p>give you another vibe</p>
+              </div>
+              <a href="/" class="text-xl underline">Shop Now</a>
+            </div>
+          </div>
+    
+          <!-- Grid Bottom -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+            <!-- Bottom Left -->
+            <div class="relative w-full bg-black min-h-[230px] px-5 flex items-center justify-center">
+              <div class="flex items-center justify-end rounded-t-xl">
+                <img src="public/product-img/speaker.png" alt="Speaker" class="h-[170px] object-cover" />
+              </div>
+              <div class="absolute bottom-6 left-5 text-white">
+                <h2 class="text-2xl font-bold mb-1">Speaker</h2>
+                <div class="text-sm mb-1">
+                  <p>Amazon wireless speakers</p>
+                </div>
+                <a href="/" class="text-lg underline">Shop Now</a>
+              </div>
+            </div>
+    
+            <!-- Bottom Right -->
+            <div class="relative w-full bg-black min-h-[230px] px-5 flex items-center justify-center">
+              <div class="flex items-center justify-end rounded-t-xl">
+                <img src="public/product-img/terkob.png" alt="Perfume" class="h-[170px] object-cover" />
+              </div>
+              <div class="absolute bottom-6 left-5 text-white">
+                <h2 class="text-2xl font-bold mb-1">Perfume</h2>
+                <div class="text-sm mb-1">
+                  <p>GUCCI INTENSE OUD</p>
+                </div>
+                <a href="/" class="text-lg underline">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="max-w-7xl mx-auto px-5 py-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
+        
+        <!-- Feature 1 -->
+        <div class="flex flex-col items-center">
+          <div class="w-20 h-20 bg-black rounded-full flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 128 128" id="truckfastdelivery" width="60px" height="60px">
+              <path stroke="#fefefe" stroke-linecap="round" stroke-width="7" d="M32.5 25H56C67.3137 25 72.9706 25 76.4853 28.5147C80 32.0294 80 37.6863 80 49V94H46M19 94H29.675" class="colorStroke000000 svgStroke"></path>
+              <path stroke="#fefefe" stroke-width="7" d="M78.766 52H86.7504C91.8896 52 94.4592 52 96.747 52.9941C99.0348 53.9882 100.788 55.8666 104.295 59.6235L106.96 62.479C108.746 64.3917 109.638 65.3481 110.291 66.4367C110.97 67.5693 111.458 68.8062 111.734 70.0977C112 71.339 112 72.6472 112 75.2637V84.1702C112 89.5991 107.599 94 102.17 94V94M68 94H85.0851" class="colorStroke000000 svgStroke"></path>
+              <circle cx="36.5" cy="94.5" r="9.5" stroke="#fefefe" stroke-width="7" class="colorStroke000000 svgStroke"></circle>
+              <circle cx="95.5" cy="94.5" r="9.5" stroke="#fefefe" stroke-width="7" class="colorStroke000000 svgStroke"></circle>
+              <path stroke="#fefefe" stroke-linecap="round" stroke-width="7" d="M19 39H43M15 55L33 55M19 71H41" class="colorStroke000000 svgStroke"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold mb-1">FREE AND FAST DELIVERY</h3>
+          <p class="text-sm text-gray-600">Free delivery for all orders over $140</p>
+        </div>
+    
+        <!-- Feature 2 -->
+        <div class="flex flex-col items-center">
+          <div class="w-20 h-20 bg-black rounded-full flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" id="headset" width="60px" height="60px">
+              <path d="M93.8033 247.315C93.97 242.392 93.7544 237.437 93.81 232.508C94.7913 145.545 164.049 79.5616 249.941 75.5643C333.219 73.4857 407.706 132.797 417.426 216.548C418.624 226.869 417.881 237.001 418.288 247.315C435.868 262.523 437.622 273.237 437.6 296.168C437.578 317.824 434.057 334.396 412.063 345.492C408.728 347.175 405.031 348.034 401.777 349.857L401.411 350.066C399.569 354.662 399.403 359.616 398.152 364.359C390.087 394.939 364.596 419.351 332.986 424.079C325.421 425.211 317.758 425.149 310.129 425.154L287.257 425.147C277.18 438.987 257.093 438.293 241.567 436.18C214.982 432.562 212.973 394.001 239.627 388.618C244.207 387.693 266.916 387.519 271.396 388.254C278.099 389.352 283.381 393.345 287.257 398.792L311.911 398.807C317.785 398.808 323.876 399.127 329.691 398.19C347.496 395.322 365.405 381.513 371.066 364.309C360.359 367.653 347.731 363.08 346.656 350.436C346.068 343.524 346.487 336.286 346.486 329.333L346.483 258.953C346.473 253.252 345.799 246.346 347.001 240.838C350.397 225.277 372.356 223.154 381.866 238.27L391.74 238.27C391.784 231.216 391.079 224.284 390.525 217.261C384.94 190.832 376.086 168.786 356.676 148.862L356.211 148.898C343.889 149.817 339.497 141.791 330.606 135.591C286.002 104.491 219.221 103.29 176.893 138.991C167.065 147.28 168.384 148.722 154.422 148.862L153.902 149.413C132.927 171.966 119.717 207.506 120.908 238.27L130.828 238.27C136.156 227.785 149.7 225.146 158.851 232.28C168.719 239.972 165.883 253.727 165.883 264.713L165.887 334.976C165.89 340.314 166.375 346.167 165.586 351.438C162.558 371.678 130.641 371.319 129.289 350.066C124.195 350.074 118.989 350.285 113.917 349.785C92.9994 347.724 76.4625 329.327 74.8515 308.723C74.5238 304.532 74.7289 300.198 74.7355 295.992C74.7683 275.357 75.998 261.785 93.8033 247.315ZM247.757 85.7319C216.037 89.9866 196.235 93.797 168.104 112.913C163.876 115.786 155.221 121.956 152.134 125.836C147.312 131.898 152.989 140.06 160.467 138.415C163.17 137.82 171.467 129.772 174.663 127.501C203.612 106.926 229.261 101.844 263.301 101.992C295.289 104.486 322.363 113.905 346.997 135.687C356.524 144.112 365.57 132.396 359.076 125.049C355.744 121.28 350.338 117.698 346.195 114.786C317.238 94.4326 282.951 84.7279 247.757 85.7319ZM371.066 137.424C369.501 139.438 368.112 141.757 366.455 143.67L366.675 144.014C369.952 149.074 374.462 153.233 377.776 158.306C393.446 182.295 403.056 211.276 402.099 240.149C402.881 240.155 403.804 240.264 404.568 240.149L408.277 241.453C408.71 204.297 398.785 171.952 375.063 142.561C373.716 140.892 372.204 139.239 371.066 137.424ZM141.021 137.424C115.7 164.874 103.013 204.457 104.053 241.453C105.33 241.027 106.607 240.604 107.875 240.149L110.606 239.276C110.28 206.733 122.121 167.553 145.322 143.67C144.506 142.615 141.681 137.77 141.021 137.424ZM363.529 238.27C352.78 240.249 356.676 256.228 356.677 265.396L356.676 336.633C356.678 344.434 354.273 356.727 366.455 355.192C376.102 352.272 372.67 329.933 372.672 321.219L372.669 256.224C372.665 249.302 374.698 236.747 363.529 238.27ZM146.686 238.27C141.855 239.403 139.616 241.912 139.474 246.723C139.25 254.278 139.461 261.903 139.462 269.464L139.469 336.657C139.472 344.427 136.83 356.731 148.534 356.25C159.416 353.292 155.504 333.274 155.506 323.52L155.5 256.295C155.497 249.016 157.373 238.382 146.686 238.27ZM117.664 248.257C91.2678 251.572 85.2334 273.039 85.1792 295.816C85.1408 311.981 85.87 325.543 101.978 335.158C111.116 340.27 119.192 339.746 129.289 339.719L129.289 248.257C125.475 248.189 121.464 247.933 117.664 248.257ZM382.786 248.257C382.382 249.04 383.114 330.656 382.786 339.719C397.029 339.773 405.477 340.47 416.687 329.927C432.044 314.286 432.271 274.515 416.362 259.019C405.221 248.167 396.519 248.881 382.786 248.257ZM382.786 350.066C384.531 361.9 379.009 373.614 372.08 382.923C355.395 405.341 335.358 409.215 309.791 409.229L290.252 409.223L290.252 414.827C292.788 414.919 295.275 414.946 297.812 414.827L315.028 414.837C319.378 414.835 323.749 414.929 328.081 414.478C363.069 410.832 386.03 383.599 390.525 350.066C387.927 349.918 385.383 349.892 382.786 350.066ZM243.888 398.792C227.944 398.966 225.972 422.33 241.537 426.057C245.675 427.048 262.486 426.702 267.695 426.443C284.189 424.368 284.65 400.837 270.208 398.532C266.749 397.98 262.837 398.838 259.31 398.853C256.277 398.866 246.311 398.02 243.888 398.792Z" transform="scale(2)" fill="#fefefe" class="color000000 svgShape"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold mb-1">24/7 CUSTOMER SERVICE</h3>
+          <p class="text-sm text-gray-600">Friendly 24/7 customer support</p>
+        </div>
+    
+        <!-- Feature 3 -->
+        <div class="flex flex-col items-center">
+          <div class="w-20 h-20 bg-black rounded-full flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="Approve" width="60px" height="60px">
+              <path d="M24,4H8A4,4,0,0,0,4,8V24a4,4,0,0,0,4,4H24a4,4,0,0,0,4-4V8A4,4,0,0,0,24,4Zm2,20a2,2,0,0,1-2,2H8a2,2,0,0,1-2-2V8A2,2,0,0,1,8,6H24a2,2,0,0,1,2,2ZM20.27,12.064a1,1,0,0,1,.166,1.4l-4.964,6.3a1,1,0,0,1-.786.381h-.01a1,1,0,0,1-.787-.4l-2.337-3.087a1,1,0,0,1,1.6-1.207L14.7,17.514l4.163-5.283A1,1,0,0,1,20.27,12.064Z" fill="#fefefe" class="color000000 svgShape"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold mb-1">MONEY BACK GUARANTEE</h3>
+          <p class="text-sm text-gray-600">We return money within 30 days</p>
+        </div>
+    
+      </div>
+    </section>
+    
+    
+  </main>
+
+  <footer class="bg-black text-white py-12">
+    <div class="container mx-auto px-4">
+      <!-- Main Footer Content -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 xl:grid-cols-5">
+        <!-- Exclusive Section -->
+        <div class="mb-6 md:mb-0">
+          <h2 class="text-xl font-bold mb-4">Exclusive</h2>
+          <p class="text-sm mb-4">Subscribe</p>
+          <p class="text-sm mb-4">Get 10% off your first order</p>
+          <div class="flex items-center border border-gray-700 rounded-md overflow-hidden">
+            <input type="email" placeholder="Enter your email"
+              class="bg-transparent border-none outline-none px-3 py-2 w-full text-white" />
+            <button class="px-3 py-2 bg-transparent">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Support Section -->
+        <div class="mb-6 md:mb-0">
+          <h2 class="text-xl font-bold mb-4">Support</h2>
+          <p class="text-sm mb-2">111 Bijoy sarani, Dhaka,</p>
+          <p class="text-sm mb-4">DH 1515, Bangladesh.</p>
+          <p class="text-sm mb-2">exclusive@gmail.com</p>
+          <p class="text-sm mb-2">+88015-88888-9999</p>
+        </div>
+
+        <!-- Account Section -->
+        <div class="mb-6 md:mb-0">
+          <h2 class="text-xl font-bold mb-4">Account</h2>
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="text-sm hover:text-gray-300">My Account</a>
+            </li>
+            <li>
+              <a href="#" class="text-sm hover:text-gray-300">Login / Register</a>
+            </li>
+            <li>
+              <a href="#" class="text-sm hover:text-gray-300">Cart</a>
+            </li>
+            <li>
+              <a href="#" class="text-sm hover:text-gray-300">Wishlist</a>
+            </li>
+            <li>
+              <a href="#" class="text-sm hover:text-gray-300">Shop</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Quick Link Section -->
+        <div class="mb-6 md:mb-0">
+          <h2 class="text-xl font-bold mb-4">Quick Link</h2>
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="text-sm hover:text-gray-300">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#" class="text-sm hover:text-gray-300">Terms Of Use</a>
+            </li>
+            <li>
+              <a href="#" class="text-sm hover:text-gray-300">FAQ</a>
+            </li>
+            <li>
+              <a href="#" class="text-sm hover:text-gray-300">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Download App Section -->
+        <div class="mb-6 md:mb-0">
+          <div class="mb-6 self-center">
+            <h3 class="text-lg font-semibold mb-4">Download App</h3>
+            <p class="text-sm mb-4">Save $3 with App New User Only</p>
+            <div class="flex flex-row items-center justify-start">
+              <div class="mr-4 mb-4 md:mb-0">
+                <img src="./public/footer/qr.png" alt="QR Code" class="w-24 h-24" />
+              </div>
+              <div class="flex flex-col space-y-2">
+                <a href="#" class="block">
+                  <img src="./public/footer/googleplaystore.png" alt="Google Play" class="h-10" />
+                </a>
+                <a href="#" class="block">
+                  <img src="./public/footer/appstore.png" alt="App Store" class="h-10 w-34" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Social Media Icons -->
+          <div class="flex space-x-4 justify-start lg:justify-start mt-6">
+            <a href="#" class="text-white hover:text-gray-300">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="text-white hover:text-gray-300">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-white hover:text-gray-300">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-white hover:text-gray-300">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <hr class="my-4" />
+        <p class="text-sm text-gray-400">
+          © Copyright Rimel 2022. All right reserved
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+  <script src="./src/js/navbar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: false, // Ensures it repeats every scroll
+      mirror: true,
+      reset: true,
+    });
+  </script>
+</body>
+
 </html>
