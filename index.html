@@ -1282,31 +1282,33 @@
         <div class="bg-[#DB4444] text-[#DB4444] w-3 h-full rounded mr-3">2</div>
         <span class="text-[#DB4444] text-md font-bold">New Arrival</span>
       </div>
+    
       <div id="explore-product" class="flex items-center mt-6 mb-6">
         <h2 class="text-2xl lg:text-4xl font-bold">New Arrivals</h2>
       </div>
+    
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 my-5">
         <!-- Grid Left -->
-        <div class="w-full bg-black h-[500px] px-5 flex items-center justify-center relative">
-          <div class="h-[400px] rounded-t-xl">
-            <img src="public/product-img/playstation.png" alt="" class="h-full  object-cover" />
+        <div class="relative w-full bg-black min-h-[400px] lg:h-[500px] px-5 flex items-center justify-center">
+          <div class="h-[300px] md:h-[400px] rounded-t-xl">
+            <img src="public/product-img/playstation.png" alt="Playstation" class="h-full object-cover" />
           </div>
           <div class="absolute bottom-8 left-5 text-white">
             <h2 class="text-3xl font-bold mb-4">Play Station 5</h2>
             <div class="font-extralight mb-4">
-              <p class="font-extralight">Black and White version of the PS5</p>
-              <p class="font-extralight">comming out on sale</p>
+              <p>Black and White version of the PS5</p>
+              <p>coming out on sale</p>
             </div>
             <a href="/" class="text-xl underline">Shop Now</a>
           </div>
         </div>
-
+    
         <!-- Grid Right -->
-        <div class="grid grid-cols-1 gap-5 xl:h-[500px] mb-2.5">
+        <div class="grid grid-cols-1 gap-5 lg:h-[500px]">
           <!-- Grid Top -->
-          <div class="w-full bg-black h-[500px] lg:h-[250px] px-5 flex items-center justify-end relative">
-            <div class="h-auto flex items-center justify-center lg:justify-end rounded-t-xl">
-              <img src="public/product-img/women.png" alt="" class="h-[400px] lg:h-[250px] object-cover" />
+          <div class="relative w-full bg-black min-h-[250px] lg:h-[250px] px-5 flex items-center justify-end">
+            <div class="flex items-center justify-center lg:justify-end rounded-t-xl">
+              <img src="public/product-img/women.png" alt="Women's Collection" class="h-[250px] object-cover" />
             </div>
             <div class="absolute bottom-8 left-5 text-white">
               <h2 class="text-3xl font-bold mb-4">Women's Collections</h2>
@@ -1317,31 +1319,32 @@
               <a href="/" class="text-xl underline">Shop Now</a>
             </div>
           </div>
-          <!-- grid Bottom -->
-          <div class="w-full h-[500px] lg:h-[250px] grid grid-cols-1 lg:grid-cols-2 space-y-2.5 lg:gap-6">
-            <!-- Grid left -->
-            <div class="w-full h-[500px] lg:h-[250px] mb-2 lg:mb-0 bg-black px-5 flex items-center justify-center relative">
-              <div class="h-[500px] lg:h-[170px] flex items-center justify-end rounded-t-xl">
-                <img src="public/product-img/speaker.png" alt="" class="h-[300px] lg:h-[170px] object-cover" />
+    
+          <!-- Grid Bottom -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+            <!-- Bottom Left -->
+            <div class="relative w-full bg-black min-h-[230px] px-5 flex items-center justify-center">
+              <div class="flex items-center justify-end rounded-t-xl">
+                <img src="public/product-img/speaker.png" alt="Speaker" class="h-[170px] object-cover" />
               </div>
               <div class="absolute bottom-6 left-5 text-white">
                 <h2 class="text-2xl font-bold mb-1">Speaker</h2>
-                <div class="text-white text-sm mb-1">
+                <div class="text-sm mb-1">
                   <p>Amazon wireless speakers</p>
                 </div>
                 <a href="/" class="text-lg underline">Shop Now</a>
               </div>
             </div>
-
-            <!-- Grid right -->
-            <div class="w-full h-[500px] lg:h-[250px] mb-2 lg:mb-0 bg-black px-5 flex items-center justify-center relative">
-              <div class="h-[500px] lg:h-[170px] flex items-center justify-center rounded-t-xl">
-                <img src="public/product-img/terkob.png" alt="" class="h-[300px] lg:h-[170px] object-cover" />
+    
+            <!-- Bottom Right -->
+            <div class="relative w-full bg-black min-h-[230px] px-5 flex items-center justify-center">
+              <div class="flex items-center justify-end rounded-t-xl">
+                <img src="public/product-img/terkob.png" alt="Perfume" class="h-[170px] object-cover" />
               </div>
               <div class="absolute bottom-6 left-5 text-white">
                 <h2 class="text-2xl font-bold mb-1">Perfume</h2>
-                <div class="text-white text-sm mb-1">
-                  <p>GUCCI INTENSE OUDEDP</p>
+                <div class="text-sm mb-1">
+                  <p>GUCCI INTENSE OUD</p>
                 </div>
                 <a href="/" class="text-lg underline">Shop Now</a>
               </div>
@@ -1350,6 +1353,52 @@
         </div>
       </div>
     </section>
+
+    <!-- Services -->
+    <section class="max-w-7xl mx-auto px-5 py-10">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center">
+        
+        <!-- Feature 1 -->
+        <div class="flex flex-col items-center">
+          <div class="w-20 h-20 bg-black rounded-full flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 128 128" id="truckfastdelivery" width="60px" height="60px">
+              <path stroke="#fefefe" stroke-linecap="round" stroke-width="7" d="M32.5 25H56C67.3137 25 72.9706 25 76.4853 28.5147C80 32.0294 80 37.6863 80 49V94H46M19 94H29.675" class="colorStroke000000 svgStroke"></path>
+              <path stroke="#fefefe" stroke-width="7" d="M78.766 52H86.7504C91.8896 52 94.4592 52 96.747 52.9941C99.0348 53.9882 100.788 55.8666 104.295 59.6235L106.96 62.479C108.746 64.3917 109.638 65.3481 110.291 66.4367C110.97 67.5693 111.458 68.8062 111.734 70.0977C112 71.339 112 72.6472 112 75.2637V84.1702C112 89.5991 107.599 94 102.17 94V94M68 94H85.0851" class="colorStroke000000 svgStroke"></path>
+              <circle cx="36.5" cy="94.5" r="9.5" stroke="#fefefe" stroke-width="7" class="colorStroke000000 svgStroke"></circle>
+              <circle cx="95.5" cy="94.5" r="9.5" stroke="#fefefe" stroke-width="7" class="colorStroke000000 svgStroke"></circle>
+              <path stroke="#fefefe" stroke-linecap="round" stroke-width="7" d="M19 39H43M15 55L33 55M19 71H41" class="colorStroke000000 svgStroke"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold mb-1">FREE AND FAST DELIVERY</h3>
+          <p class="text-sm text-gray-600">Free delivery for all orders over $140</p>
+        </div>
+    
+        <!-- Feature 2 -->
+        <div class="flex flex-col items-center">
+          <div class="w-20 h-20 bg-black rounded-full flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" id="headset" width="60px" height="60px">
+              <path d="M93.8033 247.315C93.97 242.392 93.7544 237.437 93.81 232.508C94.7913 145.545 164.049 79.5616 249.941 75.5643C333.219 73.4857 407.706 132.797 417.426 216.548C418.624 226.869 417.881 237.001 418.288 247.315C435.868 262.523 437.622 273.237 437.6 296.168C437.578 317.824 434.057 334.396 412.063 345.492C408.728 347.175 405.031 348.034 401.777 349.857L401.411 350.066C399.569 354.662 399.403 359.616 398.152 364.359C390.087 394.939 364.596 419.351 332.986 424.079C325.421 425.211 317.758 425.149 310.129 425.154L287.257 425.147C277.18 438.987 257.093 438.293 241.567 436.18C214.982 432.562 212.973 394.001 239.627 388.618C244.207 387.693 266.916 387.519 271.396 388.254C278.099 389.352 283.381 393.345 287.257 398.792L311.911 398.807C317.785 398.808 323.876 399.127 329.691 398.19C347.496 395.322 365.405 381.513 371.066 364.309C360.359 367.653 347.731 363.08 346.656 350.436C346.068 343.524 346.487 336.286 346.486 329.333L346.483 258.953C346.473 253.252 345.799 246.346 347.001 240.838C350.397 225.277 372.356 223.154 381.866 238.27L391.74 238.27C391.784 231.216 391.079 224.284 390.525 217.261C384.94 190.832 376.086 168.786 356.676 148.862L356.211 148.898C343.889 149.817 339.497 141.791 330.606 135.591C286.002 104.491 219.221 103.29 176.893 138.991C167.065 147.28 168.384 148.722 154.422 148.862L153.902 149.413C132.927 171.966 119.717 207.506 120.908 238.27L130.828 238.27C136.156 227.785 149.7 225.146 158.851 232.28C168.719 239.972 165.883 253.727 165.883 264.713L165.887 334.976C165.89 340.314 166.375 346.167 165.586 351.438C162.558 371.678 130.641 371.319 129.289 350.066C124.195 350.074 118.989 350.285 113.917 349.785C92.9994 347.724 76.4625 329.327 74.8515 308.723C74.5238 304.532 74.7289 300.198 74.7355 295.992C74.7683 275.357 75.998 261.785 93.8033 247.315ZM247.757 85.7319C216.037 89.9866 196.235 93.797 168.104 112.913C163.876 115.786 155.221 121.956 152.134 125.836C147.312 131.898 152.989 140.06 160.467 138.415C163.17 137.82 171.467 129.772 174.663 127.501C203.612 106.926 229.261 101.844 263.301 101.992C295.289 104.486 322.363 113.905 346.997 135.687C356.524 144.112 365.57 132.396 359.076 125.049C355.744 121.28 350.338 117.698 346.195 114.786C317.238 94.4326 282.951 84.7279 247.757 85.7319ZM371.066 137.424C369.501 139.438 368.112 141.757 366.455 143.67L366.675 144.014C369.952 149.074 374.462 153.233 377.776 158.306C393.446 182.295 403.056 211.276 402.099 240.149C402.881 240.155 403.804 240.264 404.568 240.149L408.277 241.453C408.71 204.297 398.785 171.952 375.063 142.561C373.716 140.892 372.204 139.239 371.066 137.424ZM141.021 137.424C115.7 164.874 103.013 204.457 104.053 241.453C105.33 241.027 106.607 240.604 107.875 240.149L110.606 239.276C110.28 206.733 122.121 167.553 145.322 143.67C144.506 142.615 141.681 137.77 141.021 137.424ZM363.529 238.27C352.78 240.249 356.676 256.228 356.677 265.396L356.676 336.633C356.678 344.434 354.273 356.727 366.455 355.192C376.102 352.272 372.67 329.933 372.672 321.219L372.669 256.224C372.665 249.302 374.698 236.747 363.529 238.27ZM146.686 238.27C141.855 239.403 139.616 241.912 139.474 246.723C139.25 254.278 139.461 261.903 139.462 269.464L139.469 336.657C139.472 344.427 136.83 356.731 148.534 356.25C159.416 353.292 155.504 333.274 155.506 323.52L155.5 256.295C155.497 249.016 157.373 238.382 146.686 238.27ZM117.664 248.257C91.2678 251.572 85.2334 273.039 85.1792 295.816C85.1408 311.981 85.87 325.543 101.978 335.158C111.116 340.27 119.192 339.746 129.289 339.719L129.289 248.257C125.475 248.189 121.464 247.933 117.664 248.257ZM382.786 248.257C382.382 249.04 383.114 330.656 382.786 339.719C397.029 339.773 405.477 340.47 416.687 329.927C432.044 314.286 432.271 274.515 416.362 259.019C405.221 248.167 396.519 248.881 382.786 248.257ZM382.786 350.066C384.531 361.9 379.009 373.614 372.08 382.923C355.395 405.341 335.358 409.215 309.791 409.229L290.252 409.223L290.252 414.827C292.788 414.919 295.275 414.946 297.812 414.827L315.028 414.837C319.378 414.835 323.749 414.929 328.081 414.478C363.069 410.832 386.03 383.599 390.525 350.066C387.927 349.918 385.383 349.892 382.786 350.066ZM243.888 398.792C227.944 398.966 225.972 422.33 241.537 426.057C245.675 427.048 262.486 426.702 267.695 426.443C284.189 424.368 284.65 400.837 270.208 398.532C266.749 397.98 262.837 398.838 259.31 398.853C256.277 398.866 246.311 398.02 243.888 398.792Z" transform="scale(2)" fill="#fefefe" class="color000000 svgShape"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold mb-1">24/7 CUSTOMER SERVICE</h3>
+          <p class="text-sm text-gray-600">Friendly 24/7 customer support</p>
+        </div>
+    
+        <!-- Feature 3 -->
+        <div class="flex flex-col items-center">
+          <div class="w-20 h-20 bg-black rounded-full flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="Approve" width="60px" height="60px">
+              <path d="M24,4H8A4,4,0,0,0,4,8V24a4,4,0,0,0,4,4H24a4,4,0,0,0,4-4V8A4,4,0,0,0,24,4Zm2,20a2,2,0,0,1-2,2H8a2,2,0,0,1-2-2V8A2,2,0,0,1,8,6H24a2,2,0,0,1,2,2ZM20.27,12.064a1,1,0,0,1,.166,1.4l-4.964,6.3a1,1,0,0,1-.786.381h-.01a1,1,0,0,1-.787-.4l-2.337-3.087a1,1,0,0,1,1.6-1.207L14.7,17.514l4.163-5.283A1,1,0,0,1,20.27,12.064Z" fill="#fefefe" class="color000000 svgShape"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold mb-1">MONEY BACK GUARANTEE</h3>
+          <p class="text-sm text-gray-600">We return money within 30 days</p>
+        </div>
+    
+      </div>
+    </section>
+    
+    
   </main>
 
   <footer class="bg-black text-white py-12">
