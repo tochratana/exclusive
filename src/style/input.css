@@ -15,7 +15,7 @@
   --color-hover-button2: #e07575;
   /* TODO Font family */
   --font-poppins: "Poppins", sans-serif;
-  --font-display:  "Poppins", sans-serif;
+  --font-display: "Poppins", sans-serif;
   --font-inter: "Inter", sans-serif;
   /* TODO Font size  */
 
@@ -24,6 +24,17 @@
   --text-title16px: 16px;
   --text-title12px: 12px;
   --text-subtitle: 36px;
-  --color-button2: #DB4444;
-  --color-hover-button2: #E07575;
+  --color-button2: #db4444;
+  --color-hover-button2: #e07575;
+}
+
+/* Hide scrollbar for Chrome, Safari, Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

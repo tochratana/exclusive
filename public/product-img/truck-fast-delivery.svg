@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 128 128" id="truckfastdelivery">
+  <path stroke="#fefefe" stroke-linecap="round" stroke-width="7" d="M32.5 25H56C67.3137 25 72.9706 25 76.4853 28.5147C80 32.0294 80 37.6863 80 49V94H46M19 94H29.675" class="colorStroke000000 svgStroke"></path>
+  <path stroke="#fefefe" stroke-width="7" d="M78.766 52H86.7504C91.8896 52 94.4592 52 96.747 52.9941C99.0348 53.9882 100.788 55.8666 104.295 59.6235L106.96 62.479C108.746 64.3917 109.638 65.3481 110.291 66.4367C110.97 67.5693 111.458 68.8062 111.734 70.0977C112 71.339 112 72.6472 112 75.2637V84.1702C112 89.5991 107.599 94 102.17 94V94M68 94H85.0851" class="colorStroke000000 svgStroke"></path>
+  <circle cx="36.5" cy="94.5" r="9.5" stroke="#fefefe" stroke-width="7" class="colorStroke000000 svgStroke"></circle>
+  <circle cx="95.5" cy="94.5" r="9.5" stroke="#fefefe" stroke-width="7" class="colorStroke000000 svgStroke"></circle>
+  <path stroke="#fefefe" stroke-linecap="round" stroke-width="7" d="M19 39H43M15 55L33 55M19 71H41" class="colorStroke000000 svgStroke"></path>
+</svg>
