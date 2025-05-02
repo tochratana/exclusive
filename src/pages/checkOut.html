@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style/output.css" />
-    <title>CheckOut</title>
+    <link
+      rel="shortcut icon"
+      href="/public/asset/icon.png"
+      type="image/x-icon"
+    />
+    <title>Exclusive</title>
   </head>
   <body class="font-display">
     <header class="sticky top-0">
@@ -213,7 +218,9 @@
       id="sidebar-overlay"
       class="fixed inset-0 bg-black opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out"
     ></div>
-    <main class="mx-10 my-6 grid grid-cols-1 place-items-center gap-10 md:grid-cols-2 md:mx-20 md:gap-20">
+    <main
+      class="mx-10 my-6 grid grid-cols-1 place-items-center gap-10 md:grid-cols-2 md:mx-20 md:gap-20"
+    >
       <section class="space-y-6 mx-3 md:mx-5 w-full">
         <div>
           <p class="text-sm text-[var(--color-text1)]">
@@ -280,7 +287,7 @@
           <div class="flex items-center justify-between">
             <div class="flex items-center gap-2">
               <img
-                src="../../public/checkOut/gamingpad.png"
+                src="/public/asset/handgame.png"
                 alt="gaming pad"
                 class="w-1/7"
               />
@@ -323,9 +330,13 @@
               <span>Bank</span>
             </div>
             <div class="flex items-center justify-end">
-              <img src="../../public/checkOut/visa.png" alt="visa logo" class="w-1/9" />
               <img
-                src="../../public/checkOut/mastercard.png"
+                src="/public/checkOut/visa.png"
+                alt="visa logo"
+                class="w-1/9"
+              />
+              <img
+                src="/public/checkOut/mastercard.png"
                 alt="mastercard logo"
                 class="w-1/9"
               />
@@ -337,15 +348,27 @@
             </div>
           </div>
           <div class="flex items-center gap-2">
-            <input class="w-5 h-5 accent-black" type="radio"/>
+            <input class="w-5 h-5 accent-black" type="radio" />
             <label>Cash on delivery</label>
           </div>
           <div class="space-y-4">
             <div class="w-full space-y-4 lg:space-y-0 lg:flex gap-2">
-              <input class="w-full lg:w-md p-2 border border-gray-900 rounded-sm" type="text" placeholder="Coupon Code" />
-              <button class="w-full lg:w-sm text-white p-2 bg-[var(--color-button2)] hover:bg-[var(--color-hover-button2)] rounded-sm">Apply Coupon</button>
+              <input
+                class="w-full lg:w-md p-2 border border-gray-900 rounded-sm"
+                type="text"
+                placeholder="Coupon Code"
+              />
+              <button
+                class="w-full lg:w-sm text-white p-2 bg-[var(--color-button2)] hover:bg-[var(--color-hover-button2)] rounded-sm"
+              >
+                Apply Coupon
+              </button>
             </div>
-            <button class="w-full text-white p-2 lg:w-2/5 bg-[var(--color-button2)] hover:bg-[var(--color-hover-button2)] rounded-sm">Place order</button>
+            <button
+              class="w-full text-white p-2 lg:w-2/5 bg-[var(--color-button2)] hover:bg-[var(--color-hover-button2)] rounded-sm"
+            >
+              Place order
+            </button>
           </div>
         </div>
       </section>
