@@ -11,12 +11,17 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../style/output.css" />
-    <title>Document</title>
+    <link
+      rel="icon"
+      href="/public/asset/icon.png"
+      type="image/x-icon"
+    />
+    <title>Exclusive</title>
   </head>
   <body class="font-display">
-    <header class="sticky top-0">
+    <header class="sticky top-0 z-10">
       <!-- Promo Banner -->
-      <div class="bg-black text-white text-centergi t py-2 px-4">
+      <div class="bg-black text-white text-center py-2 px-4">
         <div class="flex justify-center items-center space-x-2">
           <p class="text-sm md:text-base">
             Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
@@ -42,17 +47,17 @@
             <div class="hidden md:flex gap-5 lg:gap-10">
               <a href="/" class="text-gray-800 hover:text-gray-600">Home</a>
               <a
-                href="./src/pages/contact.html"
+                href="./contact.html"
                 class="text-gray-800 hover:text-gray-600"
                 >Contact</a
               >
               <a
-                href="./src/pages/about.html"
+                href="./about.html"
                 class="text-gray-800 hover:text-gray-600"
                 >About</a
               >
               <a
-                href="./src/pages/signup.html"
+                href="./signup.html"
                 class="text-gray-800 hover:text-gray-600"
                 >Sign Up</a
               >
@@ -104,7 +109,7 @@
                   />
                 </svg>
               </a>
-              <a href="#" class="text-gray-800">
+              <a href="./src/pages/addCart.html" class="text-gray-800">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6"
@@ -172,7 +177,7 @@
     </header>
     <main class="max-w-6xl mx-auto p-6 pb-[150px]">
       <div class="py-12">
-        <span class="text-gray-500">Home</span>
+        <a href="/index.html" class="text-gray-500">Home</a>
         <span>/</span>
         <span>Cart</span>
       </div>
@@ -222,18 +227,18 @@
                       <!-- <span class="line-through text-gray-500">$99</span> -->
                       $70
                     </td>
-                    <td class="py-4 px-4 flex items-center space-x-2">
+                    <td class="py-6 px-4 flex items-center space-x-2">
                       <button
                         type="button"
-                        class="border px-2"
+                        class="border px-2 rounded-sm border-none shadow"
                         onclick="updateQty(-1,1)"
                       >
                         -
                       </button>
-                      <span id="qty1" class="w-12 text-center border">1</span>
+                      <span id="qty1" class="w-12 text-center border rounded-sm border-none shadow">1</span>
                       <button
                         type="button"
-                        class="border px-2"
+                        class="border px-2 rounded-sm border-none shadow"
                         onclick="updateQty(1, 1)"
                       >
                         +
@@ -271,19 +276,19 @@
                       <div class="flex items-center space-x-2">
                         <button
                           type="button"
-                          class="border px-2"
+                          class="border px-2 rounded-sm border-none shadow"
                           onclick="updateQty(-1, 2)"
                         >
                           -
                         </button>
                         <span
                           id="qty2"
-                          class="w-12 border inline-block text-center"
+                          class="w-12 border inline-block text-center rounded-sm border-none shadow"
                           >1</span
                         >
                         <button
                           type="button"
-                          class="border px-2"
+                          class="border px-2 rounded-sm border-none shadow"
                           onclick="updateQty(1, 2)"
                         >
                           +
@@ -302,12 +307,12 @@
             <!-- Cart action buttons  -->
             <div class="flex justify-between items-center mt-4">
               <button
-                class="flex items-center space-x-2 text-black border border-gray-500 px-4 py-2 rounded"
+                class="flex items-center space-x-2 text-black border border-gray-500 px-4 py-2 rounded hover:shadow-lg"
               >
-                <span class="px-6 text-[14px]">Return To Shop</span>
+                <span class="px-6 text-[14px] ">Return To Shop</span>
               </button>
               <button
-                class="text-black border border-gray-500 px-4 py-2 rounded"
+                class="text-black border border-gray-500 px-4 py-2 rounded hover:shadow-lg"
               >
                 <span class="px-6 text-[14px]">Update Cart</span>
               </button>
@@ -342,15 +347,17 @@
             <span>Total</span>
             <span id="finalTotal"></span>
           </div>
-          <button
-            class="w-full bg-red-700 hover:bg-red-500 text-white py-3 rounded mt-4"
-          >
-            <span>Process to checkout</span>
-          </button>
+          <a href="../pages/checkOut.html">
+            <button
+              class="w-full bg-red-700 hover:bg-red-500 text-white py-3 rounded mt-4 cursor-pointer"
+            >
+              <span>Process to checkout</span>
+            </button>
+          </a>
         </div>
       </div>
     </main>
-    <footer class="bg-black text-white py-12 ">
+    <footer class="bg-black text-white py-12">
       <div class="container mx-auto px-4">
         <!-- Main Footer Content -->
         <div
