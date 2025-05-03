@@ -330,6 +330,9 @@
   .left-\[12px\] {
     left: 12px;
   }
+  .z-2 {
+    z-index: 2;
+  }
   .z-10 {
     z-index: 10;
   }
@@ -513,6 +516,9 @@
   .table {
     display: table;
   }
+  .h-1\.5 {
+    height: calc(var(--spacing) * 1.5);
+  }
   .h-2 {
     height: calc(var(--spacing) * 2);
   }
@@ -554,6 +560,9 @@
   }
   .h-24 {
     height: calc(var(--spacing) * 24);
+  }
+  .h-25 {
+    height: calc(var(--spacing) * 25);
   }
   .h-30 {
     height: calc(var(--spacing) * 30);
@@ -713,6 +722,9 @@
   }
   .w-24 {
     width: calc(var(--spacing) * 24);
+  }
+  .w-25 {
+    width: calc(var(--spacing) * 25);
   }
   .w-34 {
     width: calc(var(--spacing) * 34);
@@ -1070,6 +1082,10 @@
     border-style: var(--tw-border-style);
     border-width: 0px;
   }
+  .border-1 {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -1101,6 +1117,9 @@
   .border-solid {
     --tw-border-style: solid;
     border-style: solid;
+  }
+  .border-black {
+    border-color: var(--color-black);
   }
   .border-blue-100 {
     border-color: var(--color-blue-100);
@@ -1219,6 +1238,9 @@
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
+  .p-1\.5 {
+    padding: calc(var(--spacing) * 1.5);
+  }
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
@@ -1264,6 +1286,9 @@
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
   }
+  .px-\[7px\] {
+    padding-inline: 7px;
+  }
   .px-\[10px\] {
     padding-inline: 10px;
   }
@@ -1278,6 +1303,9 @@
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
+  }
+  .py-1\.5 {
+    padding-block: calc(var(--spacing) * 1.5);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
@@ -1300,8 +1328,32 @@
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
   }
+  .py-\[3px\] {
+    padding-block: 3px;
+  }
   .py-\[4px\] {
     padding-block: 4px;
+  }
+  .py-\[5p6\] {
+    padding-block: 5p6;
+  }
+  .py-\[5px\] {
+    padding-block: 5px;
+  }
+  .py-\[6px\] {
+    padding-block: 6px;
+  }
+  .py-\[7\] {
+    padding-block: 7;
+  }
+  .py-\[7p\] {
+    padding-block: 7p;
+  }
+  .py-\[7px\] {
+    padding-block: 7px;
+  }
+  .py-\[9px\] {
+    padding-block: 9px;
   }
   .py-\[16px\] {
     padding-block: 16px;
