@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <link rel="stylesheet" href="../style/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body class="font-display">
     <header class="sticky top-0">
@@ -28,7 +35,7 @@
           <div class="flex justify-between items-center py-4">
             <!-- Logo -->
             <div class="flex items-center">
-              <h1 class="text-2xl font-bold">Exclusive</h1>
+              <a href="/" class="text-2xl font-bold">Exclusive</a>
             </div>
 
             <!-- Desktop Navigation Links -->
@@ -75,7 +82,7 @@
               </div>
 
               <!-- Icons -->
-              <a href="#" class="text-gray-800">
+              <a href="./addCart.html" class="text-gray-800">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6"
@@ -91,7 +98,7 @@
                   />
                 </svg>
               </a>
-              <a href="#" class="text-gray-800">
+              <a href="./wishlist.html" class="text-gray-800">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6"
@@ -106,6 +113,9 @@
                     d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
                   />
                 </svg>
+              </a>
+              <a href="./account.html" class="text-gray-800 text-lg">
+                <i class="fa-solid fa-user"></i>
               </a>
 
               <!-- Mobile Menu Button -->
@@ -216,49 +226,51 @@
 
     <!-- Login main -->
     <main class="mx-10 my-5">
-        <section
-          class="grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-2"
+      <section
+        class="grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-2"
+      >
+        <div class="w-full">
+          <img src="../../public/signupLogin/11455479.jpg" alt="Login" />
+        </div>
+        <div
+          class="block mx-auto w-full mt-4 md:w-3/4 lg:w-2/4 md:mt-0 space-y-8"
         >
-          <div class="w-full">
-            <img src="../../public/signupLogin/11455479.jpg" alt="Login" />
+          <div class="space-y-2">
+            <h3 class="text-3xl font-medium">Log in to Exclusive</h3>
+            <p class="text-sm">Enter your details below</p>
           </div>
-          <div
-            class="block mx-auto w-full mt-4 md:w-3/4 lg:w-2/4 md:mt-0 space-y-8"
-          >
-            <div class="space-y-2">
-              <h3 class="text-3xl font-medium">Log in to Exclusive</h3>
-              <p class="text-sm">Enter your details below</p>
+          <div class="block space-y-5">
+            <div>
+              <input
+                type="text"
+                class="focus:ring-0 w-full border-0"
+                placeholder="Email or Phone Number"
+              />
+              <hr />
             </div>
-            <div class="block space-y-5">
-              <div>
-                <input
-                  type="text"
-                  class="focus:ring-0 w-full border-0"
-                  placeholder="Email or Phone Number"
-                />
-                <hr />
-              </div>
-              <div>
-                <input
-                  type="text"
-                  class="focus:ring-0 w-full border-0"
-                  placeholder="Password"
-                />
-                <hr />
-              </div>
-            </div>
-            <div class="flex items-center justify-between gap-4">
-                <button
-                  type="submit"
-                  class="w-2/4 text-center bg-[var(--color-button2)] hover:bg-[var(--color-hover-button2)] text-white rounded-md py-2 px-2"
-                >
-                  Login
-                </button>
-                <a class="hover:text-[var(--color-hover-button2)]" href="#">Forget Password?</a>
+            <div>
+              <input
+                type="text"
+                class="focus:ring-0 w-full border-0"
+                placeholder="Password"
+              />
+              <hr />
             </div>
           </div>
-        </section>
-      </main>
+          <div class="flex items-center justify-between gap-4">
+            <button
+              type="submit"
+              class="w-2/4 text-center bg-[var(--color-button2)] hover:bg-[var(--color-hover-button2)] text-white rounded-md py-2 px-2"
+            >
+              <a href="./account.html"> Login </a>
+            </button>
+            <a class="hover:text-[var(--color-hover-button2)]" href="#"
+              >Forget Password?</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer class="bg-black text-white py-12">
       <div class="container mx-auto px-4">
@@ -302,7 +314,7 @@
                 <a href="#" class="text-sm hover:text-gray-300">My Account</a>
               </li>
               <li>
-                <a href="#" class="text-sm hover:text-gray-300"
+                <a href="./account.html" class="text-sm hover:text-gray-300"
                   >Login / Register</a
                 >
               </li>

@@ -330,9 +330,6 @@
   .left-\[12px\] {
     left: 12px;
   }
-  .z-2 {
-    z-index: 2;
-  }
   .z-10 {
     z-index: 10;
   }
@@ -1073,6 +1070,10 @@
     border-style: var(--tw-border-style);
     border-width: 0px;
   }
+  .border-1 {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -1104,6 +1105,9 @@
   .border-solid {
     --tw-border-style: solid;
     border-style: solid;
+  }
+  .border-black {
+    border-color: var(--color-black);
   }
   .border-blue-100 {
     border-color: var(--color-blue-100);
@@ -1303,8 +1307,29 @@
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
   }
+  .py-\[3px\] {
+    padding-block: 3px;
+  }
   .py-\[4px\] {
     padding-block: 4px;
+  }
+  .py-\[5p6\] {
+    padding-block: 5p6;
+  }
+  .py-\[5px\] {
+    padding-block: 5px;
+  }
+  .py-\[6px\] {
+    padding-block: 6px;
+  }
+  .py-\[7\] {
+    padding-block: 7;
+  }
+  .py-\[7p\] {
+    padding-block: 7p;
+  }
+  .py-\[7px\] {
+    padding-block: 7px;
   }
   .py-\[16px\] {
     padding-block: 16px;

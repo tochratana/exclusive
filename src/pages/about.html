@@ -1,8 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Basic Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Exclusive" />
+    <meta
+      name="description"
+      content="A platform that that use to sell product"
+    />
+    <meta
+      name="keywords"
+      content="E-commerce, Market place, computer, Accessories"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph (OG) Meta Tags for Social Media -->
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta
+      property="og:title"
+      content="Exclusive Deals on Tech | Computers, Phones & Cameras"
+    />
+    <meta
+      property="og:description"
+      content="Discover the best prices on top tech products. Shop computers, smartphones, cameras, and more at our exclusive online store."
+    />
+    <meta
+      property="og:image"
+      content="https://exclusive-istad.netlify.app/thumbnail.jpg"
+    />
+    <meta property="og:url" content="https://exclusive-istad.netlify.app/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Tech Deals Online | Computers, Phones, Cameras & More"
+    />
+    <meta
+      name="twitter:description"
+      content="Browse high-quality gadgets at unbeatable prices. Our online tech store offers a wide range of products including computers, phones, and cameras."
+    />
+    <meta
+      name="twitter:image"
+      content="https://exclusive-istad.netlify.app/thumbnail.jpg"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="../../public/asset/icon.png" type="image/x-icon" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="../style/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
     <link rel="stylesheet" href="../style/output.css" />
     <link
@@ -128,6 +184,9 @@
                   />
                 </svg>
               </a>
+              <a href="./account.html" class="text-gray-800 text-lg">
+                <i class="fa-solid fa-user"></i>
+              </a>
 
               <!-- Mobile Menu Button -->
               <button id="mobile-menu-button" class="md:hidden text-gray-800">
@@ -248,7 +307,7 @@
       <!-- Our Story Section -->
       <section class="container mx-auto px-6 py-10">
         <div class="flex flex-col md:flex-row items-center">
-          <div class="md:w-1/2 pr-8">
+          <div class="md:w-1/2 pr-8" data-aos="fade-down-right">
             <h1 class="text-4xl font-bold mb-6">Our Story</h1>
             <p class="text-gray-700 mb-4">
               Launched in 2015, Exclusive is South Asia's premier online
@@ -263,7 +322,7 @@
               ranging from consumer.
             </p>
           </div>
-          <div class="md:w-1/2 mt-8 md:mt-0">
+          <div class="md:w-1/2 mt-8 md:mt-0" data-aos="fade-up-left">
             <img
               src="../../public/contact/hero.png"
               alt="Two women shopping with bags on pink background"
@@ -279,6 +338,8 @@
           <!-- Stat Card 1 -->
           <div
             class="stat-card bg-white hover:bg-red-400 rounded-lg shadow-md text-black hover:text-white p-6 text-center duration-200 border border-blue-200 hover:border-no"
+            data-aos="fade-up"
+            data-aos-duration="3000"
           >
             <div
               class="inline-flex items-center justify-center w-16 h-16 bg-gray-100 hover:bg-white rounded-full mb-4"
@@ -291,6 +352,8 @@
           <!-- Stat Card 2 -->
           <div
             class="stat-card bg-white hover:bg-red-400 rounded-lg shadow-md text-black hover:text-white p-6 text-center duration-200 border border-blue-200 hover:border-no"
+            data-aos="fade-up"
+            data-aos-duration="3000"
           >
             <div
               class="inline-flex items-center justify-center w-16 h-16 bg-gray-100 hover:bg-white rounded-full mb-4"
@@ -305,6 +368,8 @@
           <!-- Stat Card 3 -->
           <div
             class="stat-card bg-white hover:bg-red-400 rounded-lg shadow-md text-black hover:text-white p-6 text-center duration-200 border border-blue-200 hover:border-no"
+            data-aos="fade-up"
+            data-aos-duration="3000"
           >
             <div
               class="inline-flex items-center justify-center w-16 h-16 bg-gray-100 hover:bg-white rounded-full mb-4"
@@ -317,6 +382,8 @@
           <!-- Stat Card 4 -->
           <div
             class="stat-card bg-white hover:bg-red-400 rounded-lg shadow-md text-black hover:text-white p-6 text-center duration-200 border border-blue-200 hover:border-no"
+            data-aos="fade-up"
+            data-aos-duration="3000"
           >
             <div
               class="inline-flex items-center justify-center w-16 h-16 bg-gray-100 hover:bg-white rounded-full mb-4"
@@ -335,7 +402,10 @@
       <section class="container mx-auto px-6 py-10">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Team Member 1 -->
-          <div class="team-card bg-gray-50 rounded-lg p-6">
+          <div
+            class="team-card bg-gray-50 rounded-lg p-6"
+            data-aos="fade-up-right"
+          >
             <div class="mb-4">
               <img
                 src="https://img.freepik.com/free-photo/lifestyle-people-emotions-casual-concept-confident-nice-smiling-asian-woman-cross-arms-chest-confident-ready-help-listening-coworkers-taking-part-conversation_1258-59335.jpg?semt=ais_hybrid&w=740"
@@ -359,7 +429,10 @@
           </div>
 
           <!-- Team Member 2 -->
-          <div class="team-card bg-gray-50 rounded-lg p-6">
+          <div
+            class="team-card bg-gray-50 rounded-lg p-6"
+            data-aos="fade-up-right"
+          >
             <div class="mb-4">
               <img
                 src="https://dy7glz37jgl0b.cloudfront.net/advice/images/39732cb0715c2a3b547785ccb83407e1-man-smiles-at-computer-hands-clasped_l.jpeg"
@@ -383,7 +456,10 @@
           </div>
 
           <!-- Team Member 3 -->
-          <div class="team-card bg-gray-50 rounded-lg p-6">
+          <div
+            class="team-card bg-gray-50 rounded-lg p-6"
+            data-aos="fade-up-right"
+          >
             <div class="mb-4">
               <img
                 src="https://cdn.prod.website-files.com/64c90c3b6f011629401599b1/652d09aa1adab2cd93fde418_rodzaje-person-zakupowych.webp"
@@ -421,7 +497,10 @@
       <section class="container mx-auto px-6 py-10">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <!-- Service 1 -->
-          <div class="bg-white rounded-lg shadow-md p-6 text-center">
+          <div
+            class="bg-white rounded-lg shadow-md p-6 text-center"
+            data-aos="fade-down-left"
+          >
             <div
               class="inline-flex items-center justify-center w-16 h-16 bg-gray-100 rounded-full mb-4"
             >
@@ -434,7 +513,10 @@
           </div>
 
           <!-- Service 2 -->
-          <div class="bg-white rounded-lg shadow-md p-6 text-center">
+          <div
+            class="bg-white rounded-lg shadow-md p-6 text-center"
+            data-aos="fade-down-right"
+          >
             <div
               class="inline-flex items-center justify-center w-16 h-16 bg-gray-100 rounded-full mb-4"
             >
@@ -447,7 +529,7 @@
           </div>
 
           <!-- Service 3 -->
-          <div class="bg-white rounded-lg shadow-md p-6 text-center">
+          <div class="bg-white rounded-lg shadow-md p-6 text-center" data-aos="fade-up-left">
             <div
               class="inline-flex items-center justify-center w-16 h-16 bg-gray-100 rounded-full mb-4"
             >
@@ -598,5 +680,9 @@
       </div>
     </footer>
     <script src="../js/navbar.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
